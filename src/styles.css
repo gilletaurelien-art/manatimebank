@@ -1425,3 +1425,19 @@ html { background: var(--sand); }
 .brand { display: inline-flex; align-items: center; gap: 6px; }
 .hero h1.brand-grand { display: flex; align-items: center; justify-content: center; gap: 10px; }
 .hero h1.brand-grand .logo-spectre { margin: 0; }
+
+/* ===== Le spectre vit dans le mot : « time » porte les quatre couleurs ===== */
+/* MANA et bank restent en encre ; chaque lettre de time prend une teinte
+   de la charte — la marque affiche le spectre, sans image. */
+.spectre { white-space: nowrap; }
+.sp-t { color: var(--bleu); }
+.sp-i { color: var(--vert); }
+.sp-m { color: #b8860b; }
+.sp-e { color: var(--orange); }
+
+/* Toute la marque porte le spectre : les 12 lettres cyclent les 4 teintes */
+.marque-spectre { white-space: nowrap; }
+.sp-bleu { color: var(--bleu); }
+.sp-vert { color: var(--vert); }
+.sp-jaune { color: #b8860b; }
+.sp-orange { color: var(--orange); }

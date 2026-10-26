@@ -13,7 +13,6 @@ import {
   NavCharte } from "./NavGlyphs";
 import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand } from "./doctrine";
 import { ContactForm } from "./ContactForm";
-import { LogoSpectre } from "./Logo";
 
 // manatimebank.org — visage doctrine : mission, méthode versionnée,
 // indice, portrait, charte. Ton publication scientifique et civique,
@@ -377,7 +376,6 @@ export default function App() {
       <header className="site-header">
         <div className="wrap">
           <a className="brand" href={`${B}/`}>
-            <LogoSpectre size={26} />
             <Brand />
           </a>
           <nav className="nav">
@@ -415,8 +413,7 @@ export default function App() {
                 Infrastructure d'observation · Pilote Crozon
               </p>
               <h1 className="brand-grand">
-                <LogoSpectre size={52} />
-                MANA<em>time</em>bank
+                <Brand />
               </h1>
               <p className="lede">
                 Le temps est la ressource. La société, le système
@@ -492,7 +489,6 @@ export default function App() {
         <div className="wrap footer-colonnes">
           <div>
             <p className="brand">
-              <LogoSpectre size={26} />
               <Brand />
             </p>
             <p className="footer-note">

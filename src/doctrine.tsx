@@ -52,11 +52,19 @@ export function useTitre(titre: string | null) {
   }, [titre]);
 }
 
+const SPECTRE = ["sp-bleu", "sp-vert", "sp-jaune", "sp-orange"] as const;
+
+// La marque entière porte le spectre : les douze lettres de
+// MANAtimebank cyclent les quatre teintes de la charte (3 cycles).
 export function Brand() {
   return (
-    <>
-      MANA<em>time</em>bank
-    </>
+    <span className="marque-spectre">
+      {"MANAtimebank".split("").map((l, i) => (
+        <span key={i} className={SPECTRE[i % 4]}>
+          {l}
+        </span>
+      ))}
+    </span>
   );
 }
 
