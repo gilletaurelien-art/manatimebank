@@ -418,10 +418,16 @@ export default function App() {
                 <Brand />
               </h1>
               <p className="lede">
+                Dans les cultures du Pacifique, le mana est la force vitale
+                qui circule en toute chose — invisible, non mesurable,
+                présente partout. Nous empruntons le mot et retournons la
+                démarche : le MANA est partout, alors nous n'en mesurons pas
+                la présence — nous observons ce qu'on en voit.
+              </p>
+              <p className="lede">
                 Le temps est la ressource. La société, le système
                 d'organisation. Le vivant, l'environnement. On observe comment
-                l'humanité utilise sa ressource temporelle — on ne note pas
-                la valeur de chaque heure.
+                l'humanité utilise sa ressource temporelle — son MANA.
               </p>
               <div className="hero-cta">
                 <a className="btn btn-primary" href={`${B}/vision`}>
