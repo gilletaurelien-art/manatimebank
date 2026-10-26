@@ -29,7 +29,21 @@ système vivant dont elle dépend.
 - Production portée par l'Alliance MANA (association) : connaissance
   d'intérêt général.
 
-Pages : /vision, /indice, /portrait, /methode, /charte, /mentions-legales.
+Manifeste du temps retrouvé (page /manifeste) : l'âme de l'enfant — celui
+qui se questionne sans les outils des adultes, qui vit ici et maintenant, et
+qui ne veut que manger, rire, être avec sa famille — est le regard que
+MANA TIME BANK porte sur le temps. Le temps est le bien commun
+premier de l'humanité — vingt-quatre heures pour chacun, du billionnaire au
+sans-abri. Tous les grands courants de pensée l'ont placé au service d'autre
+chose (production, croissance, progrès, révolution) ; aucun n'en a fait le
+centre. MANA TIME BANK dresse un constat sourcé (OMS/OIT : 745 000 décès/an
+attribuables aux longues heures ; ONU : 72 pays seulement mesurent le temps
+de care), questionne sans accuser, et revendique le droit au temps —
+familial, d'oisiveté, de contemplation — sans proposer de solutions :
+une lumière nouvelle, pas un programme.
+
+Pages : /manifeste, /vision, /indice, /portrait, /methode, /charte,
+/mentions-legales.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).

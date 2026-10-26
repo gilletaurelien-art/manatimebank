@@ -73,3 +73,13 @@ export function NavCharte({ size = 20, className }: GlyphProps) {
     </svg>
   );
 }
+
+export function NavManifeste({ size = 20 }: GlyphProps) {
+  return (
+    <svg {...base} width={size} height={size} aria-hidden="true">
+      <path d="M2.8 12c2.9-4.4 6-6.6 9.2-6.6s6.3 2.2 9.2 6.6c-2.9 4.4-6 6.6-9.2 6.6S5.7 16.4 2.8 12z" />
+      <circle cx="12" cy="12" r="2.6" />
+      <Accent cx={12} cy={12} r={1.1} />
+    </svg>
+  );
+}

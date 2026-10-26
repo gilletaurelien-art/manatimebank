@@ -10,7 +10,8 @@ import {
   NavIndice,
   NavPortrait,
   NavMethode,
-  NavCharte } from "./NavGlyphs";
+  NavCharte,
+  NavManifeste } from "./NavGlyphs";
 import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand } from "./doctrine";
 import { ContactForm } from "./ContactForm";
 
@@ -359,7 +360,142 @@ function PageMentions() {
   );
 }
 
+function PageManifeste() {
+  return (
+    <PageDoctrine
+      nom="Posture de l'Alliance"
+      titre="Manifeste du temps retrouvé"
+      sections={[
+        {
+          label: "L'âme de l'enfant",
+          corps: (
+            <p>
+              Un enfant ne comprend pas le monde des adultes — et il a
+              raison. Il n'en a pas les outils : ni le rendement, ni la
+              carrière, ni la retraite. Il possède d'autres instruments,
+              que nous avons tous eus et perdus : l'étonnement, la question
+              sans fin, le présent absolu. Il veut bien manger, rire, être
+              avec sa famille. C'est tout ce qui l'intéresse. Puis les
+              systèmes le forment — l'école, l'horloge, la productivité —
+              et l'ici et maintenant devient l'attente de plus tard.
+              MANA TIME BANK regarde le temps avec l'âme de cet enfant :
+              curieux, sans outils, questionnant ce que les adultes ont
+              cessé de voir.
+            </p>
+          ),
+        },
+        {
+          label: "Le constat",
+          corps: (
+            <>
+              <p>
+                Chaque être humain reçoit vingt-quatre heures par jour. Ni plus,
+                ni moins — du billionnaire au sans-abri, c'est la seule
+                ressource parfaitement partagée de l'humanité. Elle ne se
+                cumule pas, ne s'hérite pas, ne se fabrique pas. Et personne
+                ne la compte.
+              </p>
+              <p>
+                Le monde publie sa monnaie chaque trimestre, dans près de deux
+                cents pays. Il mesure le temps de sa vie une fois par décennie,
+                dans soixante-douze d'entre eux (ONU, SDG 5.4.1). Les heures de
+                soin données aux enfants et aux aînés — des milliards par an,
+                majoritairement portées par des femmes — n'apparaissent dans
+                aucune comptabilité nationale en tant que telles (OIT, 2018).
+                L'Organisation mondiale de la santé estime à 745 000 les décès
+                annuels attribuables aux seules longues heures de travail
+                (OMS/OIT, 2021). L'insomnie est devenue un mode de gouvernement
+                silencieux : le monde compte son argent en dormant debout.
+              </p>
+              <p>
+                Comment une civilisation qui mesure tout a-t-elle pu ne jamais
+                mesurer la seule chose qu'elle possède tous en commun ?
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Les questions",
+          corps: (
+            <>
+              <p>
+                Nous n'accusons personne. Nous remarquons que tous les grands
+                courants de pensée, chacun à sa manière, ont placé le temps de
+                la vie au service d'autre chose — et nous demandons pourquoi.
+              </p>
+              <p>
+                Celui qui fait du temps une marchandise : pourquoi le rendement
+                d'une heure vaudrait-il plus que sa plénitude ? Celui qui en
+                fait un devoir : pourquoi la valeur d'une vie se mesurerait-elle
+                à sa production ? Celui qui promet d'en abolir le besoin : que
+                deviendrait un humain qui ne dort plus ? Celui qui a gagné la
+                journée de huit heures : pourquoi s'est-il arrêté là, il y a
+                un siècle ? Aucun n'a fait du temps le centre. Tous l'ont mis
+                à l'arrière-plan — de la production, de la croissance, du
+                progrès, de la révolution. Le bien commun premier de l'humanité
+                reste le grand absent de ses pensées politiques.
+              </p>
+              <p>
+                Et nous demandons aussi : qui possède les heures ? Car il
+                n'existe pas de marché du temps proprement dit — il existe un
+                marché du temps <em>des autres</em>. Certains vendent leurs
+                heures pour vivre ; d'autres achètent les heures des premiers
+                pour exister. La grande redistribution moderne n'est peut-être
+                pas celle des richesses. C'est celle des heures.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Ce que nous revendiquons — et ce que nous ne proposons pas",
+          corps: (
+            <>
+              <p>
+                Nous revendiquons un droit qui n'a jamais été écrit : le droit
+                au temps. Le temps de sa famille, le temps de la paresse au sens
+                de Paul Lafargue, le temps de la contemplation, le temps du
+                sommeil rendu. Tout ce que chaque époque a essayé de retirer à
+                l'humain pour le mettre au travail.
+              </p>
+              <p>
+                Nous n'affirmons pas avoir de solutions. Nous proposons une
+                lumière nouvelle : rendre visible ce qui circule entre les
+                êtres — les heures de travail, de soin, d'entraide, d'attention
+                — et ce que chaque système en fait. Un constat documenté,
+                sourcé, vérifiable, est plus redoutable qu'un programme : on
+                peut renvoyer une utopie à l'utopie ; on ne peut pas renvoyer
+                un chiffre à l'imaginaire.
+              </p>
+              <p>
+                Le MANA, disaient les cultures du Pacifique, est la force
+                vitale qui circule en toute chose. Elle est partout. Ce n'est
+                pas elle qui manque — c'est notre regard.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              ONU, SDG 5.4.1 (proportion de temps consacré au travail domestique
+              et de soin non rémunéré, 72 pays disposant d'enquêtes) · OIT, Care
+              work and care jobs (2018) · OMS/OIT, Environmental and societal
+              burden of long working hours (745 000 décès/an, 2021) · ILOSTAT,
+              heures hebdomadaires effectives, ~160 pays · Paul Lafargue, Le
+              Droit à la paresse (1880) · Bertrand Russell, Éloge de l'oisiveté
+              (1932) · Byung-Chul Han, La Société de la fatigue · Hartmut
+              Rosa, Accélération et résonance.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
+  manifeste: PageManifeste,
   vision: PageVision,
   indice: PageIndice,
   portrait: PagePortrait,
@@ -381,8 +517,12 @@ export default function App() {
             <Brand />
           </a>
           <nav className="nav">
+            <a href={`${B}/manifeste`}>
+              <NavManifeste className="nav-acc-jaune" />
+              <span>Manifeste</span>
+            </a>
             <a href={`${B}/vision`}>
-              <NavVision className="nav-acc-jaune" />
+              <NavVision className="nav-acc-bleu" />
               <span>Vision</span>
             </a>
             <a href={`${B}/indice`}>
@@ -425,16 +565,26 @@ export default function App() {
                 la présence — nous observons ce qu'on en voit.
               </p>
               <p className="lede">
+                Et pour regarder le temps, nous prenons l'âme de l'enfant :
+                celui qui se questionne sans les outils des adultes, qui
+                s'étonne de tout, qui vit ici et maintenant. Manger, rire,
+                être avec les siens — c'est tout ce qui l'intéresse. C'est
+                peut-être tout ce qui a jamais compté.
+              </p>
+              <p className="lede">
                 Le temps est la ressource. La société, le système
                 d'organisation. Le vivant, l'environnement. On observe comment
                 l'humanité utilise sa ressource temporelle — son MANA.
               </p>
               <div className="hero-cta">
-                <a className="btn btn-primary" href={`${B}/vision`}>
-                  Lire la vision
+                <a className="btn btn-primary" href={`${B}/manifeste`}>
+                  Lire le manifeste
+                </a>
+                <a className="btn btn-ghost" href={`${B}/vision`}>
+                  La vision
                 </a>
                 <a className="btn btn-ghost" href={`${B}/portrait`}>
-                  Découvrir le Portrait MANA
+                  Le Portrait MANA
                 </a>
               </div>
               <p className="hero-note">{METHODE_VERSION} — en cours d'éprouval</p>
@@ -511,6 +661,7 @@ export default function App() {
             <ContactForm />
           </div>
           <nav className="footer-nav" aria-label="Pied de page">
+            <a href={`${B}/manifeste`}>Manifeste du temps retrouvé</a>
             <a href={`${B}/vision`}>Vision</a>
             <a href={`${B}/indice`}>Indice MANA</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
