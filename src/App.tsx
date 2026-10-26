@@ -848,8 +848,119 @@ function PageDonnees() {
   );
 }
 
+function PageRegimeInsomniaque() {
+  return (
+    <PageDoctrine
+      nom="Typologie des régimes temporels — fiche 01"
+      titre="Le régime insomniaque connecté"
+      sections={[
+        {
+          label: "Définition",
+          corps: (
+            <p>
+              Configuration stable d'usage du temps où le travail, la connexion
+              et l'attention se superposent en continu plutôt qu'ils ne se
+              succèdent. Le temps n'y est plus découpé en sphères
+              (travail / repos / famille) mais en superposition : on travaille
+              le soir, on répond aux messages pendant le dîner, on s'endort
+              en scrollant. La lignée intellectuelle existe — société de la
+              fatigue (Byung-Chul Han), accélération (Hartmut Rosa) — mais
+              aucun cadre ne l'a encore documentée comme régime, avec ses
+              marqueurs et ses coûts.
+            </p>
+          ),
+        },
+        {
+          label: "Stock — la réserve grignotée aux deux bouts",
+          corps: (
+            <p>
+              Vingt-quatre heures comme partout, mais la réserve éveillée est
+              rognée aux deux extrémités : le sommeil retardé par l'écran, le
+              matin avancé par la première notification.{" "}
+              <strong>Marqueurs :</strong> dette de sommeil (enquêtes
+              nationales de sommeil — rares, non comparables entre elles) ;
+              durée de sommeil moyenne par pays (hypothèse tant que les
+              enquêtes ne sont pas harmonisées).
+            </p>
+          ),
+        },
+        {
+          label: "Circulation — des flux qui ne s'arrêtent plus",
+          corps: (
+            <p>
+              Le travail payé déborde le contrat, l'attention est vendue en
+              continu, le care est interrompu par la connexion.{" "}
+              <strong>Marqueurs :</strong> heures hebdomadaires effectives vs
+              contractuelles (ILOSTAT — mesuré) ; temps de disponibilité
+              numérique non compté — invisible dans toutes les bases mondiales,
+              et nommé ici comme tel.
+            </p>
+          ),
+        },
+        {
+          label: "Distribution — ceux qui peuvent couper, ceux qui ne le peuvent pas",
+          corps: (
+            <p>
+              La variance s'aggrave entre ceux qui peuvent « couper » (revenus
+              élevés, statut protégé, droit à la déconnexion effectif) et ceux
+              qui ne le peuvent pas (précarité connectée, livraison,
+              plateformes). <strong>Marqueurs :</strong> temps partiel subi et
+              horaires atypiques par catégorie socio-professionnelle
+              (enquêtes emploi — mesuré au niveau national, interprété à
+              l'échelle mondiale).
+            </p>
+          ),
+        },
+        {
+          label: "Tenue — un régime qui ne tient que par ses coûts",
+          corps: (
+            <p>
+              Le point le plus falsifiable de la fiche : ce régime se maintient
+              en détruisant sa réserve. L'OMS et l'OIT attribuent 745 000
+              décès par an aux longues heures de travail (AVC, maladies
+              cardiaques, 2021) ; le burn-out est reconnu comme phénomène
+              professionnel par l'OIT depuis 2024 ; l'OMS décrit l'insomnie
+              comme une préoccupation mondiale croissante. Un régime qui tient
+              en détruisant sa réserve est un régime à boucle ouverte — la
+              question de sa durée de vie reste ouverte, et n'appartient pas
+              à la donnée.
+            </p>
+          ),
+        },
+        {
+          label: "Les invisibles de ce régime",
+          corps: (
+            <p>
+              Le temps de disponibilité numérique (aucune base mondiale ne le
+              compte) et le care interrompu par la connexion (aucune enquête
+              ne le relève comme tel). Ces deux invisibles sont des résultats
+              en soi : la première carte mondiale du régime insomniaque
+              serait, pour l'essentiel, une carte de ce qu'on ne voit pas.
+            </p>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              ILOSTAT, heures hebdomadaires effectives (~160 pays) · OMS/OIT,
+              Environmental and societal burden of long working hours (745 000
+              décès/an, 2021) · OIT, reconnaissance du burn-out (2024) · OMS,
+              rapports sur l'insomnie · Gallup World Poll (question du temps
+              pour soi, 140+ pays) · Byung-Chul Han, La Société de la fatigue ·
+              Hartmut Rosa, Accélération. Fiche établie selon la Méthode MANA,
+              v0.2.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
+  "regime-insomniaque-connecte": PageRegimeInsomniaque,
   donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
@@ -1017,6 +1128,7 @@ export default function App() {
             <a href={`${B}/vision`}>Vision</a>
             <a href={`${B}/donnees`}>Données du temps mondial</a>
             <a href={`${B}/indice`}>Indice MANA</a>
+            <a href={`${B}/regime-insomniaque-connecte`}>Régime insomniaque connecté — fiche 01</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>

@@ -58,8 +58,18 @@ Principe-pivot : le MANA est partout — l'indice ne mesure pas la présence
 du MANA mais la visibilité de ses circuits (ce qui circule entre les êtres
 et avec le vivant, ce qu'on en voit, ce qu'on n'en voit pas).
 
+Typologie des régimes temporels (Article 4 de la méthode) — première
+fiche publiée : /regime-insomniaque-connecte. Le régime insomniaque
+connecté : travail, connexion et attention superposés en continu ;
+réserve grignotée aux deux bouts (dette de sommeil) ; flux sans
+interruption (disponibilité numérique invisible dans toutes les bases) ;
+variance entre ceux qui peuvent couper et les autres ; tenue assurée par
+ses coûts (OMS/OIT : 745 000 décès/an, burn-out reconnu 2024). Chaque
+grandeur (stock, circulation, distribution, tenue) porte ses marqueurs
+avec leur état : mesuré, interprété, hypothèse, invisible.
+
 Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
-/charte, /mentions-legales.
+/charte, /mentions-legales, /regime-insomniaque-connecte.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).
