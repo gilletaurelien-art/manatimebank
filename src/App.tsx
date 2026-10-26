@@ -299,7 +299,7 @@ function PageCharte() {
               Facturation par l'Alliance MANA (association), sous conditions de
               tenue : non-lucrativité réelle (barème de couverture de coûts,
               test des 4P : produit, public, prix, publicité), résultats
-              publiers, méthode ouverte. Si les prix montent vers des prix de
+              publiables, méthode ouverte. Si les prix montent vers des prix de
               cabinet, transfert côté TEMPOsystem (sous-traitant technique
               éventuel).
             </p>
