@@ -68,13 +68,24 @@ export function Brand() {
   );
 }
 
-export function PageDoctrine({ nom, titre, sections }: {
+export function PageDoctrine({ nom, titre, sections, description }: {
   nom: string;
   titre: string;
+  description?: string;
   sections: { label: string; corps: React.ReactNode }[];
 }) {
   useTitre(titre);
   const B = baseUrl();
+  useEffect(() => {
+    if (!description) return;
+    let meta = document.querySelector('meta[name="description"]');
+    if (!meta) {
+      meta = document.createElement("meta");
+      meta.setAttribute("name", "description");
+      document.head.appendChild(meta);
+    }
+    meta.setAttribute("content", description);
+  }, [description]);
   return (
     <main className="publier">
       <div className="wrap">
@@ -85,7 +96,7 @@ export function PageDoctrine({ nom, titre, sections }: {
         <h1 className="fiche-titre">{titre}</h1>
         {sections.map((s) => (
           <section key={s.label} className="publier-panel">
-            <p className="apercu-label">{s.label}</p>
+            <h2 className="apercu-label">{s.label}</h2>
             <div className="territoire-intro">{s.corps}</div>
           </section>
         ))}

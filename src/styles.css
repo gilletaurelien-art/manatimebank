@@ -1545,3 +1545,6 @@ html { background: var(--sand); }
 .donnees-table td:nth-child(2),
 .donnees-table td:nth-child(3),
 .donnees-table td:nth-child(4) { text-align: right; }
+
+/* Labels de section : sémantique h2, même style */
+h2.apercu-label { margin: 0; }

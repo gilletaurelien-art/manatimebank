@@ -89,6 +89,7 @@ function PageVision() {
     <PageDoctrine
       nom="Vision"
       titre="Une infrastructure d'observation du temps"
+      description="MANA TIME BANK observe comment l'humanité utilise sa ressource temporelle. Le mot banque au sens de banque de données ; ce que nous ne sommes pas ; le MANA partout et la visibilité des circuits."
       sections={[
         {
           label: "La décision fondatrice",
@@ -166,6 +167,7 @@ function PageIndice() {
     <PageDoctrine
       nom="Indice MANA"
       titre="La visibilité des circuits"
+      description="L'indice MANA ne mesure pas la présence du MANA mais la visibilité de ses circuits : six chapitres, quatre grandeurs (stock, circulation, distribution, tenue), quatre états de donnée, aucun score."
       sections={[
         {
           label: "Le principe-pivot",
@@ -234,6 +236,7 @@ function PagePortrait() {
     <PageDoctrine
       nom="Premier produit"
       titre="Le Portrait MANA"
+      description="Diagnostic mondial documenté à partir de données publiques (ONU, OIT, OCDE) : l'état du visible, la liste des invisibles, la description des régimes. Trois livrables, aucun score."
       sections={[
         {
           label: "Nature du produit",
@@ -299,6 +302,7 @@ function PageMethode() {
     <PageDoctrine
       nom="Méthode"
       titre="Méthode MANA v0.2 — publique et versionnée"
+      description="Dix articles, un faisceau de neuf regards, des interdits : pas de score, pas de classement, mesuré/interprété/hypothèse/invisible. Méthode publique, versionnée, falsifiable."
       sections={[
         {
           label: "Version et citation",
@@ -479,6 +483,7 @@ function PageCharte() {
     <PageDoctrine
       nom="Confiance"
       titre="Charte de confiance"
+      description="La méthode est publique et versionnée. La prestation est payante. Les conclusions sont soumises aux données et à la méthode — jamais au montant du contrat."
       sections={[
         {
           label: "Engagement",
@@ -567,6 +572,7 @@ function PageManifeste() {
     <PageDoctrine
       nom="Posture de l'Alliance"
       titre="Manifeste du temps retrouvé"
+      description="Le temps est le bien commun premier de l'humanité : 24 heures pour chacun. Un constat sourcé (OMS/OIT, ONU), des questions sans accusation, le droit au temps — familial, d'oisiveté, de contemplation."
       sections={[
         {
           label: "L'âme de l'enfant",
@@ -705,6 +711,7 @@ function PageDonnees() {
     <PageDoctrine
       nom="Les observations"
       titre="Données du temps mondial"
+      description="Le bilan chiffré du temps humain : heures travaillées (PWT 2023), care non rémunéré par sexe (ONU SDG 5.4.1), lues en thèse, antithèse et synthèse. Sources datées, états de données, aucun classement."
       sections={[
         {
           label: "En bref",
@@ -1706,8 +1713,9 @@ function PageRegimes() {
 function PageTempsVecu() {
   return (
     <PageDoctrine
-      nom="Chapitre — charnière conceptuelle"
+      nom="Chapitre — essai en trois échelles"
       titre="Du temps possédé au temps vécu"
+      description="Essai en trois échelles (individu, collectivités, humanité) : temps vécu et liberté temporelle à l'ère des machines. Avoir, valoir, être ; le paradoxe du progrès technique ; Internet, diapason potentiel."
       sections={[
         {
           label: "Des années de vie. De la vie dans des années.",
@@ -1897,44 +1905,6 @@ function PageTempsVecu() {
           ),
         },
         {
-          label: "L'amour, une piste pour comprendre le temps vécu",
-          corps: (
-            <>
-              <p>
-                Proposition de réflexion, traitée comme piste
-                interdisciplinaire et non comme explication
-                universelle : les relations affectives mettent en
-                évidence plusieurs temporalités à la fois. Le temps
-                court de l'intensité — désir, passion, rencontre,
-                émotion, sentiment d'urgence, l'instant qui prend
-                une place immense. Le temps long de la confiance —
-                expériences répétées, fiabilité, attention, soin,
-                connaissance de l'autre, mémoire commune, continuité
-                du lien.
-              </p>
-              <p>
-                Ces dynamiques ne s'excluent pas : la passion peut
-                ouvrir une relation qui se construit dans la durée ;
-                une relation durable peut renouveler son intensité ;
-                et la durée seule ne garantit ni la confiance ni la
-                qualité du lien. Distinguer systématiquement :
-                l'intensité ressentie · la durée chronologique · la
-                confiance construite · la qualité relationnelle · la
-                liberté de chacun au sein de la relation.
-              </p>
-              <p>
-                Question de recherche possible : comment les relations
-                qui comptent pour nous transforment-elles notre
-                expérience du temps et la manière dont nous choisissons
-                de l'employer ? L'amour est un cas d'étude — pas la
-                définition universelle de toute temporalité humaine,
-                et personne ne prétend ici qu'il explique déjà la
-                majorité des décisions humaines.
-              </p>
-            </>
-          ),
-        },
-        {
           label: "MÉSO — les temporalités collectives",
           corps: (
             <>
@@ -2004,6 +1974,44 @@ function PageTempsVecu() {
                 s'agit de décrire les conditions qui rendent
                 certaines expériences possibles et en empêchent
                 d'autres — pour chacun et pour tous.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "L'amour, une piste pour comprendre le temps vécu",
+          corps: (
+            <>
+              <p>
+                Proposition de réflexion, traitée comme piste
+                interdisciplinaire et non comme explication
+                universelle : les relations affectives mettent en
+                évidence plusieurs temporalités à la fois. Le temps
+                court de l'intensité — désir, passion, rencontre,
+                émotion, sentiment d'urgence, l'instant qui prend
+                une place immense. Le temps long de la confiance —
+                expériences répétées, fiabilité, attention, soin,
+                connaissance de l'autre, mémoire commune, continuité
+                du lien.
+              </p>
+              <p>
+                Ces dynamiques ne s'excluent pas : la passion peut
+                ouvrir une relation qui se construit dans la durée ;
+                une relation durable peut renouveler son intensité ;
+                et la durée seule ne garantit ni la confiance ni la
+                qualité du lien. Distinguer systématiquement :
+                l'intensité ressentie · la durée chronologique · la
+                confiance construite · la qualité relationnelle · la
+                liberté de chacun au sein de la relation.
+              </p>
+              <p>
+                Question de recherche possible : comment les relations
+                qui comptent pour nous transforment-elles notre
+                expérience du temps et la manière dont nous choisissons
+                de l'employer ? L'amour est un cas d'étude — pas la
+                définition universelle de toute temporalité humaine,
+                et personne ne prétend ici qu'il explique déjà la
+                majorité des décisions humaines.
               </p>
             </>
           ),
