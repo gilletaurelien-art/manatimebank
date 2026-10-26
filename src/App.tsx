@@ -441,7 +441,7 @@ export default function App() {
                   <s.glyphe className={ACCENTS[i % 3]} />
                 </div>
                 <h2 className="section-title">{s.titre}</h2>
-                <div className="sous-bulle">
+                <div className={`sous-bulle ${ACCENTS[i % 3]}`}>
                   <p className={`section-accroche ${ACCENTS[i % 3]}`}>{s.accroche}</p>
                   <p className="section-texte">{s.texte}</p>
                   <div className="est-actions">

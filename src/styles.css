@@ -1395,3 +1395,24 @@ html { background: var(--sand); }
 .promesse h3.accent-jaune { color: #b8860b; }
 .glyphe.accent-jaune,
 .nav-acc-jaune { color: #b8860b; }
+
+/* Sous-bulles colorées : chaque section porte la pastel de son accent
+   (issues du fond d'écran) — le texte repasse en encre, l'accroche garde
+   la teinte profonde, le CTA reste blanc plein. */
+.sous-bulle.accent-jaune { background: #f8e49f; }
+.sous-bulle.accent-vert { background: #bdeed0; }
+.sous-bulle.accent-orange { background: #fcb992; }
+.sous-bulle.accent-bleu { background: #daf1f6; }
+.sous-bulle.accent-jaune,
+.sous-bulle.accent-vert,
+.sous-bulle.accent-orange,
+.sous-bulle.accent-bleu {
+  border-color: rgb(29 58 95 / 10%);
+}
+.sous-bulle.accent-jaune .section-texte,
+.sous-bulle.accent-vert .section-texte,
+.sous-bulle.accent-orange .section-texte,
+.sous-bulle.accent-bleu .section-texte {
+  color: var(--ink);
+  opacity: 0.9;
+}
