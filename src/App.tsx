@@ -1736,14 +1736,27 @@ function PageTempsVecu() {
                 vie longue n'est pas d'office une vie riche.
               </p>
               <p>
+                Quatre notions à distinguer d'entrée : le{" "}
+                <strong>temps chronologique</strong> mesure une durée ;
+                le <strong>temps vécu</strong> désigne l'expérience
+                subjective de cette durée ; le <strong>temps
+                collectif</strong> désigne les rythmes, les contraintes
+                et les possibilités organisés par une société ; le{" "}
+                <strong>temps civilisationnel</strong> désigne
+                l'articulation des temporalités humaines,
+                technologiques, économiques, écologiques et
+                intergénérationnelles. Ces dimensions interagissent
+                sans être réductibles les unes aux autres.
+              </p>
+              <p>
                 Ce chapitre est une charnière : il part de
                 l'expérience individuelle, montre comment les
                 temporalités sont organisées collectivement, puis ouvre
                 sur les rythmes de l'humanité et du vivant. La question
-                de recherche : comment décrire les relations entre le
-                temps chronologique, le temps vécu, le temps
-                remémoré, la liberté temporelle et les conditions
-                sociales dans lesquelles les vies se déroulent ?
+                de recherche : comment décrire les relations entre
+                ces quatre temps, la liberté temporelle et les
+                conditions sociales dans lesquelles les vies se
+                déroulent ?
               </p>
             </>
           ),
@@ -1760,7 +1773,14 @@ function PageTempsVecu() {
                 social — posséder pour être reconnu, consommer pour
                 appartenir, travailler pour justifier sa place. Erich
                 Fromm décrivait dès 1942 cette tendance à définir
-                l'existence par l'avoir plutôt que par l'être.
+                l'existence par l'avoir plutôt que par l'être. Et la
+                possession n'est pas seulement matérielle : les
+                sociétés peuvent aussi valoriser l'occupation permanente
+                du temps, la disponibilité, la vitesse de réaction et
+                la productivité — posséder son agenda comme on possède
+                un bien. L'observation n'est pas une condamnation de la
+                consommation ou de l'activité : elle repère le moment
+                où l'occupation devient une preuve d'existence.
               </p>
               <p>
                 Trois dimensions distinctes, souvent confondues :
@@ -1775,11 +1795,15 @@ function PageTempsVecu() {
               <p>
                 Proposition philosophique : la dignité humaine ne
                 devrait pas dépendre de la productivité économique
-                d'une personne. Les sociétés où l'accès à une vie
-                digne semble conditionné à la capacité de produire,
-                de gagner ou de consommer méritent d'être observées
-                comme des configurations temporelles — décrites dans
-                leurs conséquences, non jugées.
+                d'une personne. Et la liberté temporelle ne consiste
+                pas simplement à avoir des heures libres : elle
+                consiste à pouvoir choisir ce que l'on en fait sans
+                devoir constamment justifier son utilité. Les sociétés
+                où l'accès à une vie digne semble conditionné à la
+                capacité de produire, de gagner ou de consommer
+                méritent d'être observées comme des configurations
+                temporelles — décrites dans leurs conséquences, non
+                jugées.
               </p>
             </>
           ),
@@ -1806,13 +1830,14 @@ function PageTempsVecu() {
                 <strong>2.</strong> la transformation du travail et
                 des tâches · <strong>3.</strong> le temps
                 effectivement rendu disponible · <strong>4.</strong> la
-                liberté réelle de choisir l'usage de ce temps. La
-                question n'est pas de savoir ce que les machines
-                peuvent accomplir, mais qui bénéficie des gains, qui
-                supporte les coûts, et comment les nouvelles
-                possibilités sont distribuées. Une société peut
-                devenir plus productive sans devenir temporellement
-                plus libre.
+                liberté réelle de choisir l'usage de ce temps — le
+                temps appropriable, celui qu'une personne peut
+                réellement faire sien. La question n'est pas de savoir
+                ce que les machines peuvent accomplir, mais qui
+                bénéficie des gains, qui supporte les coûts, et
+                comment les nouvelles possibilités sont distribuées.
+                Une société peut devenir plus productive sans
+                devenir temporellement plus libre.
               </p>
             </>
           ),
@@ -1954,21 +1979,48 @@ function PageTempsVecu() {
           ),
         },
         {
-          label: "MACRO — les temporalités de l'humanité et du vivant",
+          label: "Le temps d'un peuple",
           corps: (
             <>
               <p>
-                À l'échelle civilisationnelle, les rythmes humains,
-                économiques, technologiques, écologiques et
-                intergénérationnels interagissent — sans coïncider.
-                Les communications numériques sont quasi
-                instantanées ; les décisions institutionnelles
-                suivent des calendriers propres ; la confiance
-                relationnelle se construit à travers des expériences
-                répétées ; le développement humain s'étend sur des
-                années ; la régénération des écosystèmes dépend de
-                processus biologiques lents ; et les conséquences de
-                décisions présentes peuvent se prolonger sur
+                Un peuple ne possède pas une expérience temporelle
+                unique et homogène. Les temporalités collectives se
+                construisent à travers les institutions, les cultures,
+                les générations, les conditions matérielles et les
+                rythmes partagés. À l'intérieur d'un même peuple,
+                observer :
+              </p>
+              <p>
+                les inégalités de temps disponible · les horaires et
+                contraintes de travail · les responsabilités de soin ·
+                les possibilités de rencontre et d'entraide · les
+                rythmes des services et des institutions · les
+                mémoires collectives et la transmission · les
+                différences de temporalité entre générations.
+              </p>
+              <p>
+                La question n'est pas de classer les peuples selon
+                leur bonheur ou leur qualité de vie temporelle. Il
+                s'agit de décrire les conditions qui rendent
+                certaines expériences possibles et en empêchent
+                d'autres — pour chacun et pour tous.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "MACRO — les temporalités désaccordées",
+          corps: (
+            <>
+              <p>
+                À l'échelle civilisationnelle, les rythmes
+                économiques, politiques, humains et écologiques se
+                désaccordent. La réactivité économique peut être très
+                rapide ; la confiance relationnelle se construit dans
+                la durée ; les besoins de soin suivent des
+                temporalités concrètes ; les écosystèmes répondent à
+                des cycles qui varient selon les milieux ; et les
+                conséquences des décisions peuvent dépasser
                 plusieurs générations.
               </p>
               <p>
@@ -2071,6 +2123,37 @@ function PageTempsVecu() {
           ),
         },
         {
+          label: "De la possession à la liberté temporelle",
+          corps: (
+            <>
+              <p>
+                Le changement de paradigme ne consiste pas à culpabiliser
+                les individus ni à leur demander de renoncer à leurs
+                aspirations. Il suppose d'examiner les conditions
+                collectives qui rendent la liberté possible : une
+                sécurité matérielle suffisante · des revenus et des
+                services accessibles · une répartition équitable du
+                travail rémunéré et du soin · la possibilité de réduire
+                le temps de travail lorsque les gains de productivité le
+                permettent · la reconnaissance des contributions non
+                marchandes · la préservation des ressources et des
+                écosystèmes · le droit de choisir l'usage de son temps,
+                y compris celui de ne rien optimiser.
+              </p>
+              <p>
+                Et la liberté temporelle dépend aussi de la
+                synchronisation : avoir du temps seul ne garantit pas de
+                pouvoir le partager. Des disponibilités qui ne se
+                rencontrent pas — horaires incompatibles, proches
+                éloignés, services fermés — produisent une solitude
+                temporelle que n'aucune heure libre ne comble. Pouvoir
+                synchroniser son temps avec celui d'autrui fait partie
+                des conditions de la liberté.
+              </p>
+            </>
+          ),
+        },
+        {
           label: "Méthode — distinguer le mesuré, l'interprété et l'inconnu",
           corps: (
             <p>
@@ -2146,13 +2229,22 @@ function PageTempsVecu() {
                 Une société n'est pas seulement riche de ce qu'elle
                 possède ou de ce qu'elle produit. Elle l'est aussi
                 des possibilités qu'elle offre à chacun de vivre son
-                temps. Le temps ne se possède pas : il se vit, se
-                partage et se préserve. MANA TIME BANK ne cherche
-                ni à noter le bonheur ni à prescrire une manière de
-                vivre — il cherche à comprendre les conditions dans
-                lesquelles le temps cesse d'être uniquement une
-                ressource à rentabiliser et devient une possibilité
-                de vivre.
+                temps. Trois idées pour finir :{" "}
+                <strong>1.</strong> les machines peuvent contribuer à
+                économiser du temps, sans garantir que ce temps
+                devienne une liberté ; <strong>2.</strong> Internet
+                et les IA offrent de nouvelles possibilités de
+                communication, de réflexion et de coordination, sans
+                garantir que l'humanité sache mieux employer son
+                temps ; <strong>3.</strong> MANA TIME BANK cherche à
+                comprendre les conditions dans lesquelles les
+                individus et les sociétés peuvent disposer de leur
+                temps, le partager et préserver les possibilités des
+                générations futures.
+              </p>
+              <p style={{ fontStyle: "italic" }}>
+                Le temps ne se possède pas. Il se vit, se partage et
+                se préserve.
               </p>
               <p style={{ fontStyle: "italic" }}>
                 Nous savons compter les heures. Nous devons encore
