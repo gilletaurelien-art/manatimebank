@@ -1092,10 +1092,155 @@ function PageRegimeSynchronise() {
   );
 }
 
+function PageRegimeFragmente() {
+  return (
+    <PageDoctrine
+      nom="Typologie des régimes temporels — fiche 03"
+      titre="Le régime fragmenté marchand"
+      sections={[
+        {
+          label: "Définition",
+          corps: (
+            <p>
+              Configuration stable d'usage du temps où le travail arrive en
+              fragments imposés : plages courtes, horaires éclatés, semaines
+              variables d'une semaine à l'autre, disponibilité exigée sans
+              être rémunérée. C'est le régime de la précarité horaire —
+              caisses, livraisons, nettoyage, intérim, plateformes — où
+              l'heure vendue est trop souvent « trop petite pour compter » :
+              chaque fragment isolé semble négligeable, leur somme fait une
+              vie. Il ne se superpose pas comme l'insomniaque connecté
+              (fiche 01) ni ne se synchronise comme l'institutionnel
+              (fiche 02) : il disperse.
+            </p>
+          ),
+        },
+        {
+          label: "Stock — une réserve saisie par fragments",
+          corps: (
+            <p>
+              La réserve n'est pas découpée en blocs protégés mais prélevée
+              en éclats : 4 heures ici, 3 heures là, souvent aux heures
+              que les autres régimes laissent libres (soir, nuit, week-end).
+              Le repos lui-même est fragmenté — récupérer entre deux
+              plages, dormir en anticipation d'un réveil à 4h.
+              <strong> Marqueurs :</strong> part de l'emploi à temps
+              partiel subi (enquêtes emploi — mesuré) ; horaires
+              atypiques et travail de nuit par secteur (mesuré) ;
+              variabilité des plages d'une semaine à l'autre — rarement
+              documentée, souvent déclarée invisible.
+            </p>
+          ),
+        },
+        {
+          label: "Circulation — des flux à la demande des autres",
+          corps: (
+            <p>
+              Les flux ne circulent pas au rythme de celui qui les porte :
+              ils sont déclenchés par la demande, l'algorithme de tournée,
+              le pic commercial, la saison. Le travailleur fragmenté
+              n'organise pas ses heures — il les attend. La disponibilité
+              est le produit réel vendu : ce n'est pas l'heure travaillée
+              qui est rémunérée, c'est la mise à disposition de toutes
+              ses heures possibles. <strong>Marqueurs :</strong> travail
+              à la demande / gig economy (estimations OIT — hypothèse,
+              définitions nationales divergentes) ; heures d'attente
+              entre plages — invisibles dans presque toutes les bases.
+            </p>
+          ),
+        },
+        {
+          label: "Distribution — le régime de la double pénalité",
+          corps: (
+            <p>
+              Le régime fragmenté frappe deux fois : il concentre le temps
+              contraint sur ceux qui ont le moins de choix, et il rend la
+              reconstruction d'un temps choisi presque impossible (les
+              fragments non travaillés sont trop courts, trop aléatoires,
+              trop épuisés pour devenir du temps propre). Les femmes,
+              les jeunes, les travailleurs informels et migrants en
+              portent la part la plus lourde — documenté partout où
+              l'enquête les regarde. <strong>Marqueurs :</strong> temps
+              partiel subi par genre et âge (mesuré) ; pauvreté malgré
+              l'emploi (Eurostat, statistiques nationales — mesuré).
+            </p>
+          ),
+        },
+        {
+          label: "Tenue — un régime qui s'étend en s'autodétruisant",
+          corps: (
+            <p>
+              Falsifiable : le régime fragmenté s'étend dans presque toutes
+              les économies (part du travail précaire et à la demande en
+              croissance documentée), mais sa tenue est doublement
+              limitée — par le corps (l'éclatement des horaires aggrave
+              les troubles du sommeil et cardiovasculaires, documenté par
+              les études de santé au travail) et par la reproduction
+              sociale (sans temps reconstruisable, ni formation, ni
+              engagement, ni care stable — chaque porteur du régime
+              s'épuise sans transmettre). C'est le seul régime dont
+              l'expansion est attestée en même temps que la tenue
+              est contredite : il croît en contradiction avec ses
+              propres conditions.
+            </p>
+          ),
+        },
+        {
+          label: "Les invisibles de ce régime",
+          corps: (
+            <p>
+              Les heures d'attente entre deux plages (ni travaillées, ni
+              libres — la catégorie statistique n'existe pas) ; le coût
+              de reconstitution du temps propre (ce qu'il faut pour
+              transformer des fragments en vie : trajets multiples,
+              réorganisation permanente, fatigue cumulée) ; le travail
+              informel fragmenté, hors de toute enquête. La somme de
+              ces invisibles est probablement supérieure au temps
+              officiellement compté — et c'est précisément la
+              conjecture que la méthode pose, sans pouvoir encore la
+              mesurer.
+            </p>
+          ),
+        },
+        {
+          label: "Contraste avec les fiches 01 et 02",
+          corps: (
+            <p>
+              L'insomniaque connecté superpose (le temps perd ses bornes) ;
+              le synchronisé institutionnel sépare (le temps est borné et
+              protégé) ; le fragmenté marchand disperse (le temps est saisi
+              par éclats, à la demande). Trois manières de déposséder ou
+              d'organiser la même ressource : l'un déborde un cadre
+              hérité, l'autre l'a construit, le troisième n'a jamais eu
+              de cadre. Les trois fiches ensemble dessinent déjà la
+              question commune : qui tient l'horloge ?
+            </p>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              OIT, rapports sur le travail à la demande et les plateformes
+              (définitions et estimations — hypothèses assumées) · enquêtes
+              emploi nationales et européennes (temps partiel subi, horaires
+              atypiques) · Eurostat, pauvreté malgré l'emploi · études de
+              santé au travail sur le travail fragmenté et de nuit ·
+              ILOSTAT (emploi à temps partiel). Fiche établie selon la
+              Méthode MANA, v0.2.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
   "regime-synchronise-institutionnel": PageRegimeSynchronise,
+  "regime-fragmente-marchand": PageRegimeFragmente,
   donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
@@ -1265,6 +1410,7 @@ export default function App() {
             <a href={`${B}/indice`}>Indice MANA</a>
             <a href={`${B}/regime-insomniaque-connecte`}>Régime insomniaque connecté — fiche 01</a>
             <a href={`${B}/regime-synchronise-institutionnel`}>Régime synchronisé institutionnel — fiche 02</a>
+            <a href={`${B}/regime-fragmente-marchand`}>Régime fragmenté marchand — fiche 03</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>

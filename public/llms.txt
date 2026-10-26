@@ -78,9 +78,19 @@ aidants — vivent sans bornes) ; érosion documentée de ses limites
 superposition ; construit par un siècle de luttes contre avance sans
 avoir été décidé ; aucun des deux n'est « meilleur ».
 
+Fiche 03 : /regime-fragmente-marchand — le régime fragmenté marchand :
+le travail arrive en fragments imposés (plages courtes, horaires éclatés,
+disponibilité exigée non rémunérée) ; la disponibilité est le produit réel
+vendu ; double pénalité (temps contraint concentré sur ceux qui ont le
+moins de choix, temps propre impossible à reconstruire) ; s'étend en
+s'autodétruisant (expansion attestée, tenue contredite par le corps et la
+reproduction sociale). Invisibles : heures d'attente entre plages, coût
+de reconstitution du temps propre. Les trois fiches posent la question
+commune : qui tient l'horloge ?
+
 Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
 /charte, /mentions-legales, /regime-insomniaque-connecte,
-/regime-synchronise-institutionnel.
+/regime-synchronise-institutionnel, /regime-fragmente-marchand.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).
