@@ -27,9 +27,9 @@ const SECTIONS = [
     glyphe: GlyphTemps,
     num: "01",
     titre: "Le temps est une ressource",
-    accroche: "Ni banque de dépôt, ni bourse du temps : une observation.",
+    accroche: "Une observation, rien d'autre.",
     texte:
-      "MANA TIME BANK n'est pas une banque de temps classique. Pas de dépôt, d'échange ni de crédit d'heures. C'est une infrastructure d'observation mondiale : comment l'humanité utilise sa ressource temporelle dans le système vivant dont elle dépend. Le temps est la ressource, la société le système d'organisation, le vivant l'environnement.",
+      "MANA TIME BANK observe : comment l'humanité utilise sa ressource temporelle dans le système vivant dont elle dépend. Le temps est la ressource, la société le système d'organisation, le vivant l'environnement. Rien n'y est déposé, échangé ni crédité — la ressource observée est le temps lui-même, pas une monnaie.",
   },
   {
     glyphe: GlyphIndice,
@@ -123,15 +123,28 @@ function PageVision() {
           ),
         },
         {
+          label: "Ce que nous ne sommes pas",
+          corps: (
+            <p>
+              Pas une banque de temps d'échange : aucune heure n'y est
+              déposée, échangée ou créditée. Pas un classement de pays : aucun
+              territoire n'y est noté, comparé ou primé. Pas un prescripteur :
+              aucune solution, aucun programme, aucune recommandation. Pas un
+              vendeur en l'état : aucune prestation n'est proposée sur ce
+              site. Si vous cherchez un système d'échange d'heures, il existe
+              de vraies timebanks — ce projet-là observe ; il n'échange pas.
+            </p>
+          ),
+        },
+        {
           label: "Positionnement",
           corps: (
             <p>
               Indice mondial, même écosystème MANA. Le MANA est partout —
-              il n'y a pas de territoire sans MANA, seulement des circuits
+              il n'y a pas de lieu sans MANA, seulement des circuits
               qu'on ne voit pas encore. La production de connaissance est
               portée par l'Alliance MANA (association) : intérêt général,
-              méthode publique. L'usage réglementé du mot « banque » est en
-              cours de vérification juridique avant toute publication majeure.
+              méthode publique.
             </p>
           ),
         },
@@ -144,16 +157,29 @@ function PageIndice() {
   return (
     <PageDoctrine
       nom="Indice MANA"
-      titre="Six dimensions, aucun score global"
+      titre="La visibilité des circuits"
       sections={[
         {
-          label: "Un profil, pas une note",
+          label: "Le principe-pivot",
+          corps: (
+            <p>
+              Le MANA est partout — il n'y a pas de lieu sans MANA, seulement
+              des circuits qu'on ne voit pas encore. L'indice MANA ne mesure
+              donc pas la présence du MANA : il observe la <strong>
+              visibilité de ses circuits</strong> — ce qui circule entre
+              les êtres et avec le vivant, ce qu'on en voit, ce qu'on n'en
+              voit pas. Une lunette, jamais un classement.
+            </p>
+          ),
+        },
+        {
+          label: "Six chapitres",
           corps: (
             <>
               <p>
-                L'indice MANA est le cœur méthodologique : six dimensions
-                observées séparément, sans agrégation tant que la méthode
-                n'est pas éprouvée.
+                Les six dimensions sont les chapitres de lecture du portrait —
+                des entrées éditoriales lisibles, jamais des composantes d'un
+                score :
               </p>
               <ul>
                 {DIMENSIONS.map((d) => (
@@ -166,12 +192,27 @@ function PageIndice() {
           ),
         },
         {
+          label: "Quatre grandeurs, ossature interne",
+          corps: (
+            <p>
+              Chaque chapitre se lit à travers les quatre grandeurs de la
+              méthode : le <strong>stock</strong> (la réserve d'heures), la{" "}
+              <strong>circulation</strong> (les flux), la{" "}
+              <strong>distribution</strong> (la variance entre groupes) et la{" "}
+              <strong>tenue</strong> (la persistance des circuits). Un même
+              chapitre peut montrer une circulation intense et une tenue
+              fragile — le profil montre les tensions, il ne les arbitre pas.
+            </p>
+          ),
+        },
+        {
           label: "Règles de publication",
           corps: (
             <p>
-              Pas de score global ni de couleur synthétique tant que la méthode
-              n'est pas éprouvée : profil multidimensionnel, données sourcées,
-              incertitudes explicites, représentation spectrale à terme.
+              Pas de score global, pas de couleur synthétique, pas de
+              classement des pays : profil multidimensionnel, données
+              sourcées, incertitudes explicites, carte de visibilité à trous
+              affichée, représentation spectrale à terme.
             </p>
           ),
         },
@@ -218,13 +259,13 @@ function PagePortrait() {
           ),
         },
         {
-          label: "Facturation",
+          label: "Modèle",
           corps: (
             <p>
-              La prestation est facturée par l'Alliance MANA (association) :
-              nature du produit = production de connaissance d'intérêt
-              général. Vente sur devis, facturation directe associative ;
-              aucun mur payant sur ce site.
+              Production de connaissance d'intérêt général portée par
+              l'Alliance MANA (association). Le modèle économique est en
+              cours de définition ; ce site ne vend rien en l'état et ne
+              comporte aucun mur payant.
             </p>
           ),
         },
@@ -249,36 +290,174 @@ function PageMethode() {
   return (
     <PageDoctrine
       nom="Méthode"
-      titre="Méthode publique et versionnée"
+      titre="Méthode MANA v0.2 — publique et versionnée"
       sections={[
         {
-          label: "Version",
+          label: "Version et citation",
           corps: (
             <p>
-              État actuel : <strong>{METHODE_VERSION}</strong>. La méthode est
-              publique, versionnée et citée dans chaque résultat : « Méthode
-              MANA, vX.Y, date ». Une correction fait l'objet d'une nouvelle
-              version, jamais d'une retouche silencieuse.
+              État actuel : <strong>{METHODE_VERSION}</strong>. Toute
+              observation se cite « Méthode MANA, v0.2, date ». Une correction
+              fait l'objet d'une nouvelle version, jamais d'une retouche
+              silencieuse. La v0.2 est déclarée ce qu'elle est : une
+              conjecture en cours de mise à l'épreuve.
             </p>
           ),
         },
         {
-          label: "Sources",
+          label: "Article 1 — Objet",
           corps: (
             <p>
-              Données publiques existantes uniquement : ILOSTAT, ONU, OCDE,
-              instituts nationaux. Aucune donnée identifiante, aucun scraping. Une source manquante est
-              documentée comme manquante.
+              La méthode observe comment l'humanité utilise sa ressource
+              temporelle dans le système vivant dont elle dépend. Le MANA est
+              partout : elle ne mesure donc pas la présence du MANA, mais la
+              visibilité de ses circuits — ce qui circule entre les êtres et
+              avec le vivant, ce qu'on en voit, ce qu'on n'en voit pas.
             </p>
           ),
         },
         {
-          label: "Ce que la méthode refuse",
+          label: "Article 2 — Les quatre grandeurs",
+          corps: (
+            <>
+              <p>
+                Toute observation se décline en quatre lectures, chacune avec
+                ses unités :
+              </p>
+              <p><strong>Stock</strong> — la réserve d'heures (population ×
+              temps de vie éveillé), en heures.</p>
+              <p><strong>Circulation</strong> — les flux qui circulent
+              (travail payé, care, entraide, transport, énergie), en heures,
+              kWh, kilomètres.</p>
+              <p><strong>Distribution</strong> — la variance entre groupes
+              (genre, âge, revenu, lieu), jamais transformée en note.</p>
+              <p><strong>Tenue</strong> — la persistance des circuits
+              (inertie des structures et des porteurs), lisible dans la
+              durée.</p>
+            </>
+          ),
+        },
+        {
+          label: "Article 3 — Les quatre états de la donnée",
           corps: (
             <p>
-              Pas de score global, pas de classement des pays, pas de
-              promesse d'amélioration d'évaluation contre paiement. Le mesuré,
-              l'interprété et l'hypothèse restent distingués partout.
+              Aucune donnée n'est traitée sans son état :{" "}
+              <strong>mesuré</strong> (publiée, datée, sourcée) ·{" "}
+              <strong>interprété</strong> (calcul MANA à partir de données
+              publiques, calcul documenté) · <strong>hypothèse</strong>{" "}
+              (modèle ou donnée non locale, déclarée) ·{" "}
+              <strong>invisible</strong> (aucune source ne la voit — un
+              résultat en soi, jamais un regret).
+            </p>
+          ),
+        },
+        {
+          label: "Article 4 — Le régime temporel",
+          corps: (
+            <p>
+              L'unité de description n'est ni le pays ni le territoire : c'est
+              le régime temporel — une configuration stable d'usage du temps
+              (flux + règles), stable au sens systémique (elle se reproduit
+              tant que ses boucles tiennent), jamais au sens normatif (elle
+              n'est ni bonne ni mauvaise). Les pays et les lieux servent à
+              documenter des régimes, jamais à les classer.
+            </p>
+          ),
+        },
+        {
+          label: "Article 5 — Interdictions",
+          corps: (
+            <p>
+              Pas de score global. Pas de pondération entre grandeurs —
+              pondérer la symétrie contre la vitesse serait un choix moral
+              déguisé. Pas de classement de pays ou de territoires. Pas de
+              promesse d'amélioration contre paiement. Pas de donnée
+              identifiante. Aucun scraping.
+            </p>
+          ),
+        },
+        {
+          label: "Article 6 — Sources",
+          corps: (
+            <p>
+              Données publiques mondiales uniquement : ILOSTAT (heures
+              travaillées), ONU (SDG 5.4.1, care non rémunéré), OCDE Time
+              Use, enquêtes nationales d'emploi du temps, Gallup World Poll
+              (vécu — toujours déclaré comme tel). Chaque source datée ; une
+              donnée périmée reste citée comme telle. L'économie fournit des
+              données, jamais une lecture : le rendement du temps ne devient
+              sous aucun prétexte la valeur de l'heure.
+            </p>
+          ),
+        },
+        {
+          label: "Article 7 — Biais fondateur",
+          corps: (
+            <p>
+              L'appareil statistique mondial voit mieux les flux monétisés
+              que les flux réels. Un pays riche en données n'est pas plus
+              riche en MANA. La carte de visibilité à trous fait partie du
+              résultat ; elle est affichée, jamais comblée en secret.
+            </p>
+          ),
+        },
+        {
+          label: "Article 8 — Comment nous regardons (le faisceau)",
+          corps: (
+            <>
+              <p><strong>Neuf regards</strong> portent l'observation :
+              anthropologique (le régime comme culture, sans étalon — colonne
+              vertébrale), écolosociologique (le métabolisme, avec la
+              géographie), historique (la trajectoire, les acquis datés),
+              biologique (le substrat qui borne les possibles), psychologique
+              (le vécu — déclaré, jamais administré), politique-objet (les
+              décisions temporelles décrites, jamais prescrites, avec le
+              juridique), analytique (les grandeurs, les états, les unités),
+              philosophique (les interdits, la cohérence du socle),
+              philanthropique (la finalité : visibilité rendue = capacité
+              rendue).</p>
+              <p><strong>Trois bornes</strong> contraignent sans interpréter :
+              la biologie (le sommeil n'est pas négociable), la psychiatrie
+              (les coûts humains de la tenue — OMS/OIT : 745 000 décès/an),
+              la géographie (la variabilité naturelle des régimes).</p>
+              <p><strong>Quatre outils</strong> calculent sans jamais juger :
+              la mathématique, le numérique (l'agrégation ne comble pas —
+              les trous entre bases sont des trous de réel), l'économie
+              (source contrainte), la statistique publique.</p>
+              <p><strong>Quatre vigilances</strong> surveillent l'observateur :
+              l'idéologique (l'appareil statistique n'est pas neutre), la
+              linguistique (les nomenclatures sont des choix culturels —
+              « travail », « loisir », « care » ne découpent pas le même
+              temps partout), l'autocritique (l'institut qui observe est
+              lui-même situé dans un régime temporel), la falsifiabilité
+              (chaque affirmation peut être cassée par une donnée).</p>
+            </>
+          ),
+        },
+        {
+          label: "Article 9 — La grammaire systémique",
+          corps: (
+            <p>
+              Le mana, disaient les cultures du Pacifique, est la force vitale
+              qui circule en toute chose. La science dit la même chose en
+              d'autres mots : tout ce qui vit est un système de flux qui se
+              maintient. La méthode observe ces flux comme un système — des
+              stocks, des circulations, des boucles de retour, une inertie,
+              une mortalité — avec une discipline : décrire des
+              configurations, ne jamais prédire, et formuler chaque
+              affirmation de façon falsifiable.
+            </p>
+          ),
+        },
+        {
+          label: "Article 10 — Du constat à la capacité",
+          corps: (
+            <p>
+              Le livrable n'est pas une note mais trois choses : l'état du
+              visible, la liste des invisibles (qui devient une feuille de
+              route d'enquêtes), la description des régimes observés —
+              laissant au politique et aux habitants le choix de leurs
+              circuits.
             </p>
           ),
         },
@@ -317,12 +496,10 @@ function PageCharte() {
           label: "Caisse et non-lucrativité",
           corps: (
             <p>
-              Facturation par l'Alliance MANA (association), sous conditions de
-              tenue : non-lucrativité réelle (barème de couverture de coûts,
-              test des 4P : produit, public, prix, publicité), résultats
-              publiables, méthode ouverte. Si les prix montent vers des prix de
-              cabinet, transfert côté TEMPOsystem (sous-traitant technique
-              éventuel).
+              La production est portée par l'Alliance MANA (association) :
+              non-lucrativité réelle, résultats publiables, méthode ouverte.
+              Ce site ne vend rien en l'état ; le jour où une prestation
+              existe, elle respectera cet engagement.
             </p>
           ),
         },
@@ -342,11 +519,12 @@ function PageMentions() {
           corps: (
             <p>
               MANA TIME BANK est édité dans le cadre de l'écosystème MANA.
-              La prestation de diagnostic est portée par l'Alliance MANA
+              La production de connaissance est portée par l'Alliance MANA
               (association). Les coordonnées complètes de l'éditeur seront
-              publiées avec la structure juridique définitive. L'usage
-              réglementé du mot « banque » (ACPR) est en cours de vérification
-              juridique.
+              publiées avec la structure juridique définitive. Le mot
+              « banque » est employé hors de tout circuit financier — au sens
+              de « banque de données » : aucun dépôt, aucun crédit, aucune
+              monnaie n'y est manié.
             </p>
           ),
         },
@@ -479,7 +657,8 @@ function PageManifeste() {
               <p>
                 Nous n'affirmons pas avoir de solutions. Nous proposons une
                 lumière nouvelle : rendre visible ce qui circule entre les
-                êtres — les heures de travail, de soin, d'entraide, d'attention
+                êtres — la page <a href={`${B}/donnees`}>données</a> en
+                assemble les premières observations — les heures de travail, de soin, d'entraide, d'attention
                 — et ce que chaque système en fait. Un constat documenté,
                 sourcé, vérifiable, est plus redoutable qu'un programme : on
                 peut renvoyer une utopie à l'utopie ; on ne peut pas renvoyer
@@ -760,7 +939,7 @@ export default function App() {
                   Le Portrait MANA
                 </a>
               </div>
-              <p className="hero-note">{METHODE_VERSION} — en cours d'éprouval</p>
+              <p className="hero-note">{METHODE_VERSION}</p>
             </div>
           </section>
 

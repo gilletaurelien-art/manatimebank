@@ -6,7 +6,7 @@ import { baseUrl } from "./router";
 // « Méthode MANA, vX.Y, date ». Rien n'est publié ici qui ne soit
 // eprouvé : le declencheur de publication est la solidite du contenu.
 
-export const METHODE_VERSION = "Méthode MANA, v0.1 (état initial)";
+export const METHODE_VERSION = "Méthode MANA, v0.2 (mise à l'épreuve)";
 
 export const DIMENSIONS = [
   {
@@ -22,7 +22,7 @@ export const DIMENSIONS = [
   {
     nom: "Écologie",
     texte:
-      "L'empreinte des usages du temps sur le système vivant dont la communauté dépend.",
+      "L'empreinte des usages du temps sur le système vivant dont l'humanité dépend.",
   },
   {
     nom: "Régénération",
