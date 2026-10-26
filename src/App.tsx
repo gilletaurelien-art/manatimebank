@@ -18,7 +18,7 @@ import { ContactForm } from "./ContactForm";
 // indice, portrait, charte. Ton publication scientifique et civique,
 // vouvoiement. Rien n'est publié qui ne soit éprouvé.
 
-const ACCENTS = ["accent-bleu", "accent-vert", "accent-orange"] as const;
+const ACCENTS = ["accent-jaune", "accent-vert", "accent-orange"] as const;
 
 const SECTIONS = [
   {
@@ -380,7 +380,7 @@ export default function App() {
           </a>
           <nav className="nav">
             <a href={`${B}/vision`}>
-              <NavVision className="nav-acc-bleu" />
+              <NavVision className="nav-acc-jaune" />
               <span>Vision</span>
             </a>
             <a href={`${B}/indice`}>

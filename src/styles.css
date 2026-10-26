@@ -1388,3 +1388,10 @@ html { background: var(--sand); }
 .nav-acc-bleu { color: var(--bleu); }
 .nav-acc-vert { color: var(--vert); }
 .nav-acc-orange { color: var(--orange); }
+
+/* Jaune : version lisible du jaune pastel de l'image (#f8e49f) */
+.accent-jaune,
+.section-accroche.accent-jaune,
+.promesse h3.accent-jaune { color: #b8860b; }
+.glyphe.accent-jaune,
+.nav-acc-jaune { color: #b8860b; }
