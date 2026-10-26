@@ -1416,3 +1416,12 @@ html { background: var(--sand); }
   color: var(--ink);
   opacity: 0.9;
 }
+
+/* Logo-spectre : les quatre teintes en vagues, posé à gauche de la marque */
+.logo-spectre { display: inline-block; vertical-align: -6px; margin-right: 6px; flex: 0 0 auto; }
+.hero .logo-spectre { display: block; margin: 0 auto var(--sp-2); vertical-align: 0; }
+
+/* Le logo vit à gauche de la marque cursive, sur une seule ligne */
+.brand { display: inline-flex; align-items: center; gap: 6px; }
+.hero h1.brand-grand { display: flex; align-items: center; justify-content: center; gap: 10px; }
+.hero h1.brand-grand .logo-spectre { margin: 0; }

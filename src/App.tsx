@@ -13,12 +13,13 @@ import {
   NavCharte } from "./NavGlyphs";
 import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand } from "./doctrine";
 import { ContactForm } from "./ContactForm";
+import { LogoSpectre } from "./Logo";
 
 // manatimebank.org — visage doctrine : mission, méthode versionnée,
 // indice, portrait, charte. Ton publication scientifique et civique,
 // vouvoiement. Rien n'est publié qui ne soit éprouvé.
 
-const ACCENTS = ["accent-jaune", "accent-vert", "accent-orange"] as const;
+const ACCENTS = ["accent-jaune", "accent-vert", "accent-orange", "accent-bleu"] as const;
 
 const SECTIONS = [
   {
@@ -376,6 +377,7 @@ export default function App() {
       <header className="site-header">
         <div className="wrap">
           <a className="brand" href={`${B}/`}>
+            <LogoSpectre size={26} />
             <Brand />
           </a>
           <nav className="nav">
@@ -413,6 +415,7 @@ export default function App() {
                 Infrastructure d'observation · Pilote Crozon
               </p>
               <h1 className="brand-grand">
+                <LogoSpectre size={52} />
                 MANA<em>time</em>bank
               </h1>
               <p className="lede">
@@ -437,12 +440,12 @@ export default function App() {
             {SECTIONS.map((s, i) => (
               <section key={s.num} className="landing-section bulle">
                 <p className="section-num">{s.num}</p>
-                <div className={`section-glyphe ${ACCENTS[i % 3]}`}>
-                  <s.glyphe className={ACCENTS[i % 3]} />
+                <div className={`section-glyphe ${ACCENTS[i % 4]}`}>
+                  <s.glyphe className={ACCENTS[i % 4]} />
                 </div>
                 <h2 className="section-title">{s.titre}</h2>
-                <div className={`sous-bulle ${ACCENTS[i % 3]}`}>
-                  <p className={`section-accroche ${ACCENTS[i % 3]}`}>{s.accroche}</p>
+                <div className={`sous-bulle ${ACCENTS[i % 4]}`}>
+                  <p className={`section-accroche ${ACCENTS[i % 4]}`}>{s.accroche}</p>
                   <p className="section-texte">{s.texte}</p>
                   <div className="est-actions">
                     <a
@@ -470,7 +473,7 @@ export default function App() {
                   const d = DIMENSIONS.find((x) => x.nom === nom)!;
                   return (
                     <div key={d.nom} className="promesse">
-                      <h3 className={ACCENTS[i % 3]}>{d.nom}</h3>
+                      <h3 className={ACCENTS[i % 4]}>{d.nom}</h3>
                       <p>{d.texte}</p>
                     </div>
                   );
@@ -489,6 +492,7 @@ export default function App() {
         <div className="wrap footer-colonnes">
           <div>
             <p className="brand">
+              <LogoSpectre size={26} />
               <Brand />
             </p>
             <p className="footer-note">
