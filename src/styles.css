@@ -1449,8 +1449,7 @@ html { background: var(--sand); }
 .site-footer > .wrap {
   background: rgb(255 255 255 / 88%);
 }
-.site-footer .brand,
-.site-footer .brand * { color: inherit; }
+
 .site-footer .footer-note { color: var(--ink); opacity: 0.85; }
 .site-footer .footer-colonnes { color: var(--ink); }
 .site-footer .footer-nav a {
