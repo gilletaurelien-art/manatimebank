@@ -99,10 +99,22 @@ sans être assurée par aucun. Verbe : imprégner — la nappe phréatique
 sous tous les régimes. L'horloge du care est tenue par celles et ceux
 qu'aucune horloge ne compte.
 
+Fiche 05 : /regime-saisonnier — le régime saisonnier : l'année, et non
+la journée, porte la structure (pleine saison / morte saison) ; vit à
+crédit temporel (emprunte ses heures d'été à son hiver) ; le seul
+régime où la circulation modifie le stock (la population du lieu
+change de volume au calendrier) ; le plus ancien régime de
+l'humanité, dont la boucle annuelle — travailler la vague, réparer
+l'entre-vague — perd sa seconde moitié. Verbe : alterner.
+Invisible produced par l'outil de mesure : la moyenne annuelle gomme
+la vague. Cinq régimes : superposer, séparer, disperser, imprégner,
+alterner — et la question déplacée : qui tient l'horloge, et à
+quelle échelle de temps ?
+
 Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
 /charte, /mentions-legales, /regime-insomniaque-connecte,
 /regime-synchronise-institutionnel, /regime-fragmente-marchand,
-/regime-care-massif.
+/regime-care-massif, /regime-saisonnier.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).
