@@ -18,6 +18,8 @@ import { ContactForm } from "./ContactForm";
 // indice, portrait, charte. Ton publication scientifique et civique,
 // vouvoiement. Rien n'est publié qui ne soit éprouvé.
 
+const ACCENTS = ["accent-bleu", "accent-vert", "accent-orange"] as const;
+
 const SECTIONS = [
   {
     glyphe: GlyphTemps,
@@ -432,15 +434,15 @@ export default function App() {
           </section>
 
           <main className="wrap">
-            {SECTIONS.map((s) => (
+            {SECTIONS.map((s, i) => (
               <section key={s.num} className="landing-section bulle">
                 <p className="section-num">{s.num}</p>
-                <div className="section-glyphe">
-                  <s.glyphe />
+                <div className={`section-glyphe ${ACCENTS[i % 3]}`}>
+                  <s.glyphe className={ACCENTS[i % 3]} />
                 </div>
                 <h2 className="section-title">{s.titre}</h2>
                 <div className="sous-bulle">
-                  <p className="section-accroche">{s.accroche}</p>
+                  <p className={`section-accroche ${ACCENTS[i % 3]}`}>{s.accroche}</p>
                   <p className="section-texte">{s.texte}</p>
                   <div className="est-actions">
                     <a
@@ -464,11 +466,11 @@ export default function App() {
             <section className="landing-section bulle">
               <h2 className="section-title">Les six dimensions</h2>
               <div className="promesses-grid" style={{ paddingTop: 0 }}>
-                {DIMENSIONS_GRID.map((nom) => {
+                {DIMENSIONS_GRID.map((nom, i) => {
                   const d = DIMENSIONS.find((x) => x.nom === nom)!;
                   return (
                     <div key={d.nom} className="promesse">
-                      <h3>{d.nom}</h3>
+                      <h3 className={ACCENTS[i % 3]}>{d.nom}</h3>
                       <p>{d.texte}</p>
                     </div>
                   );

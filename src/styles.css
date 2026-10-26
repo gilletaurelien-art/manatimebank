@@ -4,14 +4,18 @@
 
 :root {
   /* Palette : bleu nuit + blanc chaud + touche dorée */
-  --ink: #1b2a4a;
+  --ink: #1d3a5f;
   --primary: #b08a2e;
   --primary-deep: #8f6d1f;
-  --sand: #faf8f3;
+  --sand: #fbfaf6;
   --blanc-chaud: #ffffff;
-  --ecume: #e9e5dc;
+  --ecume: #e5ecf2;
   --or: #c9a227;
   --alerte: #b0413e;
+  /* Accents du fond d'écran : bleu, vert, orange */
+  --bleu: #2e7bb5;
+  --vert: #2e8b57;
+  --orange: #d2691e;
   --shadow: 0 4px 32px rgb(44 47 33 / 10%);
 
   /* Échelle typographique stricte (rem) */
@@ -92,9 +96,9 @@ html { background: var(--sand); }
   border-radius: 999px;
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 10%),
+    0 4px 12px rgb(29 58 95 / 10%),
     0 0 0 4px rgb(201 162 39 / 14%),
-    0 36px 80px rgb(27 42 74 / 26%);
+    0 36px 80px rgb(29 58 95 / 26%);
   padding: var(--sp-1) var(--sp-4);
   max-width: 1080px;
   width: fit-content;
@@ -130,7 +134,7 @@ html { background: var(--sand); }
   border-color: var(--ecume);
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 90%),
-    0 3px 8px rgb(27 42 74 / 12%);
+    0 3px 8px rgb(29 58 95 / 12%);
   transform: translateY(-1px);
 }
 .nav .nav-cta {
@@ -139,12 +143,12 @@ html { background: var(--sand); }
   border-color: var(--ecume);
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 90%),
-    0 3px 10px rgb(27 42 74 / 14%);
+    0 3px 10px rgb(29 58 95 / 14%);
 }
 .nav .nav-cta:hover {
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 90%),
-    0 6px 16px rgb(27 42 74 / 20%);
+    0 6px 16px rgb(29 58 95 / 20%);
   transform: translateY(-1px);
 }
 /* Mobile : icônes seules — le libellé passe en sr-only pour l'accessibilité */
@@ -176,7 +180,7 @@ html { background: var(--sand); }
   content: "";
   position: fixed;
   inset: 0;
-  background: var(--sand);
+  background: url("./assets/hero.jpeg") center / cover no-repeat;
   z-index: -2;
 }
 .hero .wrap {
@@ -225,9 +229,9 @@ html { background: var(--sand); }
   border-radius: 44px 56px 40px 52px / 52px 42px 56px 46px;
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 10%),
+    0 4px 12px rgb(29 58 95 / 10%),
     0 0 0 4px rgb(201 162 39 / 14%),
-    0 36px 80px rgb(27 42 74 / 26%);
+    0 36px 80px rgb(29 58 95 / 26%);
   padding: var(--sp-2) var(--sp-4) var(--sp-2);
   text-align: center;
   max-width: 720px;
@@ -241,9 +245,9 @@ html { background: var(--sand); }
   border-radius: 36px 46px 32px 44px / 44px 34px 46px 38px;
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 10%),
+    0 4px 12px rgb(29 58 95 / 10%),
     0 0 0 4px rgb(201 162 39 / 14%),
-    0 36px 80px rgb(27 42 74 / 26%);
+    0 36px 80px rgb(29 58 95 / 26%);
   padding: var(--sp-4);
   text-align: center;
   max-width: none;
@@ -477,14 +481,14 @@ html { background: var(--sand); }
   border-color: var(--ink);
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 18%),
-    0 6px 18px rgb(27 42 74 / 22%);
+    0 6px 18px rgb(29 58 95 / 22%);
 }
 .btn-primary:hover {
   background: var(--primary);
   border-color: var(--primary);
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 18%),
-    0 8px 22px rgb(27 42 74 / 28%);
+    0 8px 22px rgb(29 58 95 / 28%);
 }
 .btn-ghost {
   background: rgb(255 255 255 / 75%);
@@ -734,9 +738,9 @@ html { background: var(--sand); }
   border-radius: 44px 56px 40px 52px / 52px 42px 56px 46px;
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 10%),
+    0 4px 12px rgb(29 58 95 / 10%),
     0 0 0 4px rgb(201 162 39 / 14%),
-    0 36px 80px rgb(27 42 74 / 26%);
+    0 36px 80px rgb(29 58 95 / 26%);
   padding: var(--sp-4) var(--sp-6);
   max-width: 1080px;
 }
@@ -965,7 +969,7 @@ html { background: var(--sand); }
 .photos-apercu { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(96px, 1fr)); gap: var(--sp-1); padding: 0; margin: var(--sp-2) 0 0; }
 .photos-apercu li { position: relative; border-radius: 8px; overflow: hidden; aspect-ratio: 4 / 3; }
 .photos-apercu img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.photos-apercu button { position: absolute; top: 4px; right: 4px; border: none; border-radius: 50%; width: 22px; height: 22px; cursor: pointer; background: rgb(27 42 74 / 80%); color: #fff; font-size: 14px; line-height: 1; }
+.photos-apercu button { position: absolute; top: 4px; right: 4px; border: none; border-radius: 50%; width: 22px; height: 22px; cursor: pointer; background: rgb(29 58 95 / 80%); color: #fff; font-size: 14px; line-height: 1; }
 .photos-vitrine { position: absolute; bottom: 4px; left: 4px; font-size: 10px; background: var(--or); color: #fff; border-radius: 4px; padding: 1px 6px; }
 .apercu-photo { aspect-ratio: 16 / 9; border-radius: 12px; overflow: hidden; margin-bottom: var(--sp-2); }
 .apercu-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
@@ -988,8 +992,8 @@ html { background: var(--sand); }
   border: 1px solid var(--ecume);
   border-radius: 18px 24px 16px 22px;
   box-shadow:
-    0 4px 12px rgb(27 42 74 / 10%),
-    0 24px 56px rgb(27 42 74 / 18%);
+    0 4px 12px rgb(29 58 95 / 10%),
+    0 24px 56px rgb(29 58 95 / 18%);
   text-align: left;
 }
 .suggestions button {
@@ -1051,7 +1055,7 @@ html { background: var(--sand); }
   padding: 6px 6px 6px 18px;
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 8%),
+    0 4px 12px rgb(29 58 95 / 8%),
     0 0 0 4px rgb(201 162 39 / 10%);
 }
 .moteur-loupe {
@@ -1077,7 +1081,7 @@ html { background: var(--sand); }
 .moteur-barre:focus-within {
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 8%),
+    0 4px 12px rgb(29 58 95 / 8%),
     0 0 0 4px rgb(201 162 39 / 28%);
 }
 .moteur-barre select {
@@ -1119,7 +1123,7 @@ html { background: var(--sand); }
   padding: var(--sp-1);
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 10%);
+    0 4px 12px rgb(29 58 95 / 10%);
 }
 .moteur-champ { flex: 1 1 160px; min-width: 0; }
 .moteur-categorie { flex: 1.2 1 190px; }
@@ -1159,7 +1163,7 @@ html { background: var(--sand); }
   background: var(--blanc-chaud);
   box-shadow:
     inset 0 2px 6px rgb(255 255 255 / 85%),
-    0 4px 12px rgb(27 42 74 / 10%);
+    0 4px 12px rgb(29 58 95 / 10%);
 }
 .moteur input:focus {
   outline: 2px solid var(--or);
@@ -1268,7 +1272,7 @@ html { background: var(--sand); }
   border-radius: 20px 26px 18px 24px;
   box-shadow:
     inset 0 1px 3px rgb(255 255 255 / 12%),
-    0 3px 10px rgb(27 42 74 / 14%);
+    0 3px 10px rgb(29 58 95 / 14%);
   padding: var(--sp-4);
   margin: 0 auto;
   max-width: 60ch;
@@ -1303,7 +1307,7 @@ html { background: var(--sand); }
   border-color: var(--blanc-chaud);
   box-shadow:
     inset 0 1px 2px rgb(255 255 255 / 90%),
-    0 6px 18px rgb(27 42 74 / 25%);
+    0 6px 18px rgb(29 58 95 / 25%);
 }
 .btn-clair:hover {
   background: var(--sand);
@@ -1361,3 +1365,16 @@ html { background: var(--sand); }
 
 /* Brand du footer : MANA blanc, home or — sur fond encre */
 .site-footer .brand { color: #fff; }
+
+/* ===== Accents manatimebank : bleu, vert, orange (fond d'écran) =====
+   Les sous-titres et accroches alternent les trois teintes de l'image ;
+   l'or reste réservé à la signature (anneaux, numéros de section). */
+.section-accroche.accent-bleu,
+.promesse h3.accent-bleu { color: var(--bleu); }
+.section-accroche.accent-vert,
+.promesse h3.accent-vert { color: var(--vert); }
+.section-accroche.accent-orange,
+.promesse h3.accent-orange { color: var(--orange); }
+.glyphe.accent-bleu { color: var(--bleu); }
+.glyphe.accent-vert { color: var(--vert); }
+.glyphe.accent-orange { color: var(--orange); }
