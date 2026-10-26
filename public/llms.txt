@@ -111,7 +111,19 @@ la vague. Cinq régimes : superposer, séparer, disperser, imprégner,
 alterner — et la question déplacée : qui tient l'horloge, et à
 quelle échelle de temps ?
 
-Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
+Chapitre /temps-vecu — « Du temps possédé au temps vécu » : à l'ère des
+machines, que voulons-nous faire de notre liberté ? Réflexion philosophique
+sur la possession (avoir/valoir/être), le paradoxe du progrès technique
+(Keynes 1930 : 15 heures prédites ; ILOSTAT : ~44 heures mesurées — les
+gains de productivité n'ont pas coulé vers le temps libre), le temps vécu
+comme ressource irréversible, l'illusion de la destination, la triade
+MANA = énergie, TEMPS = maintenant, BANQUE = ici (architecture éditoriale,
+pas théorie démontrée), et les conditions collectives de la liberté
+temporelle (y compris le droit de ne rien optimiser). Les passages
+philosophiques sont signalés comme propositions de réflexion, pas comme
+résultats empiriques.
+
+Pages : /manifeste, /temps-vecu, /vision, /donnees, /indice, /portrait, /methode,
 /charte, /mentions-legales, /regime-insomniaque-connecte,
 /regime-synchronise-institutionnel, /regime-fragmente-marchand,
 /regime-care-massif, /regime-saisonnier.

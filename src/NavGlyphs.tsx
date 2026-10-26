@@ -95,3 +95,14 @@ export function NavDonnees({ size = 20 }: GlyphProps) {
     </svg>
   );
 }
+
+export function NavTempsVecu({ size = 20 }: GlyphProps) {
+  return (
+    <svg {...base} width={size} height={size} aria-hidden="true">
+      <circle cx="12" cy="12" r="8.4" />
+      <path d="M12 7.4V12l3.2 2" />
+      <path d="M17.5 5.5c1.8 1.6 2.9 3.9 2.9 6.5" />
+      <Accent cx={17.5} cy={5.5} r={1.1} />
+    </svg>
+  );
+}

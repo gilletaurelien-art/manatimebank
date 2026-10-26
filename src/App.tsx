@@ -12,7 +12,8 @@ import {
   NavMethode,
   NavCharte,
   NavManifeste,
-  NavDonnees } from "./NavGlyphs";
+  NavDonnees,
+  NavTempsVecu } from "./NavGlyphs";
 import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand, useTitre } from "./doctrine";
 import { ContactForm } from "./ContactForm";
 
@@ -1702,7 +1703,309 @@ function PageRegimes() {
   );
 }
 
+function PageTempsVecu() {
+  return (
+    <PageDoctrine
+      nom="Chapitre — proposition de réflexion"
+      titre="Du temps possédé au temps vécu"
+      sections={[
+        {
+          label: "À l'ère des machines, que voulons-nous faire de notre liberté ?",
+          corps: (
+            <>
+              <p style={{ fontStyle: "italic" }}>
+                Une société qui produit toujours davantage rend-elle ses
+                habitants plus libres de vivre, ou leur fournit-elle toujours
+                plus de moyens d'occuper le temps qu'ils n'ont plus la
+                liberté d'habiter ?
+              </p>
+              <p>
+                Ce chapitre est une proposition de réflexion, pas un
+                résultat empirique. Il prolonge la doctrine MANA — observer
+                comment les sociétés organisent le temps humain — en
+                interrogeant la relation entre possession, valeur sociale,
+                temps vécu et liberté. Les passages philosophiques sont
+                signalés comme tels ; les constats chiffrés renvoient à
+                leurs sources ; les limites sont dites.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Le constat — quand l'avoir devient une preuve d'existence",
+          corps: (
+            <>
+              <p>
+                Nos sociétés associent souvent la réussite à la possession,
+                au statut, à la productivité et à la consommation. L'avoir
+                ne répond pas seulement à des besoins matériels légitimes :
+                il devient un langage social — posséder pour être reconnu,
+                consommer pour appartenir, travailler pour justifier sa
+                place. Erich Fromm décrivait dès 1942 cette tendance des
+                sociétés modernes à définir l'existence par l'avoir plutôt
+                que par l'être.
+              </p>
+              <p>
+                Une boucle peut s'installer : produire pour acquérir,
+                travailler pour consommer, consommer pour se récompenser du
+                travail, occuper les loisirs par de nouvelles consommations,
+                recommencer. Cette analyse ne réduit pas toute consommation
+                à une aliénation — les biens contribuent aussi à la
+                sécurité, à l'autonomie, au confort, à la qualité de vie.
+                Le propos interroge le moment où la possession cesse d'être
+                un moyen de vivre et devient une condition supposée de
+                notre valeur personnelle.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "La distinction fondamentale — avoir, valoir, être",
+          corps: (
+            <>
+              <p>
+                Trois dimensions distinctes, souvent confondues :
+              </p>
+              <p><strong>Avoir</strong> — disposer de ressources, de biens,
+              de moyens d'action.</p>
+              <p><strong>Valoir</strong> — être reconnu socialement à
+              travers son statut, son patrimoine, son métier ou ses
+              performances.</p>
+              <p><strong>Être</strong> — exister, éprouver, aimer,
+              apprendre, créer, prendre soin et se reposer, sans devoir
+              constamment justifier son utilité.</p>
+              <p>
+                Proposition philosophique : la dignité humaine ne devrait
+                pas dépendre de la productivité économique d'une personne.
+                Les sociétés où l'accès à une vie digne semble conditionné
+                à la capacité de produire, de gagner ou de consommer
+                méritent d'être observées comme des régimes temporels à
+                part entière — non d'être jugées, mais d'être décrites
+                dans leurs conséquences.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Le paradoxe du progrès technique",
+          corps: (
+            <>
+              <p>
+                L'intelligence artificielle et la robotique pourraient
+                automatiser une part croissante des tâches humaines. Mais
+                un gain de productivité ne devient pas automatiquement du
+                temps libre. En 1930, John Maynard Keynes prédisait des
+                semaines de travail de quinze heures ; un siècle plus tard,
+                l'ILOSTAT mesure une moyenne mondiale d'environ quarante-quatre
+                heures hebdomadaires. La prédiction n'était pas absurde —
+                les gains ont eu lieu — mais ils n'ont pas coulé vers le
+                temps libre.
+              </p>
+              <p>
+                Quatre étapes distinguent ce qui se confond :
+              </p>
+              <p>
+                <strong>1.</strong> Le temps techniquement économisé.{" "}
+                <strong>2.</strong> La transformation du travail et des
+                tâches. <strong>3.</strong> Le temps effectivement rendu
+                disponible. <strong>4.</strong> La liberté réelle de choisir
+                l'usage de ce temps.
+              </p>
+              <p>
+                Les gains peuvent se traduire par davantage de production,
+                une réduction du temps de travail, une concentration des
+                revenus — ou une combinaison. La question n'est pas de
+                savoir ce que les machines peuvent accomplir, mais qui
+                bénéficie des gains, qui supporte les coûts, et comment
+                les nouvelles possibilités sont distribuées. Une société
+                peut devenir plus productive sans devenir temporellement
+                plus libre.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Le temps comme ressource irréversible",
+          corps: (
+            <>
+              <p>
+                Le temps mesuré et le temps vécu ne sont pas identiques.
+                Une heure est une unité de durée ; mais une heure de repos,
+                une heure de soin, une heure de travail pénible et une
+                heure de présence auprès d'un proche n'ont ni les mêmes
+                conditions ni la même signification.
+              </p>
+              <p>
+                Le temps humain ne se stocke pas comme un bien matériel :
+                il ne peut être accumulé pour être revécu plus tard. C'est
+                la distinction que la méthode MANA porte depuis son premier
+                article — le stock d'heures se compte, le vécu ne se
+                comptabilise pas. Elle éclaire le rôle de MANAtimebank :
+                il ne s'agit pas de posséder ni de vendre le temps, mais
+                d'observer ses usages, ses circulations, ses inégalités
+                et les conditions dans lesquelles les individus peuvent
+                en disposer.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Le bonheur et l'illusion de la destination",
+          corps: (
+            <>
+              <p>
+                Proposition de réflexion, appuyée sur des traditions
+                anciennes mais formulée ici sans prétention empirique :
+                nous pouvons remettre notre vie à plus tard — lorsque nous
+                aurons davantage d'argent, atteint un statut, terminé notre
+                travail, obtenu ce qui nous manque. Le passé devient
+                nostalgie, le futur promesse, le présent simple transition
+                entre les deux.
+              </p>
+              <p>
+                Ce constat n'est pas une négation du bonheur : la joie, la
+                sécurité, les relations affectives et le soulagement de la
+                souffrance sont des expériences réelles. L'enjeu est
+                l'injonction à atteindre un état permanent de bonheur, à
+                optimiser son bien-être, à transformer même le temps libre
+                en performance. Les traditions qui méditent sur
+                l'impermanence, l'attachement et la présence attentive —
+                le bouddhisme parmi d'autres — sont ici des interlocutrices,
+                pas des recettes de développement personnel.
+              </p>
+              <p>
+                Et la présence au moment vécu ne remplace jamais les
+                conditions matérielles nécessaires à une existence digne :
+                pleine conscience et précarité ne font pas bon ménage.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Les trois dimensions fondatrices — énergie, maintenant, ici",
+          corps: (
+            <>
+              <p>
+                Le nom MANAtimebank porte une triade que le projet assume
+                comme architecture philosophique et éditoriale — pas comme
+                une théorie scientifique démontrée :
+              </p>
+              <p><strong>MANA → Énergie</strong> — ce qui anime, relie et
+              rend l'action possible. Dimension symbolique héritée des
+              cultures du Pacifique, non grandeur physique établie.</p>
+              <p><strong>TEMPS → Maintenant</strong> — la durée
+              irréversible et l'expérience vécue au moment où elle se
+              déroule.</p>
+              <p><strong>BANQUE → Ici</strong> — un espace d'observation,
+              de mémoire et de compréhension des circulations, sans
+              prétendre posséder ce qui circule.</p>
+              <p>
+                Énergie — Maintenant — Ici. La banque n'est pas
+                nécessairement un coffre où accumuler : elle peut être un
+                dispositif collectif qui rend visibles les ressources, les
+                échanges, les déséquilibres et les réalités qui échappent
+                aux mesures habituelles.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "De la possession à la liberté temporelle",
+          corps: (
+            <>
+              <p>
+                Le changement de paradigme ne consiste pas à culpabiliser
+                les individus qui consomment ni à leur demander de renoncer
+                individuellement à leurs aspirations. Il suppose d'examiner
+                les conditions collectives qui rendent la liberté possible :
+              </p>
+              <p>
+                une sécurité matérielle suffisante · des revenus et des
+                services accessibles · une répartition équitable du travail
+                rémunéré et du soin · la possibilité de réduire le temps
+                de travail lorsque les gains de productivité le permettent ·
+                la reconnaissance des contributions non marchandes · la
+                préservation des ressources et des écosystèmes · le droit
+                de choisir l'usage de son temps, y compris celui de ne
+                rien optimiser.
+              </p>
+              <p>
+                Ne pas confondre liberté temporelle et obligation de vivre
+                pleinement chaque instant. La liberté comprend aussi le
+                repos, l'ennui, la rêverie, les loisirs ordinaires,
+                l'échec, et le droit de ne pas être constamment productif —
+                le droit à la paresse que Paul Lafargue revendiquait déjà
+                en 1880.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Le rôle spécifique de MANAtimebank",
+          corps: (
+            <>
+              <p>
+                MANAtimebank ne prétend pas mesurer le bonheur ni
+                déterminer la manière dont chacun devrait vivre. Sa
+                fonction est d'étudier et de rendre visibles les
+                conditions temporelles de la vie collective — avec les
+                règles de la méthode : pas de score global, pas de
+                classement moral des pays, distinction entre données
+                mesurées, interprétations, hypothèses et éléments
+                invisibles, sources datées et traçables, limites
+                explicitées, séparation claire entre constats empiriques,
+                propositions philosophiques et choix politiques.
+              </p>
+              <p>
+                L'intelligence artificielle constitue un cas d'étude
+                majeur de ce chapitre — qui bénéficie des gains ? — mais
+                n'absorbe pas toute la réflexion : la question du temps
+                vécu dépasse la question des machines.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Conclusion",
+          corps: (
+            <p style={{ fontStyle: "italic" }}>
+              « Une société n'est pas seulement riche de ce qu'elle possède
+              ou de ce qu'elle produit. Elle l'est aussi des possibilités
+              qu'elle offre à chacun de vivre son temps. Les machines
+              peuvent nous aider à gagner du temps. Mais le temps économisé
+              ne devient une liberté que si les personnes peuvent
+              réellement en disposer. Le temps ne se possède pas. Il se
+              vit, se partage et se préserve. MANAtimebank ne cherche pas
+              à noter le bonheur ni à prescrire une manière de vivre. Il
+              cherche à comprendre les conditions dans lesquelles le temps
+              cesse d'être uniquement une ressource à rentabiliser et
+              devient une possibilité de vivre. »
+            </p>
+          ),
+        },
+        {
+          label: "Références",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              Erich Fromm, La Peur de la liberté (1942), et Avoir ou être ?
+              (1976) · John Maynard Keynes, Economic Possibilities for our
+              Grandchildren (1930) — prédictions de loisirs · Paul
+              Lafargue, Le Droit à la paresse (1880) · Bertrand Russell,
+              Éloge de l'oisiveté (1932) · Byung-Chul Han, La Société de la
+              fatigue · Hartmut Rosa, Accélération, et Résonance · ILOSTAT,
+              heures hebdomadaires effectives (~160 pays, consulté 2026).
+              Les passages philosophiques de ce chapitre sont des
+              propositions de réflexion, pas des résultats empiriques.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
+  "temps-vecu": PageTempsVecu,
   manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
   "regime-synchronise-institutionnel": PageRegimeSynchronise,
@@ -1735,6 +2038,10 @@ export default function App() {
             <a href={`${B}/manifeste`}>
               <NavManifeste className="nav-acc-jaune" />
               <span>Manifeste</span>
+            </a>
+            <a href={`${B}/temps-vecu`}>
+              <NavTempsVecu className="nav-acc-vert" />
+              <span>Temps vécu</span>
             </a>
             <a href={`${B}/vision`}>
               <NavVision className="nav-acc-bleu" />
@@ -1878,6 +2185,7 @@ export default function App() {
           </div>
           <nav className="footer-nav" aria-label="Pied de page">
             <a href={`${B}/manifeste`}>Manifeste du temps retrouvé</a>
+            <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu</a>
             <a href={`${B}/vision`}>Vision</a>
             <a href={`${B}/donnees`}>Données du temps mondial</a>
             <a href={`${B}/indice`}>Indice MANA</a>
