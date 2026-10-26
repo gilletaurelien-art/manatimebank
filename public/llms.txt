@@ -133,7 +133,11 @@ Architecture : quatre entrées principales.
   /regime-insomniaque-connecte, /regime-synchronise-institutionnel,
   /regime-fragmente-marchand, /regime-care-massif, /regime-saisonnier.
 - /methode — méthode MANA v0.2 (dix articles, faisceau).
-Essai long : /temps-vecu. Mentions : /mentions-legales.
+Essai long : /temps-vecu. Soutien et modèle : /soutenir (don, adhésion,
+mécénat — transparence des financements dans la charte) et /etude-pilote
+(étude des temporalités d'un territoire pour les collectivités, tarif de
+lancement 3 000-8 000 €, financée question sans achat des conclusions).
+Mentions : /mentions-legales.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).

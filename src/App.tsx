@@ -1455,6 +1455,19 @@ const SEC_CHARTE: { label: string; corps: React.ReactNode }[] = [
           ),
         },
         {
+          label: "Transparence des financements",
+          corps: (
+            <p>
+              MANA TIME BANK publie l'identité de ses financeurs, le montant
+              et l'objet des financements reçus, sous réserve des obligations
+              légales et des exigences légitimes de confidentialité. Aucun
+              financement ne donne au financeur le droit de déterminer les
+              conclusions. Celles-ci restent soumises aux données, à la
+              méthode et à la publication des limites.
+            </p>
+          ),
+        },
+        {
           label: "Caisse et non-lucrativité",
           corps: (
             <p>
@@ -2426,8 +2439,175 @@ function PageObserver() {
   );
 }
 
+function PageSoutenir() {
+  return (
+    <PageDoctrine
+      nom="Soutenir"
+      titre="Soutenir MANA TIME BANK"
+      description="Soutenir la production de connaissances d'intérêt général sur le temps : un don ponctuel ou mensuel à l'Alliance MANA, sans contrepartie, pour documenter les régimes temporels et maintenir la méthode accessible à toutes et tous."
+      sections={[
+        {
+          label: "Pourquoi soutenir",
+          corps: (
+            <p>
+              Comprendre le temps vécu et la manière dont nos sociétés
+              l'organisent est un travail de recherche et de réflexion de
+              long terme. Votre soutien aide l'Alliance MANA à documenter
+              les régimes temporels, développer la méthode et maintenir
+              ces connaissances accessibles à toutes et tous. Le site
+              reste librement accessible : on ne paie pas pour utiliser
+              MANA TIME BANK, on soutient le travail qu'il rend visible.
+            </p>
+          ),
+        },
+        {
+          label: "Comment soutenir",
+          corps: (
+            <>
+              <p>
+                <strong>Don ponctuel ou mensuel</strong> — sans
+                contrepartie, sans palier, sans contre-donation. Chaque
+                soutien, quel que soit son montant, finance la même
+                chose : la production de connaissance ouverte.
+              </p>
+              <p>
+                <strong>Adhésion de soutien à l'Alliance MANA</strong> —
+                pour celles et ceux qui veulent être membres de
+                l'association porteuse.
+              </p>
+              <p>
+                <strong>Mécénat et partenariats scientifiques</strong> —
+                fondations, organismes de recherche et acteurs de
+                l'économie sociale peuvent financer une étude, un
+                terrain d'observation ou une expérimentation. Voir la
+                règle de transparence de la charte : un financeur peut
+                financer une question — il ne peut pas acheter les
+                conclusions.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Le dispositif de soutien — en cours de mise en place",
+          corps: (
+            <p>
+              Le paiement en ligne n'est pas encore actif. Le
+              dispositif juridique (compte, reçus, éligibilité) est en
+              cours de structuration avec l'Alliance MANA ; le bouton
+              de don sera installé une fois le destinataire sécurisé.
+              En attendant, toute manifestation d'intérêt est
+              bienvenue via le formulaire de contact ci-dessous.
+              Aucune promesse d'avantage fiscal n'est faite ici tant
+              que l'éligibilité de l'organisme n'a pas été vérifiée.
+            </p>
+          ),
+        },
+        {
+          label: "Transparence",
+          corps: (
+            <p>
+              Conformément à la charte : l'identité des financeurs, le
+              montant et l'objet des financements seront publiés, sous
+              réserve des obligations légales et des exigences
+              légitimes de confidentialité. Aucun financement ne donne
+              au financeur le droit de déterminer les conclusions.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
+function PageEtudePilote() {
+  return (
+    <PageDoctrine
+      nom="Offre pilote · collectivités"
+      titre="Étude des temporalités d'un territoire"
+      description="Une étude documentée des temporalités d'un territoire : cartographie des données et zones d'ombre, régimes temporels observables, contraintes et marges de liberté temporelle — sans score global ni classement. Tarif de lancement pilote."
+      sections={[
+        {
+          label: "Pourquoi cette étude",
+          corps: (
+            <p>
+              Un territoire organise le temps de ses habitants —
+              horaires des services, mobilités, travail, care,
+              saisonnalité — rarement en le voyant. Cette étude rend
+              visibles ces articulations : comment elles se combinent,
+              où elles produisent des tensions (logement saisonnier,
+              désynchronisation des services, charge de care), et où
+              se trouvent les marges de liberté temporelle. Elle
+              applique la méthode publique MANA, v0.2 : mêmes règles,
+              mêmes états de données, aucun score, aucun classement.
+            </p>
+          ),
+        },
+        {
+          label: "Livrables",
+          corps: (
+            <>
+              <p>
+                <strong>1.</strong> Cartographie des données
+                disponibles sur le territoire et de ses zones d'ombre.
+              </p>
+              <p>
+                <strong>2.</strong> Analyse des régimes temporels
+                observables (typologie MANA — synchronisé, fragmenté,
+                saisonnier, care massif, insomniaque connecté).
+              </p>
+              <p>
+                <strong>3.</strong> Portrait documenté des contraintes
+                et des marges de liberté temporelle, par grandeur :
+                stock, circulation, distribution, tenue.
+              </p>
+              <p>
+                <strong>4.</strong> Pistes de réflexion pour les
+                décideurs — sans score global ni classement moral :
+                ce que les données montrent, ce qu'elles ne montrent
+                pas, et les questions que le territoire pourrait se
+                poser.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Conditions pilotes",
+          corps: (
+            <p>
+              Tarif de lancement : hypothèse à tester de 3 000 à
+              8 000 € selon le périmètre, les données disponibles et le
+              temps de travail — un prix d'entrée volontairement bas
+              pour éprouver la demande, pas un prix de marché établi.
+              Le financement finance une question et un travail ; il
+              n'achète pas les conclusions, soumises aux données et à
+              la méthode (voir la transparence des financements dans
+              la charte). L'étude et ses limites sont publiables.
+            </p>
+          ),
+        },
+        {
+          label: "Saisir une question temporelle concrète",
+          corps: (
+            <p>
+              Cette offre s'adresse d'abord aux territoires confrontés
+              à une tension temporelle documentable : saisonnalité
+              forte (logement, services, emplois saisonniers),
+              organisation du care et vieillissement, désynchronisation
+              des services publics. Si votre territoire vit une de ces
+              questions, le formulaire ci-dessous ouvre la
+              conversation — sans engagement.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   comprendre: PageComprendre,
+  soutenir: PageSoutenir,
+  "etude-pilote": PageEtudePilote,
   observer: PageObserver,
   regimes: PageRegimes,
   methode: PageMethode,
@@ -2597,6 +2777,8 @@ export default function App() {
             <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu — essai</a>
             <a href={`${B}/regimes`}>Régimes — typologie et cinq fiches</a>
             <a href={`${B}/methode`}>Méthode</a>
+            <a href={`${B}/soutenir`}>Soutenir — don et adhésion</a>
+            <a href={`${B}/etude-pilote`}>Étude pilote · collectivités</a>
             <a href={`${B}/mentions-legales`}>Mentions légales</a>
           </nav>
         </div>
