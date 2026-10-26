@@ -13,7 +13,7 @@ import {
   NavCharte,
   NavManifeste,
   NavDonnees } from "./NavGlyphs";
-import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand } from "./doctrine";
+import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand, useTitre } from "./doctrine";
 import { ContactForm } from "./ContactForm";
 
 // manatimebank.org — visage doctrine : mission, méthode versionnée,
@@ -1534,6 +1534,100 @@ function PageRegimeSaisonnier() {
   );
 }
 
+function PageRegimes() {
+  useTitre("Typologie des régimes temporels");
+  const B = baseUrl();
+  const regimes = [
+    {
+      num: "01",
+      nom: "Insomniaque connecté",
+      verbe: "superpose",
+      href: "/regime-insomniaque-connecte",
+      texte:
+        "Travail, connexion et attention superposés en continu : le temps perd ses bornes, la nuit est grignotée.",
+    },
+    {
+      num: "02",
+      nom: "Synchronisé institutionnel",
+      verbe: "sépare",
+      href: "/regime-synchronise-institutionnel",
+      texte:
+        "Sphères bornées et coordonnées par une horloge commune : l'héritier conquérant de la journée de huit heures.",
+    },
+    {
+      num: "03",
+      nom: "Fragmenté marchand",
+      verbe: "disperse",
+      href: "/regime-fragmente-marchand",
+      texte:
+        "Le travail arrive en fragments imposés : la disponibilité est le produit vendu, le temps propre impossible à reconstruire.",
+    },
+    {
+      num: "04",
+      nom: "Care massif",
+      verbe: "imprègne",
+      href: "/regime-care-massif",
+      texte:
+        "Le plus massif des régimes et le moins compté : la nappe phréatique sous tous les autres.",
+    },
+    {
+      num: "05",
+      nom: "Saisonnier",
+      verbe: "alterne",
+      href: "/regime-saisonnier",
+      texte:
+        "L'année porte la structure : pleine saison et morte saison, le crédit temporel de l'été emprunté à l'hiver.",
+    },
+  ];
+  return (
+    <main className="publier">
+      <div className="wrap">
+        <a className="retour" href={`${B}/`}>
+          ← Retour
+        </a>
+        <p className="hero-label">Méthode MANA, v0.2 — Article 4</p>
+        <h1 className="fiche-titre">Typologie des régimes temporels</h1>
+        <section className="publier-panel">
+          <p className="territoire-intro">
+            L'unité de description n'est ni le pays ni le territoire : c'est
+            le régime temporel — une configuration stable d'usage du temps,
+            stable au sens systémique, jamais au sens normatif. Les pays et
+            les lieux servent à documenter des régimes, jamais à les
+            classer. Cinq fiches publiées, cinq manières d'habiter la même
+            ressource — comparables en structure, incomparables en
+            jugement.
+          </p>
+        </section>
+        <div className="dimensions-grid">
+          {regimes.map((r, i) => (
+            <a
+              key={r.num}
+              className={`dimension-bulle ${ACCENTS[i % 4]}`}
+              href={`${B}${r.href}`}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <h3>{r.nom}</h3>
+              <p>
+                <strong>{r.verbe}</strong> — {r.texte}
+              </p>
+            </a>
+          ))}
+        </div>
+        <section className="publier-panel">
+          <p className="territoire-intro">
+            La question commune aux cinq régimes : <strong>qui tient
+            l'horloge ?</strong> — et à quelle échelle de temps ? Personne
+            (le flux), l'institution (conquise), la demande (imposée), les
+            invisibles (celles et ceux qu'aucune horloge ne compte), le
+            calendrier (externe). La plupart des vies réelles vivent dans
+            le mélange de plusieurs régimes.
+          </p>
+        </section>
+      </div>
+    </main>
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
@@ -1541,6 +1635,7 @@ const PAGES: Record<string, () => React.JSX.Element> = {
   "regime-fragmente-marchand": PageRegimeFragmente,
   "regime-care-massif": PageRegimeCare,
   "regime-saisonnier": PageRegimeSaisonnier,
+  regimes: PageRegimes,
   donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
@@ -1578,6 +1673,10 @@ export default function App() {
             <a href={`${B}/indice`}>
               <NavIndice className="nav-acc-vert" />
               <span>Indice</span>
+            </a>
+            <a href={`${B}/regimes`}>
+              <NavIndice className="nav-acc-orange" />
+              <span>Régimes</span>
             </a>
             <a href={`${B}/portrait`}>
               <NavPortrait className="nav-acc-orange" />
@@ -1708,11 +1807,7 @@ export default function App() {
             <a href={`${B}/vision`}>Vision</a>
             <a href={`${B}/donnees`}>Données du temps mondial</a>
             <a href={`${B}/indice`}>Indice MANA</a>
-            <a href={`${B}/regime-insomniaque-connecte`}>Régime insomniaque connecté — fiche 01</a>
-            <a href={`${B}/regime-synchronise-institutionnel`}>Régime synchronisé institutionnel — fiche 02</a>
-            <a href={`${B}/regime-fragmente-marchand`}>Régime fragmenté marchand — fiche 03</a>
-            <a href={`${B}/regime-care-massif`}>Régime du care massif — fiche 04</a>
-            <a href={`${B}/regime-saisonnier`}>Régime saisonnier — fiche 05</a>
+            <a href={`${B}/regimes`}>Typologie des régimes temporels</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>
