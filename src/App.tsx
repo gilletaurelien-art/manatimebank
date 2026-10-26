@@ -1859,7 +1859,7 @@ function PageTempsVecu() {
                 sans être réductibles les unes aux autres.
               </p>
               <p>
-                Ce chapitre est une charnière : il part de
+                Ce chapitre est un essai en trois échelles : il part de
                 l'expérience individuelle, montre comment les
                 temporalités sont organisées collectivement, puis ouvre
                 sur les rythmes de l'humanité et du vivant. La question
