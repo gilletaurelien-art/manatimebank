@@ -1332,7 +1332,7 @@ const SEC_MANIFESTE: { label: string; corps: React.ReactNode }[] = [
               <p>
                 Nous n'affirmons pas avoir de solutions. Nous proposons une
                 lumière nouvelle : rendre visible ce qui circule entre les
-                êtres — la page <a href={`${B}/donnees`}>données</a> en
+                êtres — la page <a href={`${B}/observer`}>Observer</a> en
                 assemble les premières observations — les heures de travail, de soin, d'entraide, d'attention
                 — et ce que chaque système en fait. Un constat documenté,
                 sourcé, vérifiable, est plus redoutable qu'un programme : on
@@ -2460,41 +2460,21 @@ export default function App() {
             <Brand />
           </a>
           <nav className="nav">
-            <a href={`${B}/manifeste`}>
+            <a href={`${B}/comprendre`}>
               <NavManifeste className="nav-acc-jaune" />
-              <span>Manifeste</span>
+              <span>Comprendre</span>
             </a>
-            <a href={`${B}/temps-vecu`}>
-              <NavTempsVecu className="nav-acc-vert" />
-              <span>Temps vécu</span>
-            </a>
-            <a href={`${B}/vision`}>
-              <NavVision className="nav-acc-bleu" />
-              <span>Vision</span>
-            </a>
-            <a href={`${B}/donnees`}>
-              <NavDonnees className="nav-acc-orange" />
-              <span>Données</span>
-            </a>
-            <a href={`${B}/indice`}>
-              <NavIndice className="nav-acc-vert" />
-              <span>Indice</span>
+            <a href={`${B}/observer`}>
+              <NavDonnees className="nav-acc-bleu" />
+              <span>Observer</span>
             </a>
             <a href={`${B}/regimes`}>
               <NavIndice className="nav-acc-orange" />
               <span>Régimes</span>
             </a>
-            <a href={`${B}/portrait`}>
-              <NavPortrait className="nav-acc-orange" />
-              <span>Portrait</span>
-            </a>
-            <a href={`${B}/methode`}>
-              <NavMethode className="nav-acc-bleu" />
+            <a href={`${B}/methode`} className="nav-cta">
+              <NavMethode className="nav-acc-vert" />
               <span>Méthode</span>
-            </a>
-            <a href={`${B}/charte`} className="nav-cta">
-              <NavCharte className="nav-acc-vert" />
-              <span>Charte</span>
             </a>
           </nav>
         </div>
@@ -2616,9 +2596,7 @@ export default function App() {
             <a href={`${B}/observer`}>Observer — données, indice, portrait</a>
             <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu — essai</a>
             <a href={`${B}/regimes`}>Régimes — typologie et cinq fiches</a>
-            <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
-            <a href={`${B}/charte`}>Charte de confiance</a>
             <a href={`${B}/mentions-legales`}>Mentions légales</a>
           </nav>
         </div>

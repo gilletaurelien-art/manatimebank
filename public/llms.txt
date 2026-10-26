@@ -123,10 +123,17 @@ temporelle (y compris le droit de ne rien optimiser). Les passages
 philosophiques sont signalés comme propositions de réflexion, pas comme
 résultats empiriques.
 
-Pages : /manifeste, /temps-vecu, /vision, /donnees, /indice, /portrait, /methode,
-/charte, /mentions-legales, /regime-insomniaque-connecte,
-/regime-synchronise-institutionnel, /regime-fragmente-marchand,
-/regime-care-massif, /regime-saisonnier.
+Architecture : quatre entrées principales.
+- /comprendre — manifeste du temps retrouvé, vision, charte de confiance.
+- /observer — données du temps mondial (thèse/antithèse/synthèse), indice
+  MANA (visibilité des circuits), portrait. Les anciennes routes
+  /manifeste, /vision, /charte, /donnees, /indice et /portrait redirigent
+  vers /comprendre ou /observer.
+- /regimes — typologie (Article 4) et cinq fiches :
+  /regime-insomniaque-connecte, /regime-synchronise-institutionnel,
+  /regime-fragmente-marchand, /regime-care-massif, /regime-saisonnier.
+- /methode — méthode MANA v0.2 (dix articles, faisceau).
+Essai long : /temps-vecu. Mentions : /mentions-legales.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).
