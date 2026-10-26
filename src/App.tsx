@@ -1680,6 +1680,52 @@ function PageRegimes() {
             jugement.
           </p>
         </section>
+        <section className="publier-panel">
+          <h2 className="apercu-label">Préalable — l'horloge du vivant</h2>
+          <div className="territoire-intro">
+            <p>
+              Toute typologie des régimes temporels humains doit commencer
+              par les temporalités du vivant. Le sommeil, la fatigue, la
+              récupération, la croissance, le vieillissement et les cycles
+              écologiques ne se règlent pas entièrement sur les horaires
+              institutionnels, les exigences marchandes ou les calendriers
+              économiques. Le vivant possède des rythmes multiples, qui se
+              superposent, s'accordent ou entrent en tension.
+            </p>
+            <p>
+              Les régimes temporels décrits dans cette méthode ne
+              constituent donc pas des systèmes indépendants du vivant :
+              ils organisent les conditions dans lesquelles ses
+              temporalités peuvent être respectées, contraintes,
+              déplacées ou rendues invisibles.
+            </p>
+            <p>
+              L'horloge du vivant n'est pas un sixième régime. Elle
+              constitue le préalable à partir duquel les cinq régimes
+              sont observés. Elle ne fournit pas davantage une norme
+              universelle à laquelle toute société devrait se conformer.
+              Elle rappelle une contrainte fondamentale : les heures
+              peuvent être organisées, distribuées et comptabilisées,
+              mais les besoins du vivant ne sont pas indéfiniment
+              reportables.
+            </p>
+            <p>
+              La question devient alors : comment les organisations
+              humaines du temps s'articulent-elles aux temporalités du
+              vivant ? Et que se passe-t-il lorsque les horloges sociales
+              entrent en conflit avec les rythmes du vivant — sommeil et
+              rythmes circadiens, fatigue et récupération, maladie,
+              vulnérabilité et vieillissement ? Le corps n'est pas
+              seulement une ressource sollicitée par les systèmes
+              temporels : il possède ses propres rythmes, qui ne
+              s'alignent pas nécessairement sur les horaires du travail,
+              les exigences de disponibilité ou les calendriers
+              économiques. Dimension transversale — pas un régime
+              établi, et pas non plus un objet d'affirmations médicales
+              ici : une contrainte à garder visible.
+            </p>
+          </div>
+        </section>
         <div className="dimensions-grid">
           {regimes.map((r, i) => (
             <a
@@ -1696,14 +1742,110 @@ function PageRegimes() {
           ))}
         </div>
         <section className="publier-panel">
-          <p className="territoire-intro">
-            La question commune aux cinq régimes : <strong>qui tient
-            l'horloge ?</strong> — et à quelle échelle de temps ? Personne
-            (le flux), l'institution (conquise), la demande (imposée), les
-            invisibles (celles et ceux qu'aucune horloge ne compte), le
-            calendrier (externe). La plupart des vies réelles vivent dans
-            le mélange de plusieurs régimes.
-          </p>
+          <h2 className="apercu-label">Disponibilité et liberté temporelle</h2>
+          <div className="territoire-intro">
+            <p>
+              Disposer de temps ne signifie pas nécessairement être libre
+              d'en décider l'usage. Distinguer, sans prétendre que ces
+              distinctions correspondent à des mesures déjà disponibles :
+              le temps disponible en théorie · le temps réellement
+              mobilisable compte tenu des contraintes · la capacité de
+              choisir, de déplacer, de refuser ou d'interrompre une
+              activité · la possibilité de disposer de plages
+              suffisamment continues pour entreprendre ce que l'on
+              souhaite.
+            </p>
+            <p>
+              Les horaires imprévisibles, les responsabilités de care, les
+              déplacements, l'épuisement et la précarité réduisent le
+              temps mobilisable bien en deçà du temps théorique. Mais
+              l'agenda rempli n'est pas, à lui seul, la preuve d'une
+              absence de liberté : des activités choisies, des relations
+              et des engagements donnent aussi du sens au temps. Ne pas
+              assimiler automatiquement autonomie, temps libre, bonheur
+              et bien-être — ce sont des phénomènes distincts.
+            </p>
+          </div>
+        </section>
+        <section className="publier-panel">
+          <h2 className="apercu-label">Une même grille pour lire les régimes</h2>
+          <div className="territoire-intro">
+            <p>
+              Six questions qualitatives pour examiner chacun des cinq
+              régimes — des axes d'observation, pas un barème : aucune
+              pondération, aucune note, aucune couleur évaluative, aucun
+              score global. Quand une réponse ne peut pas être établie,
+              c'est une limite de connaissance à signaler — pas un
+              vide à compléter arbitrairement.
+            </p>
+            <p>
+              <strong>1. Horloge dominante</strong> — qui ou quoi organise
+              le rythme ?{" "}
+              <strong>2. Frontières temporelles</strong> — les activités
+              ont-elles un début et une fin identifiables ?{" "}
+              <strong>3. Prévisibilité</strong> — peut-on anticiper son
+              temps ?{" "}
+              <strong>4. Marge de décision</strong> — peut-on refuser,
+              déplacer ou interrompre une activité ?{" "}
+              <strong>5. Compatibilité avec le vivant</strong> — les
+              rythmes corporels et les besoins de récupération
+              peuvent-ils être respectés ?{" "}
+              <strong>6. Possibilité de recomposition</strong> — reste-t-il
+              du temps suffisamment continu pour choisir ce que l'on
+              veut en faire ?
+            </p>
+          </div>
+        </section>
+        <section className="publier-panel">
+          <h2 className="apercu-label">Trois candidats à examiner — sans les établir</h2>
+          <div className="territoire-intro">
+            <p>
+              Des dimensions qui méritent une attention particulière — des
+              pistes d'analyse, pas des catégories validées. L'objectif
+              est précisément de montrer qu'une dimension importante du
+              temps ne justifie pas automatiquement la création d'un
+              nouveau régime.
+            </p>
+            <p>
+              <strong>Le vivant</strong> — dimension transversale qui
+              traverse les cinq régimes (voir le préalable).{" "}
+              <strong>L'attente</strong> — temps suspendu par une
+              décision, une procédure, une promesse ou une incertitude :
+              apparaît-elle comme un régime stable, ou traverse-t-elle
+              plusieurs régimes existants (l'attente d'une plateau dans
+              le fragmenté, d'une réponse dans l'insomniaque, d'une
+              saison dans le saisonnier) ? Question ouverte.{" "}
+              <strong>L'autonomie temporelle</strong> — capacité
+              individuelle ou collective à négocier ses rythmes :
+              décrit-elle un régime cohérent, ou plutôt une propriété
+              variable à l'intérieur de chacun des cinq régimes ?
+              Question ouverte, elle aussi.
+            </p>
+          </div>
+        </section>
+        <section className="publier-panel">
+          <h2 className="apercu-label">Qui tient l'horloge ?</h2>
+          <div className="territoire-intro">
+            <p>
+              La question commune aux cinq régimes : <strong>qui tient
+              l'horloge ?</strong> — et à quelle échelle de temps ?
+              Personne (le flux), l'institution (conquise), la demande
+              (imposée), les invisibles (celles et ceux qu'aucune horloge
+              ne compte), le calendrier (externe). La plupart des vies
+              réelles vivent dans le mélange de plusieurs régimes.
+            </p>
+            <p>
+              Deux questions complémentaires l'enrichissent.{" "}
+              <strong>Qui peut en changer le rythme, et à quel prix ?</strong>{" "}
+              — la marge de décision et le coût de l'autonomie.{" "}
+              <strong>Une fois le temps organisé, contraint ou libéré,
+              reste-t-il à la personne la possibilité de l'habiter ?</strong>{" "}
+              — l'articulation avec le temps vécu, sans réduire celui-ci
+              à une quantité mesurable. Trois questions qui ouvrent
+              l'observation — elles n'imposent pas de réponse
+              universelle.
+            </p>
+          </div>
         </section>
       </div>
     </main>
