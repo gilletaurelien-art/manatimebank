@@ -1441,3 +1441,34 @@ html { background: var(--sand); }
 .sp-vert { color: var(--vert); }
 .sp-jaune { color: #b8860b; }
 .sp-orange { color: var(--orange); }
+
+/* ===== Footer : le fond d'écran remplace l'aplat bleu ===== */
+/* Le calque fixe du hero se prolonge sous le footer ; la bulle devient
+   translucide blanche (même famille que les autres bulles), le texte
+   repasse en encre, les liens en pilules encre translucide. */
+.site-footer > .wrap {
+  background: rgb(255 255 255 / 88%);
+}
+.site-footer .brand,
+.site-footer .brand * { color: inherit; }
+.site-footer .footer-note { color: var(--ink); opacity: 0.85; }
+.site-footer .footer-colonnes { color: var(--ink); }
+.site-footer .footer-nav a {
+  color: var(--ink);
+  background: rgb(29 58 95 / 6%);
+  border-color: rgb(29 58 95 / 14%);
+}
+.site-footer .footer-nav a:hover {
+  background: var(--ink);
+  color: var(--sand);
+  border-color: var(--ink);
+}
+.site-footer .footer-bas { border-top-color: var(--ecume); color: var(--ink); opacity: 0.7; }
+.site-footer .footer-bas a { color: var(--ink); }
+
+/* Footer clair : la marque en encre, le formulaire adapté au fond clair */
+.site-footer .brand { color: var(--ink); }
+.site-footer .contact-form .champ label { color: var(--ink); }
+.site-footer .contact-form .apercu-label { color: var(--ink); opacity: 0.7; }
+.site-footer .contact-merci { color: var(--ink); }
+.site-footer .contact-note { color: var(--ink); opacity: 0.6; }
