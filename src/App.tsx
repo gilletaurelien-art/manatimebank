@@ -465,12 +465,12 @@ export default function App() {
             {/* Les six dimensions en un regard */}
             <section className="landing-section bulle">
               <h2 className="section-title">Les six dimensions</h2>
-              <div className="promesses-grid" style={{ paddingTop: 0 }}>
+              <div className="dimensions-grid">
                 {DIMENSIONS_GRID.map((nom, i) => {
                   const d = DIMENSIONS.find((x) => x.nom === nom)!;
                   return (
-                    <div key={d.nom} className="promesse">
-                      <h3 className={ACCENTS[i % 4]}>{d.nom}</h3>
+                    <div key={d.nom} className={`dimension-bulle ${ACCENTS[i % 4]}`}>
+                      <h3>{d.nom}</h3>
                       <p>{d.texte}</p>
                     </div>
                   );
