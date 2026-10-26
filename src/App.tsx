@@ -520,6 +520,24 @@ function PageDonnees() {
       titre="Données du temps mondial"
       sections={[
         {
+          label: "En bref",
+          corps: (
+            <p>
+              Le monde compte l'argent chaque trimestre dans près de 200
+              pays ; il ne mesure le temps de la vie que par de rares
+              enquêtes — 72 pays une fois, 27 au moins deux fois. Ce que les
+              données publiques laissent voir : ~44 heures de travail
+              hebdomadaire en moyenne, trois fois plus de temps de soin non
+              rémunéré porté par les femmes, 745 000 décès par an liés aux
+              longues heures, et la moitié de l'humanité qui n'a pas eu le
+              temps de faire ce qui comptait pour elle hier. Cette page
+              assemble ces observations, puis en propose une lecture en
+              thèse, antithèse et synthèse — chaque chiffre porte sa
+              source, chaque question reste ouverte.
+            </p>
+          ),
+        },
+        {
           label: "Ce que le monde mesure",
           corps: (
             <>
