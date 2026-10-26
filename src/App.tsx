@@ -1380,12 +1380,167 @@ function PageRegimeCare() {
   );
 }
 
+function PageRegimeSaisonnier() {
+  return (
+    <PageDoctrine
+      nom="Typologie des régimes temporels — fiche 05"
+      titre="Le régime saisonnier"
+      sections={[
+        {
+          label: "Définition",
+          corps: (
+            <p>
+              Configuration stable d'usage du temps où l'année — et non la
+              journée — porte la structure : quelques mois concentrent le
+              travail, les revenus, l'activité, la population même du
+              lieu ; le reste de l'année est creux. C'est le régime du
+              tourisme, de l'agriculture, de la pêche, des vendanges,
+              des sports d'hiver : le temps y arrive par vagues
+              imposées par un rythme externe — climat, calendrier
+              scolaire, affluence. Il ne superpose pas (01), ne sépare
+              pas (02), ne disperse pas (03), n'imprègne pas (04) :
+              il alterne — la pleine saison et la morte saison ne se
+              ressemblent pas, et c'est leur succession qui fait la vie.
+            </p>
+          ),
+        },
+        {
+          label: "Stock — une réserve annualisée, pas journalière",
+          corps: (
+            <p>
+              Le stock ne se lit pas par jour mais par année : la réserve
+              d'heures de pleine saison (journées longues, sept jours sur
+              sept, repos différé) est prélevée d'avance sur la morte
+              saison (sous-emploi, départ, sommeil de l'économie).
+              Le régime vit à crédit temporel : il emprunte ses heures
+              d'été à son hiver. <strong>Marqueurs :</strong> emploi
+              saisonnier et contrats courts (statistiques nationales —
+              mesuré) ; taux d'activité par mois ou trimestre (mesuré) ;
+              répartition annuelle effective des heures — rarement
+              publiée hors des secteurs enquêtés.
+            </p>
+          ),
+        },
+        {
+          label: "Circulation — des flux par vagues",
+          corps: (
+            <p>
+              Tout circule par vagues : les travailleurs (qui arrivent,
+              repartent, reviennent), les visiteurs (la population du
+              lieu double ou triple à date fixe), les revenus (concentrés
+              sur la saison), l'attention publique elle-même. Le régime
+              saisonnier est le seul où la circulation modifie le stock :
+              le lieu se remplit et se vide — la ressource temporelle
+              locale change de volume avec le calendrier, pas seulement
+              d'organisation. <strong>Marqueurs :</strong> population
+              saisonnière vs résidente (recensements, fichiers — mesuré) ;
+              flux migratoires de travailleurs saisonniers (estimations
+              OIT — hypothèse, forte sous-déclaration).
+            </p>
+          ),
+        },
+        {
+          label: "Distribution — le régime des deux populations",
+          corps: (
+            <p>
+              La fracture passe entre ceux qui subissent la vague et ceux
+              qui la consomment : le résident dont l'année est imposée
+              par la saison (horaires d'été massacrés, logement rare,
+              services saturés) et le visiteur qui en vit un fragment
+              choisi. Une seconde fracture, moins vue : les saisonniers
+              eux-mêmes — souvent jeunes, étrangers, logés par
+              l'employeur — cumulent le régime saisonnier et le
+              fragmenté marchand (fiche 03). <strong>Marqueurs :</strong>
+              prix saisonniers du logement (mesuré) ; durée des contrats
+              et conditions de logement des saisonniers (enquêtes,
+              rapports — mesuré par fragments, invisible dans les
+              moyennes annuelles).
+            </p>
+          ),
+        },
+        {
+          label: "Tenue — éprouvée par les plus vieilles civilisations, érodée par l'accélération",
+          corps: (
+            <p>
+              Le régime saisonnier est le régime le plus ancien de
+              l'humanité — agriculture, pêches, saisons — et sa tenue
+              historique est millénaire : les sociétés paysannes
+              structuraient l'année autour des vagues et savaient
+              réparer la ressource pendant la morte saison (fêtes,
+              réparations, sommeil). Sa version moderne est plus
+              fragile : le tourisme et le climat désynchronisent les
+              vagues (saison qui s'allonge, qui se décale, qui se
+              double), et l'érosion de la morte saison (le revenu doit
+              durer toute l'année, l'attention numérique maintient
+              l'activité en creux) empêche la récupération. Un régime
+              millénaire dont la boucle annuelle — travailler la vague,
+              réparer l'entre-vague — est en train de perdre sa
+              seconde moitié.
+            </p>
+          ),
+        },
+        {
+          label: "Les invisibles de ce régime",
+          corps: (
+            <p>
+              La moyenne annuelle elle-même : toute statistique annuelle
+              gomme la vague (un lieu « en moyenne » tranquille qui
+              explose trois mois par an) — l'invisible du régime
+              saisonnier est produit par l'outil de mesure qui
+              l'observe ; le temps de réparation de la morte saison
+              (ce que le lieu fait de ses mois creux — visible dans
+              la vie, absent des bases) ; le travail informel de
+              saison, non déclaré par construction. Falsifiable : la
+              plupart des « petites » économies saisonnières du monde
+              n'apparaissent dans aucune donnée que pendant la vague
+              — et parfois pas même alors.
+            </p>
+          ),
+        },
+        {
+          label: "Contraste avec les fiches 01 à 04",
+          corps: (
+            <p>
+              Superposition (01), séparation (02), dispersion (03),
+              imprégnation (04) : quatre manières d'habiter le temps.
+              Alternance (05) : une manière de l'habiter par vagues —
+              la seule où le volume même de la ressource locale
+              change au calendrier. Et le contraste générationnel
+              éclaire les cinq : le saisonnier est le régime le plus
+              ancien, l'insomniaque le plus récent ; l'un avait
+              appris à réparer son temps dans le creux de la vague,
+              l'autre a perdu le creux. Les cinq fiches ensemble
+              déplacent la question : qui tient l'horloge ? — et
+              à quelle échelle de temps la tient-on ?
+            </p>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              Statistiques nationales d'emploi saisonnier et de tourisme ·
+              OIT, travail saisonnier et migration de travail (estimations
+              — hypothèses assumées) · recensements et estimation de
+              population saisonnière · histoire rurale et calendriers
+              agricoles (Braudel, les structures du quotidien) · études
+              locales de seasonality (saisonnalité résidentielle).
+              Fiche établie selon la Méthode MANA, v0.2.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
   "regime-synchronise-institutionnel": PageRegimeSynchronise,
   "regime-fragmente-marchand": PageRegimeFragmente,
   "regime-care-massif": PageRegimeCare,
+  "regime-saisonnier": PageRegimeSaisonnier,
   donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
@@ -1557,6 +1712,7 @@ export default function App() {
             <a href={`${B}/regime-synchronise-institutionnel`}>Régime synchronisé institutionnel — fiche 02</a>
             <a href={`${B}/regime-fragmente-marchand`}>Régime fragmenté marchand — fiche 03</a>
             <a href={`${B}/regime-care-massif`}>Régime du care massif — fiche 04</a>
+            <a href={`${B}/regime-saisonnier`}>Régime saisonnier — fiche 05</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>
