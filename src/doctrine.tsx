@@ -12,7 +12,7 @@ export const DIMENSIONS = [
   {
     nom: "Temps humain",
     texte:
-      "Comment le territoire répartit la ressource temporelle de ses habitants : temps contraint, temps choisi, temps contraint par autrui.",
+      "Comment l'humanité répartit sa ressource temporelle : temps contraint, temps choisi, temps contraint par autrui.",
   },
   {
     nom: "Solidarité",
@@ -44,7 +44,7 @@ export const DIMENSIONS = [
 export function useTitre(titre: string | null) {
   useEffect(() => {
     const defaut =
-      "MANA TIME BANK — Le temps comme ressource, le territoire comme système";
+      "MANA TIME BANK — Le temps comme ressource, l'humanité comme système";
     document.title = titre ? `${titre} — MANA TIME BANK` : defaut;
     return () => {
       document.title = defaut;

@@ -1,29 +1,33 @@
-# MANA TIME BANK — manatimebank.org
+# MANA TIME BANK — indice mondial du temps humain
 
 MANA TIME BANK n'est pas une banque de temps classique. Pas de dépôt,
-d'échange ni de crédit d'heures. C'est une infrastructure d'observation :
-comment l'humanité utilise sa ressource temporelle dans le système vivant
-dont elle dépend.
+d'échange ni de crédit d'heures. C'est une infrastructure d'observation
+mondiale : comment l'humanité utilise sa ressource temporelle dans le
+système vivant dont elle dépend.
 
 - Le temps est la ressource. La société, le système d'organisation. Le
   vivant, l'environnement.
 - Une heure n'a pas de valeur morale fixe : on étudie les systèmes qui
   orientent l'usage du temps et leurs conséquences.
+- Le MANA est partout : il n'y a pas de territoire sans MANA, seulement
+  des circuits qu'on ne voit pas encore. L'indice mesure la visibilité
+  des circuits, jamais la présence du MANA.
 - Indice MANA : six dimensions (Temps humain, Solidarité, Écologie,
   Régénération, Équité temporelle, Durabilité), profil multidimensionnel,
-  données sourcées, incertitudes explicites. Pas de score global tant que
-  la méthode n'est pas éprouvée.
-- Premier produit : le Portrait MANA — diagnostic territorial, état initial
-  documenté, fondé sur données publiques existantes (INSEE, Agreste,
-  observatoires, documents de la collectivité). Trois livrables : portrait
-  documenté (mesuré / interprété / hypothèse distingués), première signature
-  MANA, feuille de route.
+  données sourcées, incertitudes explicites. Pas de score global, pas de
+  classement des pays : des régimes temporels décrits.
+- Sources mondiales publiques : ILOSTAT (heures travaillées, ~160 pays),
+  ONU SDG 5.4.1 (care non rémunéré, 72 pays), OCDE Time Use, enquêtes
+  nationales d'emploi du temps, Gallup World Poll (vécu du temps).
+- Constat fondateur : le monde compte sa monnaie chaque trimestre et son
+  temps une fois par décennie dans un tiers des pays. Les trous de
+  visibilité (entraide informelle, care invisible) sont des résultats,
+  pas des regrets.
 - Charte de confiance : « La méthode est publique et versionnée. La
-  prestation est payante. Les conclusions sont soumises aux données et à la
-  méthode — jamais au montant du contrat. »
-- Prestation portée par l'Alliance MANA (association) : production de
-  connaissance d'intérêt général, vente sur devis.
-- Pilote territorial : Crozon (Finistère), écosystème MANA.
+  prestation est payante. Les conclusions sont soumises aux données et à
+  la méthode — jamais au montant du contrat. »
+- Production portée par l'Alliance MANA (association) : connaissance
+  d'intérêt général.
 
 Pages : /vision, /indice, /portrait, /methode, /charte, /mentions-legales.
 

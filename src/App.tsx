@@ -27,7 +27,7 @@ const SECTIONS = [
     titre: "Le temps est une ressource",
     accroche: "Ni banque de dépôt, ni bourse du temps : une observation.",
     texte:
-      "MANA TIME BANK n'est pas une banque de temps classique. Pas de dépôt, d'échange ni de crédit d'heures. C'est une infrastructure d'observation : comment l'humanité utilise sa ressource temporelle dans le système vivant dont elle dépend. Le temps est la ressource, la société le système d'organisation, le vivant l'environnement.",
+      "MANA TIME BANK n'est pas une banque de temps classique. Pas de dépôt, d'échange ni de crédit d'heures. C'est une infrastructure d'observation mondiale : comment l'humanité utilise sa ressource temporelle dans le système vivant dont elle dépend. Le temps est la ressource, la société le système d'organisation, le vivant l'environnement.",
   },
   {
     glyphe: GlyphIndice,
@@ -41,9 +41,9 @@ const SECTIONS = [
     glyphe: GlyphPortrait,
     num: "03",
     titre: "Le Portrait MANA",
-    accroche: "Un diagnostic territorial, un état initial documenté.",
+    accroche: "Un diagnostic, un état initial documenté — à l'échelle du monde.",
     texte:
-      "Fondé sur des données existantes (INSEE, Agreste, observatoires, documents de la collectivité), le Portrait MANA livre trois choses : un portrait territorial documenté où le mesuré, l'interprété et l'hypothèse sont distingués ; une première signature MANA avec niveaux de confiance et données manquantes ; une feuille de route de questions prioritaires et d'indicateurs annuels.",
+      "Fondé sur des données publiques mondiales (ONU, OIT, OCDE, enquêtes nationales d'emploi du temps), le Portrait MANA livre trois choses : un portrait documenté où le mesuré, l'interprété et l'hypothèse sont distingués ; une première signature MANA avec niveaux de confiance et données manquantes ; une feuille de route de questions prioritaires et d'indicateurs annuels.",
   },
   {
     glyphe: GlyphMethode,
@@ -59,7 +59,7 @@ const SECTIONS = [
     titre: "Des données publiques, rien d'autre",
     accroche: "Sources ouvertes, incertitudes explicites.",
     texte:
-      "INSEE, Agreste, observatoires, documents de la collectivité : le Portrait MANA n'invente rien. Une donnée manquante est dite manquante ; une interprétation est dite interprétation. Le mesuré, l'interprété et l'hypothèse ne se mélangent jamais.",
+      "ILOSTAT, ONU (SDG 5.4.1), OCDE Time Use, enquêtes nationales : l'indice MANA n'invente rien. Une donnée manquante est dite manquante ; une interprétation est dite interprétation. Le mesuré, l'interprété et l'hypothèse ne se mélangent jamais.",
   },
 ];
 
@@ -99,8 +99,8 @@ function PageVision() {
             <p>
               On étudie les systèmes qui orientent l'usage du temps et leurs
               conséquences, pas la « valeur » de chaque heure. Aucune heure
-              n'est classée, notée ou hiérarchisée : on observe comment le
-              territoire organise le temps, ce que cela produit, et on le
+              n'est classée, notée ou hiérarchisée : on observe comment
+              l'humanité organise le temps, ce que cela produit, et on le
               documente honnêtement.
             </p>
           ),
@@ -109,11 +109,12 @@ function PageVision() {
           label: "Positionnement",
           corps: (
             <p>
-              Pilote territorial de Crozon (Finistère), même écosystème MANA.
-              La prestation de diagnostic est portée par l'Alliance MANA
-              (association) : production de connaissance d'intérêt général.
-              L'usage réglementé du mot « banque » est en cours de
-              vérification juridique avant tout devis public.
+              Indice mondial, même écosystème MANA. Le MANA est partout —
+              il n'y a pas de territoire sans MANA, seulement des circuits
+              qu'on ne voit pas encore. La production de connaissance est
+              portée par l'Alliance MANA (association) : intérêt général,
+              méthode publique. L'usage réglementé du mot « banque » est en
+              cours de vérification juridique avant toute publication majeure.
             </p>
           ),
         },
@@ -172,9 +173,11 @@ function PagePortrait() {
           label: "Nature du produit",
           corps: (
             <p>
-              Diagnostic territorial, état initial documenté, fondé sur des
-              données existantes (INSEE, Agreste, observatoires, documents de
-              la collectivité). Premier client visé : l'EPCI, pas la commune.
+              Diagnostic mondial, état initial documenté, fondé sur des
+              données publiques existantes (ILOSTAT, ONU SDG 5.4.1, OCDE Time
+              Use, enquêtes nationales d'emploi du temps). Le monde compte
+              sa monnaie chaque trimestre ; son temps, une fois par décennie
+              dans un tiers des pays.
             </p>
           ),
         },
@@ -183,7 +186,7 @@ function PagePortrait() {
           corps: (
             <>
               <p>
-                <strong>1.</strong> Un portrait territorial documenté, où le
+                <strong>1.</strong> Un portrait documenté, où le
                 mesuré, l'interprété et l'hypothèse sont distingués.
               </p>
               <p>
@@ -212,11 +215,11 @@ function PagePortrait() {
           label: "Données et périmètres",
           corps: (
             <p>
-              Les données internes d'une collectivité ne transitent jamais par
-              le socle public : périmètre serveur dédié au diagnostic, purgé à
-              la clôture du portrait. Les conclusions ne se stockent pas comme
-              statut : constats sourcés, datés, avec niveau de confiance, profil
-              dérivé.
+              Aucune donnée identifiante n'est collectée. Les conclusions ne
+              se stockent pas comme statut : constats sourcés, datés, avec
+              niveau de confiance, profil dérivé. Les trous de visibilité
+              (l'entraide informelle, le care invisible) sont des résultats
+              en soi, pas des regrets.
             </p>
           ),
         },
@@ -246,9 +249,8 @@ function PageMethode() {
           label: "Sources",
           corps: (
             <p>
-              Données publiques existantes uniquement : INSEE, Agreste,
-              observatoires, documents de la collectivité. Aucune donnée
-              identifiante, aucun scraping. Une source manquante est
+              Données publiques existantes uniquement : ILOSTAT, ONU, OCDE,
+              instituts nationaux. Aucune donnée identifiante, aucun scraping. Une source manquante est
               documentée comme manquante.
             </p>
           ),
@@ -257,7 +259,7 @@ function PageMethode() {
           label: "Ce que la méthode refuse",
           corps: (
             <p>
-              Pas de score global, pas de classement des territoires, pas de
+              Pas de score global, pas de classement des pays, pas de
               promesse d'amélioration d'évaluation contre paiement. Le mesuré,
               l'interprété et l'hypothèse restent distingués partout.
             </p>
@@ -347,8 +349,8 @@ function PageMentions() {
           corps: (
             <p>
               Aucune donnée ni lead n'est revendu. Aucune donnée identifiante
-              n'est collectée. Les données internes d'une collectivité ne
-              transitent jamais par le socle public.
+              n'est collectée. Aucune donnée identifiante ne transite par
+              le site.
             </p>
           ),
         },
@@ -410,7 +412,7 @@ export default function App() {
           <section className="hero">
             <div className="wrap">
               <p className="hero-label">
-                Infrastructure d'observation · Pilote Crozon
+                Infrastructure d'observation · Indice mondial
               </p>
               <h1 className="brand-grand">
                 <Brand />
@@ -418,7 +420,7 @@ export default function App() {
               <p className="lede">
                 Le temps est la ressource. La société, le système
                 d'organisation. Le vivant, l'environnement. On observe comment
-                un territoire utilise sa ressource temporelle — on ne note pas
+                l'humanité utilise sa ressource temporelle — on ne note pas
                 la valeur de chaque heure.
               </p>
               <div className="hero-cta">
@@ -492,11 +494,13 @@ export default function App() {
               <Brand />
             </p>
             <p className="footer-note">
-              Infrastructure d'observation du temps humain sur le territoire —
-              pilote Crozon, écosystème MANA. Méthode publique et versionnée ;
-              conclusions soumises aux données, jamais au montant du contrat.
-              Le mot « banque » est utilisé au sens de la ressource temporelle,
-              pas de l'établissement financier.
+              Infrastructure d'observation mondiale du temps humain —
+              écosystème MANA. Méthode publique et versionnée ; conclusions
+              soumises aux données, jamais au montant du contrat. Pas de
+              score, pas de classement des pays : des régimes temporels
+              décrits, sourcés, à trous déclarés. Le mot « banque » est utilisé
+              au sens de la ressource temporelle, pas de l'établissement
+              financier.
             </p>
             <ContactForm />
           </div>
