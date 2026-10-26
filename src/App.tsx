@@ -763,6 +763,77 @@ function PageDonnees() {
           ),
         },
         {
+          label: "Séries — heures de travail payé, 2023 (heures annuelles par travailleur)",
+          corps: (
+            <>
+              <p>
+                Mesuré. Source : Penn World Table 11.0 via Our World in Data
+                (« annual working hours per worker »), millésime 2023.
+              </p>
+              <table className="donnees-table">
+                <thead>
+                  <tr><th>Pays</th><th>Heures / an</th><th>≈ h / semaine</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Cambodge</td><td>2 389</td><td>46,0</td></tr>
+                  <tr><td>Bangladesh</td><td>2 383</td><td>45,8</td></tr>
+                  <tr><td>Botswana</td><td>2 258</td><td>43,4</td></tr>
+                  <tr><td>Algérie</td><td>2 232</td><td>42,9</td></tr>
+                  <tr><td>Cameroun</td><td>2 181</td><td>41,9</td></tr>
+                  <tr><td>Albanie</td><td>2 152</td><td>41,4</td></tr>
+                  <tr><td>Brésil</td><td>1 994</td><td>38,3</td></tr>
+                  <tr><td>Chili</td><td>1 950</td><td>37,5</td></tr>
+                  <tr><td>Canada</td><td>1 731</td><td>33,3</td></tr>
+                  <tr><td>Belgique</td><td>1 593</td><td>30,6</td></tr>
+                  <tr><td>Autriche</td><td>1 438</td><td>27,7</td></tr>
+                </tbody>
+              </table>
+              <p>
+                La plage mondiale est de plus de 1 600 heures par an entre
+                les configurations les plus intensives et les moins
+                intensives — deux travailleurs ne vivent pas dans le même
+                régime. Ces chiffres ne classent rien : ils montrent
+                l'ampleur de la variance.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Séries — care non rémunéré, heures par jour (femmes / hommes, dernière enquête disponible)",
+          corps: (
+            <>
+              <p>
+                Mesuré (dans les pays enquêtés — invisible ailleurs).
+                Source : ONU, SDG 5.4.1, via Our World in Data. Année entre
+                parenthèses : la plus récente enquête du pays.
+              </p>
+              <table className="donnees-table">
+                <thead>
+                  <tr><th>Pays</th><th>Femmes</th><th>Hommes</th><th>Rapport</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Inde (2024)</td><td>5,37</td><td>0,70</td><td>7,7×</td></tr>
+                  <tr><td>Mexique (2024)</td><td>5,14</td><td>2,04</td><td>2,5×</td></tr>
+                  <tr><td>Maroc (2012)</td><td>5,00</td><td>0,72</td><td>6,9×</td></tr>
+                  <tr><td>France (2010)</td><td>3,79</td><td>2,28</td><td>1,7×</td></tr>
+                  <tr><td>États-Unis (2023)</td><td>3,70</td><td>2,42</td><td>1,5×</td></tr>
+                  <tr><td>Japon (2021)</td><td>3,53</td><td>0,90</td><td>3,9×</td></tr>
+                  <tr><td>Norvège (2023)</td><td>3,48</td><td>2,76</td><td>1,3×</td></tr>
+                  <tr><td>Suède (2011)</td><td>3,85</td><td>3,08</td><td>1,25×</td></tr>
+                </tbody>
+              </table>
+              <p>
+                Trois constats dans les données elles-mêmes : la fracture
+                de genre existe partout mesurée (jamais inversée) ; son
+                ampleur varie de 1,25 à 7,7 — ce ne sont pas les mêmes
+                régimes ; et les dates racontent l'asymétrie : la Norvège
+                a enquêté en 2023, la France en 2010 — certains pays ne
+                regardent leur care que tous les quinze ans.
+              </p>
+            </>
+          ),
+        },
+        {
           label: "La thèse — ce que les données suggèrent",
           corps: (
             <p>
@@ -834,12 +905,15 @@ function PageDonnees() {
           label: "Sources",
           corps: (
             <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
-              ILOSTAT, heures hebdomadaires effectives (~160 pays) · OIT, Care
-              work and care jobs (72 pays avec enquête emploi du temps, 27 au
-              moins deux fois, 2018) · ONU, SDG 5.4.1 (temps de soin non
-              rémunéré par sexe) · OMS/OIT (745 000 décès/an attribuables aux
-              longues heures, 2021) · Gallup World Poll (question du temps
-              pour soi, 140+ pays) · OCDE, Time Use Database.
+              Heures de travail : Penn World Table 11.0 via Our World in
+              Data, « annual working hours per worker », 2023 · Care non
+              rémunéré : ONU SDG 5.4.1 via Our World in Data (dernière
+              enquête disponible par pays) · ILOSTAT, heures hebdomadaires
+              effectives (~160 pays) · OIT, Care work and care jobs (72
+              pays avec enquête emploi du temps, 27 au moins deux fois,
+              2018) · OMS/OIT (745 000 décès/an attribuables aux longues
+              heures, 2021) · Gallup World Poll (question du temps pour
+              soi, 140+ pays) · OCDE, Time Use Database.
             </p>
           ),
         },

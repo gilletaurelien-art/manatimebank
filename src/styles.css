@@ -1520,3 +1520,28 @@ html { background: var(--sand); }
 .dimension-bulle.accent-vert { background: rgb(189 238 208 / 55%); }
 .dimension-bulle.accent-jaune { background: rgb(248 228 159 / 55%); }
 .dimension-bulle.accent-orange { background: rgb(252 185 146 / 55%); }
+
+/* Tableaux de données : sobres, lisibles, sourcés */
+.donnees-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--t-s);
+  margin: var(--sp-2) 0;
+}
+.donnees-table th {
+  text-align: left;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: var(--t-xs);
+  color: var(--ink);
+  border-bottom: 2px solid var(--or);
+  padding: var(--sp-1) var(--sp-2);
+}
+.donnees-table td {
+  padding: var(--sp-1) var(--sp-2);
+  border-bottom: 1px solid var(--ecume);
+}
+.donnees-table tr:nth-child(even) td { background: rgb(29 58 95 / 3%); }
+.donnees-table td:nth-child(2),
+.donnees-table td:nth-child(3),
+.donnees-table td:nth-child(4) { text-align: right; }
