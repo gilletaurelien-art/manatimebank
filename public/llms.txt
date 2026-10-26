@@ -1,0 +1,31 @@
+# MANA TIME BANK — manatimebank.org
+
+MANA TIME BANK n'est pas une banque de temps classique. Pas de dépôt,
+d'échange ni de crédit d'heures. C'est une infrastructure d'observation :
+comment l'humanité utilise sa ressource temporelle dans le système vivant
+dont elle dépend.
+
+- Le temps est la ressource. La société, le système d'organisation. Le
+  vivant, l'environnement.
+- Une heure n'a pas de valeur morale fixe : on étudie les systèmes qui
+  orientent l'usage du temps et leurs conséquences.
+- Indice MANA : six dimensions (Temps humain, Solidarité, Écologie,
+  Régénération, Équité temporelle, Durabilité), profil multidimensionnel,
+  données sourcées, incertitudes explicites. Pas de score global tant que
+  la méthode n'est pas éprouvée.
+- Premier produit : le Portrait MANA — diagnostic territorial, état initial
+  documenté, fondé sur données publiques existantes (INSEE, Agreste,
+  observatoires, documents de la collectivité). Trois livrables : portrait
+  documenté (mesuré / interprété / hypothèse distingués), première signature
+  MANA, feuille de route.
+- Charte de confiance : « La méthode est publique et versionnée. La
+  prestation est payante. Les conclusions sont soumises aux données et à la
+  méthode — jamais au montant du contrat. »
+- Prestation portée par l'Alliance MANA (association) : production de
+  connaissance d'intérêt général, vente sur devis.
+- Pilote territorial : Crozon (Finistère), écosystème MANA.
+
+Pages : /vision, /indice, /portrait, /methode, /charte, /mentions-legales.
+
+Contact : via le formulaire du site (démo locale tant que le backend
+n'existe pas).

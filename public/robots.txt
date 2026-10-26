@@ -1,0 +1,16 @@
+# Site doctrinal public : moteurs et assistants de découverte bienvenus.
+User-agent: *
+Allow: /
+
+# Blocage des crawlers non autorisés ; jamais Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot.
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
