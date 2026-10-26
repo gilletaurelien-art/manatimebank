@@ -1,24 +1,130 @@
-entity,code,year,working_hours_omm,owid_region
-Cambodia,KHM,2023,2388.86,Asia
-Bangladesh,BGD,2023,2383.18,Asia
-Botswana,BWA,2023,2258.06,Africa
-Algeria,DZA,2023,2232.41,Africa
-Cameroon,CMR,2023,2180.62,Africa
+Entity,Code,Year,Working hours per worker,World region according to OWID
 Albania,ALB,2023,2151.97,Europe
-Brazil,BRA,2023,1993.72,South America
-Chile,CHL,2023,1949.71,South America
-Canada,CAN,2023,1731.02,North America
-Belgium,BEL,2023,1593.29,Europe
-Austria,AUT,2023,1438.45,Europe
-Australia,AUS,2023,1611.13,Oceania
+Algeria,DZA,2023,2232.41,Africa
+Angola,AGO,2023,2114.5,Africa
 Argentina,ARG,2023,1612.12,South America
-Bulgaria,BGR,2023,1659.33,Europe
-Belarus,BLR,2023,1874.84,Europe
-Bolivia,BOL,2023,1967.76,South America
-Bosnia and Herzegovina,BIH,2023,2121.9,Europe
-Burkina Faso,BFA,2023,2356.19,Africa
+Armenia,ARM,2023,1976.15,Asia
+Australia,AUS,2023,1611.13,Oceania
+Austria,AUT,2023,1438.45,Europe
 Azerbaijan,AZE,2023,1790.75,Asia
 Bahrain,BHR,2023,2052.43,Asia
-Armenia,ARM,2023,1976.15,Asia
-Angola,AGO,2023,2114.5,Africa
+Bangladesh,BGD,2023,2383.18,Asia
+Belarus,BLR,2023,1874.84,Europe
+Belgium,BEL,2023,1593.29,Europe
+Bolivia,BOL,2023,1967.76,South America
+Bosnia and Herzegovina,BIH,2023,2121.9,Europe
+Botswana,BWA,2023,2258.06,Africa
+Brazil,BRA,2023,1993.72,South America
+Bulgaria,BGR,2023,1659.33,Europe
+Burkina Faso,BFA,2023,2356.19,Africa
+Cambodia,KHM,2023,2388.86,Asia
+Cameroon,CMR,2023,2180.62,Africa
+Canada,CAN,2023,1731.02,North America
 Chad,TCD,2023,1585.39,Africa
+Chile,CHL,2023,1949.71,South America
+China,CHN,2023,2327.79,Asia
+Colombia,COL,2023,2470.61,South America
+Congo,COG,2023,2534.17,Africa
+Costa Rica,CRI,2023,2176.92,North America
+Cote d'Ivoire,CIV,2023,2103.1,Africa
+Croatia,HRV,2023,1974.04,Europe
+Cyprus,CYP,2023,1839.56,Europe
+Czechia,CZE,2023,1774.15,Europe
+Democratic Republic of Congo,COD,2023,1840.97,Africa
+Denmark,DNK,2023,1379.94,Europe
+Dominican Republic,DOM,2023,2072.15,North America
+Ecuador,ECU,2023,1593.77,South America
+Egypt,EGY,2023,2368.51,Africa
+Estonia,EST,2023,1605.74,Europe
+Ethiopia,ETH,2023,1599.42,Africa
+Finland,FIN,2023,1496.85,Europe
+France,FRA,2023,1487.1,Europe
+Gabon,GAB,2023,2174.15,Africa
+Georgia,GEO,2023,1931.53,Asia
+Germany,DEU,2023,1335.27,Europe
+Ghana,GHA,2023,1655.62,Africa
+Greece,GRC,2023,1893.06,Europe
+Guatemala,GTM,2023,2150.62,North America
+Hong Kong,HKG,2023,2240.49,Asia
+Hungary,HUN,2023,1668.16,Europe
+Iceland,ISL,2023,1451.99,Europe
+India,IND,2023,2382.58,Asia
+Indonesia,IDN,2023,1958.47,Asia
+Iran,IRN,2023,2246.08,Asia
+Iraq,IRQ,2023,1583.22,Asia
+Ireland,IRL,2023,1654.04,Europe
+Israel,ISR,2023,1890.21,Asia
+Italy,ITA,2023,1701.42,Europe
+Jamaica,JAM,2023,1962.72,North America
+Japan,JPN,2023,1653.9,Asia
+Jordan,JOR,2023,2483.18,Asia
+Kazakhstan,KAZ,2023,1974.69,Asia
+Kenya,KEN,2023,2034.65,Africa
+Kuwait,KWT,2023,2317.94,Asia
+Kyrgyzstan,KGZ,2023,1830.13,Asia
+Latvia,LVA,2023,1625.24,Europe
+Lebanon,LBN,2023,2411.99,Asia
+Lithuania,LTU,2023,1640.35,Europe
+Luxembourg,LUX,2023,1452.08,Europe
+Madagascar,MDG,2023,1799.34,Africa
+Malawi,MWI,2023,1595.66,Africa
+Malaysia,MYS,2023,2307.51,Asia
+Mali,MLI,2023,2242.52,Africa
+Malta,MLT,2023,1847.84,Europe
+Mauritius,MUS,2023,1989.89,Africa
+Mexico,MEX,2023,1628.87,North America
+Moldova,MDA,2023,1989.17,Europe
+Morocco,MAR,2023,2173.69,Africa
+Mozambique,MOZ,2023,1506.83,Africa
+Myanmar,MMR,2023,2197.01,Asia
+Namibia,NAM,2023,2184.01,Africa
+Netherlands,NLD,2023,1438.74,Europe
+New Zealand,NZL,2023,1707.52,Oceania
+Niger,NER,2023,2069.49,Africa
+Nigeria,NGA,2023,2061.69,Africa
+North Macedonia,MKD,2023,1948.89,Europe
+Norway,NOR,2023,1412.06,Europe
+Oman,OMN,2023,2266.32,Asia
+Pakistan,PAK,2023,2471.08,Asia
+Paraguay,PRY,2023,2122.59,South America
+Peru,PER,2023,2142.96,South America
+Philippines,PHL,2023,2095.96,Asia
+Poland,POL,2023,1806.92,Europe
+Portugal,PRT,2023,1734.94,Europe
+Qatar,QAT,2023,2435.01,Asia
+Romania,ROU,2023,1825.92,Europe
+Russia,RUS,2023,2086.68,Europe
+Rwanda,RWA,2023,1584.32,Africa
+Saudi Arabia,SAU,2023,2124.51,Asia
+Senegal,SEN,2023,2335.23,Africa
+Serbia,SRB,2023,1995.18,Europe
+Singapore,SGP,2023,2283.18,Asia
+Slovakia,SVK,2023,1621.23,Europe
+Slovenia,SVN,2023,1587.57,Europe
+South Africa,ZAF,2023,2181.43,Africa
+South Korea,KOR,2023,1910.23,Asia
+Spain,ESP,2023,1637.99,Europe
+Sri Lanka,LKA,2023,2053.13,Asia
+Sudan,SDN,2023,2658.04,Africa
+Sweden,SWE,2023,1431.5,Europe
+Switzerland,CHE,2023,1528.94,Europe
+Syria,SYR,2023,1620.53,Asia
+Taiwan,TWN,2023,2031.58,Asia
+Tajikistan,TJK,2023,2134.26,Asia
+Tanzania,TZA,2023,2128.73,Africa
+Thailand,THA,2023,2177.17,Asia
+Trinidad and Tobago,TTO,2023,1609.81,North America
+Tunisia,TUN,2023,2288.01,Africa
+Turkey,TUR,2023,1747.46,Asia
+Turkmenistan,TKM,2023,2178.62,Asia
+Uganda,UGA,2023,2127.9,Africa
+Ukraine,UKR,2023,2044.97,Europe
+United Arab Emirates,ARE,2023,2514.45,Asia
+United Kingdom,GBR,2023,1522.8,Europe
+United States,USA,2023,1788.88,North America
+Uruguay,URY,2023,1481.13,South America
+Uzbekistan,UZB,2023,2098.62,Asia
+Vietnam,VNM,2023,2160.49,Asia
+Yemen,YEM,2023,1382.1,Asia
+Zambia,ZMB,2023,2199.55,Africa
+Zimbabwe,ZWE,2023,2311.02,Africa

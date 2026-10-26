@@ -21,10 +21,15 @@ chaque chiffre porte sa source, chaque série son état : mesuré).
 ## Reproductibilité
 
 Les tableaux publiés sur /donnees sont un extrait contrasté (lisibilité)
-de ces séries complètes. Pour vérifier ou étendre :
-- télécharger les CSV complets depuis les endpoints ci-dessus ;
-- les valeurs de la page correspondent aux lignes millésime 2023
-  (heures) ou à la dernière année disponible par pays (care).
+de ces séries complètes. Pour vérifier, étendre ou actualiser :
+
+    node scripts/fetch-data.mjs           # retélécharge les deux séries
+    node scripts/fetch-data.mjs --check   # compare sans écrire (exit 1 si différent)
+
+- la série heures est réduite au millésime le plus récent disponible ;
+- la série care garde chaque enquête par pays (l'ancienneté des enquêtes
+  fait partie du constat) ;
+- vérifier le diff, puis committer : doctrine — mesuré, sourcé, daté.
 
 Aucune donnée identifiante. Aucun scraping : endpoints publics, accès
 direct. La doctrine MANA s'applique à nos propres données : mesuré,
