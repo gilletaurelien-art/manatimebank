@@ -1236,11 +1236,156 @@ function PageRegimeFragmente() {
   );
 }
 
+function PageRegimeCare() {
+  return (
+    <PageDoctrine
+      nom="Typologie des régimes temporels — fiche 04"
+      titre="Le régime du care massif"
+      sections={[
+        {
+          label: "Définition",
+          corps: (
+            <p>
+              Configuration stable d'usage du temps organisée autour de la
+              prise en charge d'autrui : enfants, aînés, proches malades,
+              ménages. C'est le régime le plus massif du monde — et le
+              moins compté : l'OIT estime le travail de care non rémunéré
+              à des milliards d'heures par an, majoritairement portées par
+              des femmes, et absent des comptabilités nationales en tant
+              que richesse. Il ne superpose pas (fiche 01), ne sépare pas
+              (fiche 02), ne disperse pas (fiche 03) : il imprègne — le
+              care est la nappe phréatique sous tous les autres régimes,
+              celle qu'aucun d'eux ne voit parce qu'elle les porte tous.
+            </p>
+          ),
+        },
+        {
+          label: "Stock — une réserve au service d'une autre",
+          corps: (
+            <p>
+              Le stock du régime n'appartient pas à qui le porte : il est
+              dédié à la vie d'autrui. Sa propriété systémique la plus
+              troublante : il ne se récupère pas par le repos (une nuit
+              ne rend pas l'attention donnée), mais par le care reçu à
+              son tour — qui soigne les soignants. <strong>Marqueurs :</strong>{" "}
+              heures de care non rémunéré par sexe et âge (enquêtes
+              emploi du temps — mesuré dans 72 pays, invisible
+              ailleurs) ; temps parental et aidant (enquêtes nationales
+              — mesuré, rarement comparable).
+            </p>
+          ),
+        },
+        {
+          label: "Circulation — le seul régime à circulation nécessairement réciproque",
+          corps: (
+            <p>
+              Le care ne circule pas comme une marchandise : il se donne,
+              et sa boucle ne se referme que si quelqu'un donne en
+              retour. C'est le seul régime dont la circulation est
+              structurellement réciproque — asymétrique dans les faits
+              (les femmes donnent trois fois plus d'heures que les
+              hommes, partout où c'est mesuré), réciproque dans sa
+              condition de tenue. <strong>Marqueurs :</strong> rapport
+              hommes / femmes du temps de care (ONU SDG 5.4.1 — mesuré
+              dans les pays enquêtés) ; part du care marchandisé
+              (emploi domestique, aide à domicile — mesuré) ; entraide
+              informelle — invisible.
+            </p>
+          ),
+        },
+        {
+          label: "Distribution — la grande fracture de genre",
+          corps: (
+            <p>
+              La distribution du care est la plus documentée des
+              inégalités temporelles : environ trois fois plus d'heures
+              portées par les femmes, dans tous les pays mesurés, quels
+              que soient le régime politique et le niveau de
+              développement — l'inégalité temporelle la plus stable
+              jamais observée. Le régime du care explique aussi les
+              autres fractures : il conditionne l'accès de chacune et
+              chacun aux trois autres régimes (qui peut se superposer,
+              se synchroniser, se disperser — et qui doit d'abord
+              donner). <strong>Marqueurs :</strong> SDG 5.4.1 par sexe
+              (mesuré) ; retrait d'emploi pour care (enquêtes — mesuré) ;
+              coût d'opportunité du care non rémunéré (estimations OIT —
+              hypothèse).
+            </p>
+          ),
+        },
+        {
+          label: "Tenue — le régime qui porte les autres et que personne ne porte",
+          corps: (
+            <p>
+              Falsifiable et documenté : le care non rémunéré soutient
+              l'économie mesurée (l'OIT l'estime à des pourcentages
+              significatifs du PIB mondial, sans qu'il y soit compté),
+              mais sa propre tenue n'est assurée par rien — ni
+              reconnaissance, ni rémunération, ni relève. Le
+              vieillissement démographique accroît la demande de care
+              pendant que sa fourniture informelle se contracte : la
+              contradiction est arithmétique, pas morale. Le régime du
+              care est le seul dont la tenue conditionne la tenue de
+              tous les autres — et le seul qu'aucun autre ne
+              rembourse.
+            </p>
+          ),
+        },
+        {
+          label: "Les invisibles de ce régime",
+          corps: (
+            <p>
+              Le care invisible est la plus grande poche d'invisibilité
+              temporelle du monde : les 118 pays sans enquête emploi du
+              temps, l'entraide informelle, le care « secondaire »
+              (superviser un enfant en travaillant), le care des
+              soignants eux-mêmes. La carte mondiale du care est,
+              pour l'essentiel, une carte blanche — et cette carte
+              blanche est le résultat le plus important de cette fiche.
+            </p>
+          ),
+        },
+        {
+          label: "Contraste avec les fiches 01, 02, 03",
+          corps: (
+            <p>
+              Les trois premiers régimes décrivent ce que les systèmes
+              font du temps des gens ; le régime du care décrit ce que
+              les gens font du temps des autres — sans système pour le
+              dire. Superposition, séparation, dispersion : trois
+              manières d'organiser. Imprégnation : une manière de
+              porter. La question « qui tient l'horloge ? » prend ici
+              sa réponse la plus dérangeante : dans le care massif,
+              l'horloge est tenue par celles et ceux qu'aucune
+              horloge ne compte.
+            </p>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              OIT, Care work and care jobs for a bright future of work
+              (2018) · ONU, SDG 5.4.1 (proportion de temps de care non
+              rémunéré par sexe — 72 pays enquêtés) · enquêtes emploi du
+              temps nationales · Carol Gilligan, Une voix différente ·
+              l'éthique du care (Tronto, Gilligan) · estimations OIT de
+              la valeur du travail non rémunéré — hypothèses assumées.
+              Fiche établie selon la Méthode MANA, v0.2.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
   "regime-synchronise-institutionnel": PageRegimeSynchronise,
   "regime-fragmente-marchand": PageRegimeFragmente,
+  "regime-care-massif": PageRegimeCare,
   donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
@@ -1411,6 +1556,7 @@ export default function App() {
             <a href={`${B}/regime-insomniaque-connecte`}>Régime insomniaque connecté — fiche 01</a>
             <a href={`${B}/regime-synchronise-institutionnel`}>Régime synchronisé institutionnel — fiche 02</a>
             <a href={`${B}/regime-fragmente-marchand`}>Régime fragmenté marchand — fiche 03</a>
+            <a href={`${B}/regime-care-massif`}>Régime du care massif — fiche 04</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>

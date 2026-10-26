@@ -88,9 +88,21 @@ reproduction sociale). Invisibles : heures d'attente entre plages, coût
 de reconstitution du temps propre. Les trois fiches posent la question
 commune : qui tient l'horloge ?
 
+Fiche 04 : /regime-care-massif — le régime du care massif : le plus
+massif du monde et le moins compté (milliards d'heures non rémunérées,
+majoritairement portées par des femmes, absentes des comptabilités
+nationales) ; circulation structurellement réciproque (le seul régime
+dont la boucle exige un retour) ; la fracture de genre la plus stable
+jamais observée (trois fois plus d'heures portées par les femmes, tous
+pays mesurés confondus) ; tenue qui conditionne tous les autres régimes
+sans être assurée par aucun. Verbe : imprégner — la nappe phréatique
+sous tous les régimes. L'horloge du care est tenue par celles et ceux
+qu'aucune horloge ne compte.
+
 Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
 /charte, /mentions-legales, /regime-insomniaque-connecte,
-/regime-synchronise-institutionnel, /regime-fragmente-marchand.
+/regime-synchronise-institutionnel, /regime-fragmente-marchand,
+/regime-care-massif.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).
