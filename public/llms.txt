@@ -42,8 +42,20 @@ de care), questionne sans accuser, et revendique le droit au temps —
 familial, d'oisiveté, de contemplation — sans proposer de solutions :
 une lumière nouvelle, pas un programme.
 
-Pages : /manifeste, /vision, /indice, /portrait, /methode, /charte,
-/mentions-legales.
+Page /donnees — les observations mondiales structurées en thèse,
+antithèse, synthèse : le travail payé est compté partout (ILOSTAT, 160
+pays), le care presque invisible (72 enquêtes emploi du temps), le corps
+paie (OMS/OIT : 745 000 décès/an), le vécu se déclare (Gallup, 140+ pays).
+La thèse : les systèmes prélèvent le stock d'heures pour la production et
+laissent le care dans l'angle mort statistique. L'antithèse : le temps
+mesuré n'est pas le temps vécu, les nomenclatures sont occidentales, la
+mesure n'a rendu personne plus libre. La synthèse : entre l'alarme et le
+déni, documenter le visible, nommer l'invisible, laisser le reste au
+regard de chacun. Chaque observation porte son état — mesuré, interprété,
+hypothèse, invisible.
+
+Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
+/charte, /mentions-legales.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).

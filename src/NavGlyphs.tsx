@@ -83,3 +83,15 @@ export function NavManifeste({ size = 20 }: GlyphProps) {
     </svg>
   );
 }
+
+export function NavDonnees({ size = 20 }: GlyphProps) {
+  return (
+    <svg {...base} width={size} height={size} aria-hidden="true">
+      <path d="M4 19.5V15a11 11 0 0 1 7.4-10.4" />
+      <path d="M4 19.5h4.6A11.4 11.4 0 0 0 20 8.1V4.6" />
+      <path d="M4 11.9V4.6" />
+      <Accent cx={12} cy={12} r={1.9} />
+      <path d="M10.2 12h3.6" />
+    </svg>
+  );
+}

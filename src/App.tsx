@@ -11,7 +11,8 @@ import {
   NavPortrait,
   NavMethode,
   NavCharte,
-  NavManifeste } from "./NavGlyphs";
+  NavManifeste,
+  NavDonnees } from "./NavGlyphs";
 import { DIMENSIONS, METHODE_VERSION, PageDoctrine, Brand } from "./doctrine";
 import { ContactForm } from "./ContactForm";
 
@@ -85,12 +86,27 @@ function PageVision() {
           label: "La décision fondatrice",
           corps: (
             <p>
-              MANA TIME BANK n'est plus une banque de temps classique. Pas de
-              dépôt, d'échange ni de crédit d'heures. C'est une infrastructure
-              d'observation : comment l'humanité utilise sa ressource
+              MANA TIME BANK observe : comment l'humanité utilise sa ressource
               temporelle dans le système vivant dont elle dépend. Le temps est
               la ressource, la société le système d'organisation, le vivant
-              l'environnement.
+              l'environnement. Rien n'y est déposé, échangé ni crédité — la
+              ressource observée est le temps lui-même, pas une monnaie.
+            </p>
+          ),
+        },
+        {
+          label: "Pourquoi « banque » ?",
+          corps: (
+            <p>
+              Le mot banque est utilisé ici hors de tout circuit financier —
+              comme dans « banque de données », « banque d'images » ou
+              « banque de sons » : le lieu où l'on conserve et organise ce
+              qui compte. MANA TIME BANK n'est pas un établissement
+              financier : elle ne reçoit, ne détient ni ne manie aucun
+              dépôt, aucun crédit, aucune monnaie — d'heures ou d'autre
+              chose. C'est une banque au sens ancien et simple : la table
+              où l'on pose ce qu'on veut examiner ensemble — en
+              l'occurrence, l'usage mondial du temps humain.
             </p>
           ),
         },
@@ -497,8 +513,140 @@ function PageManifeste() {
   );
 }
 
+function PageDonnees() {
+  return (
+    <PageDoctrine
+      nom="Les observations"
+      titre="Données du temps mondial"
+      sections={[
+        {
+          label: "Ce que le monde mesure",
+          corps: (
+            <>
+              <p>
+                <strong>Le travail payé est compté partout.</strong> L'OIT
+                publie les heures hebdomadaires effectives d'environ 160 pays
+                — 43,9 heures en moyenne mondiale, plus de 48 dans les pays
+                les plus intensifs (ILOSTAT).
+              </p>
+              <p>
+                <strong>Le care est presque invisible.</strong> Seuls 72 pays
+                ont mené une enquête emploi du temps au moins une fois, 27 au
+                moins deux fois (OIT, 2018). L'ONU suit le temps de soin non
+                rémunéré via l'indicateur SDG 5.4.1 — les femmes y portent
+                environ trois fois plus d'heures que les hommes, partout où
+                c'est mesuré.
+              </p>
+              <p>
+                <strong>Le corps paie.</strong> L'OMS et l'OIT attribuent
+                745 000 décès par an aux longues heures de travail — AVC et
+                maladies cardiaques (2021). Le burn-out est reconnu comme
+                phénomène professionnel par l'OIT depuis 2024.
+              </p>
+              <p>
+                <strong>Le vécu se déclare.</strong> Le Gallup World Poll
+                demande dans plus de 140 pays : « Avez-vous eu le temps de
+                faire ce qui comptait pour vous hier ? » — la moitié de
+                l'humanité répond non, y compris dans les pays riches.
+              </p>
+              <p>
+                <strong>Certains régimes tiennent mieux.</strong> Les pays
+                nordiques combinent horaires courts, care largement
+                marchandisé et ressenti du temps parmi les meilleurs mesurés
+                — sans que personne n'ait décidé de les classer premiers.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "La thèse — ce que les données suggèrent",
+          corps: (
+            <p>
+              L'humanité dispose d'un stock inélastique — 24 heures par être,
+              ni plus ni moins — et les systèmes qui l'organisent prélèvent
+              une part croissante de ce stock pour la production, la
+              circulation et la connexion, laissant le care, le repos et
+              l'attention dans l'angle mort statistique. Les données
+              existantes dessinent un monde qui compte tout ce qu'il
+              s'échange contre de l'argent, et presque rien de ce qui
+              s'échange entre les êtres. La thèse est documentable : là où
+              le temps non monétisé est mesuré, il apparaît massif — des
+              milliards d'heures de soin et d'entraide, majoritairement
+              portées par les femmes, et nulle part comptées comme
+              richesse.
+            </p>
+          ),
+        },
+        {
+          label: "L'antithèse — ce que les mêmes données autorisent d'autre",
+          corps: (
+            <p>
+              Une lecture opposée est possible, et honnête : le temps mesuré
+              n'est pas le temps vécu, et aucun chiffre agrégé ne prouve une
+              intention. Les 43,9 heures moyennes incluent le travail
+              informel, choisi ou subi, des économies où le salariat
+              n'obéit pas aux mêmes catégories. Les enquêtes emploi du
+              temps reposent sur des nomenclatures occidentales — une
+              même activité est « travail » ici, « vie » là. Le ressenti
+              Gallup est un souvenir, pas un relevé. Et le lien entre
+              longues heures et mortalité est une corrélation à l'échelle
+              des populations, jamais une condamnation de tel système en
+              particulier. Le point le plus dérangeant de l'antithèse :
+              les pays qui mesurent le mieux leur temps sont aussi ceux
+              dont les citoyens se disent les plus pressés — la mesure
+              elle-même n'a rendu personne plus libre. Peut-être que le
+              problème n'est pas le manque de données, mais le regard.
+            </p>
+          ),
+        },
+        {
+          label: "La synthèse — ce que MANA TIME BANK retient",
+          corps: (
+            <>
+              <p>
+                La thèse et l'antithèse tiennent toutes les deux, et c'est
+                précisément le constat : l'humanité vit sur une ressource
+                qu'elle ne sait ni compter ni regarder, et les données
+                existantes — partielles, situées, nomenclaturées — ne
+                permettront jamais ni de prouver une catastrophe ni de
+                rassurer. Entre l'alarme et le déni, il y a une troisième
+                posture : documenter ce qui est visible, nommer ce qui
+                ne l'est pas, et laisser chacun — habitants, élus,
+                chercheurs — se saisir du constat.
+              </p>
+              <p>
+                La page de données de MANA TIME BANK n'affirme donc rien
+                que ses sources ne disent. Chaque observation porte son
+                état — mesuré, interprété, hypothèse, invisible. Ce que
+                le monde peut mesurer du temps est assemblé ici ; ce
+                qu'il ne peut pas (encore) mesurer est écrit comme tel.
+                Le reste — la question du mieux, du juste, du souhaitable —
+                n'appartient pas à la donnée.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              ILOSTAT, heures hebdomadaires effectives (~160 pays) · OIT, Care
+              work and care jobs (72 pays avec enquête emploi du temps, 27 au
+              moins deux fois, 2018) · ONU, SDG 5.4.1 (temps de soin non
+              rémunéré par sexe) · OMS/OIT (745 000 décès/an attribuables aux
+              longues heures, 2021) · Gallup World Poll (question du temps
+              pour soi, 140+ pays) · OCDE, Time Use Database.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
+  donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
   portrait: PagePortrait,
@@ -527,6 +675,10 @@ export default function App() {
             <a href={`${B}/vision`}>
               <NavVision className="nav-acc-bleu" />
               <span>Vision</span>
+            </a>
+            <a href={`${B}/donnees`}>
+              <NavDonnees className="nav-acc-orange" />
+              <span>Données</span>
             </a>
             <a href={`${B}/indice`}>
               <NavIndice className="nav-acc-vert" />
@@ -666,6 +818,7 @@ export default function App() {
           <nav className="footer-nav" aria-label="Pied de page">
             <a href={`${B}/manifeste`}>Manifeste du temps retrouvé</a>
             <a href={`${B}/vision`}>Vision</a>
+            <a href={`${B}/donnees`}>Données du temps mondial</a>
             <a href={`${B}/indice`}>Indice MANA</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
