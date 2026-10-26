@@ -32,7 +32,7 @@ const SECTIONS = [
     accroche: "Le droit au temps — le bien commun premier de l'humanité.",
     texte:
       "Vingt-quatre heures par jour, pour chaque être humain, du billionnaire au sans-abri : la seule ressource parfaitement partagée. Aucun grand courant de pensée n'en a fait le centre — tous l'ont mis au service d'autre chose. Nous dressons un constat sourcé, nous questionnons sans accuser, et nous revendiquons le droit au temps : familial, d'oisiveté, de contemplation.",
-    cta: { label: "Lire le manifeste", href: "/manifeste" },
+    cta: { label: "Lire le manifeste", href: "/comprendre" },
   },
   {
     glyphe: GlyphPortrait,
@@ -41,7 +41,7 @@ const SECTIONS = [
     accroche: "L'argent chaque trimestre ; le temps une fois par décennie.",
     texte:
       "Le travail payé est compté dans 160 pays ; le care non rémunéré, lui, n'est mesuré que par de rares enquêtes — 72 pays une fois, 27 au moins deux fois. 745 000 décès par an sont attribuables aux longues heures. La moitié de l'humanité déclare n'avoir pas eu le temps de faire ce qui comptait pour elle hier.",
-    cta: { label: "Voir les observations", href: "/donnees" },
+    cta: { label: "Voir les observations", href: "/observer" },
   },
   {
     glyphe: GlyphIndice,
@@ -50,7 +50,7 @@ const SECTIONS = [
     accroche: "La visibilité des circuits, jamais un classement.",
     texte:
       "Le MANA est partout — l'indice ne mesure pas sa présence, mais la visibilité de ses circuits : ce qui circule entre les êtres et avec le vivant, ce qu'on en voit, ce qu'on n'en voit pas. Six chapitres de lecture, quatre grandeurs, quatre états de la donnée — mesuré, interprété, hypothèse, invisible.",
-    cta: { label: "Comprendre l'indice", href: "/indice" },
+    cta: { label: "Comprendre l'indice", href: "/observer" },
   },
   {
     glyphe: GlyphMethode,
@@ -68,7 +68,7 @@ const SECTIONS = [
     accroche: "Sources ouvertes, incertitudes explicites.",
     texte:
       "ILOSTAT, ONU (SDG 5.4.1), OCDE Time Use, enquêtes nationales : l'indice MANA n'invente rien. Une donnée manquante est dite manquante ; une interprétation est dite interprétation. Le mesuré, l'interprété, l'hypothèse et l'invisible ne se mélangent jamais.",
-    cta: { label: "Notre approche", href: "/vision" },
+    cta: { label: "Notre approche", href: "/comprendre" },
   },
 ];
 
@@ -988,7 +988,7 @@ function PageRegimeSaisonnier() {
               — hypothèses assumées) · recensements et estimation de
               population saisonnière · histoire rurale et calendriers
               agricoles (Braudel, les structures du quotidien) · études
-              locales de seasonality (saisonnalité résidentielle).
+              locales de saisonnalité (saisonnalité résidentielle).
               Fiche établie selon la Méthode MANA, v0.2.
             </p>
           ),
@@ -1332,7 +1332,7 @@ const SEC_MANIFESTE: { label: string; corps: React.ReactNode }[] = [
               <p>
                 Nous n'affirmons pas avoir de solutions. Nous proposons une
                 lumière nouvelle : rendre visible ce qui circule entre les
-                êtres — la page <a href={`${B}/observer`}>Observer</a> en
+                êtres — la page <a href={`${B}/observer`}>Observer</a>
                 assemble les premières observations — les heures de travail, de soin, d'entraide, d'attention
                 — et ce que chaque système en fait. Un constat documenté,
                 sourcé, vérifiable, est plus redoutable qu'un programme : on
@@ -2256,7 +2256,7 @@ function PageTempsVecu() {
                 pouvoir le partager. Des disponibilités qui ne se
                 rencontrent pas — horaires incompatibles, proches
                 éloignés, services fermés — produisent une solitude
-                temporelle que n'aucune heure libre ne comble. Pouvoir
+                temporelle qu'aucune heure libre ne comble. Pouvoir
                 synchroniser son temps avec celui d'autrui fait partie
                 des conditions de la liberté.
               </p>
