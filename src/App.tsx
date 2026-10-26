@@ -26,34 +26,38 @@ const SECTIONS = [
   {
     glyphe: GlyphTemps,
     num: "01",
-    titre: "Le temps est une ressource",
-    accroche: "Une observation, rien d'autre.",
+    titre: "Manifeste du temps retrouvé",
+    accroche: "Le droit au temps — le bien commun premier de l'humanité.",
     texte:
-      "MANA TIME BANK observe : comment l'humanité utilise sa ressource temporelle dans le système vivant dont elle dépend. Le temps est la ressource, la société le système d'organisation, le vivant l'environnement. Rien n'y est déposé, échangé ni crédité — la ressource observée est le temps lui-même, pas une monnaie.",
-  },
-  {
-    glyphe: GlyphIndice,
-    num: "02",
-    titre: "L'indice MANA",
-    accroche: "Six dimensions, aucun score global.",
-    texte:
-      "Temps humain, Solidarité, Écologie, Régénération, Équité temporelle, Durabilité : un profil multidimensionnel, des données sourcées, des incertitudes explicites. Pas de score global ni de couleur synthétique tant que la méthode n'est pas éprouvée — une représentation spectrale, à terme.",
+      "Vingt-quatre heures par jour, pour chaque être humain, du billionnaire au sans-abri : la seule ressource parfaitement partagée. Aucun grand courant de pensée n'en a fait le centre — tous l'ont mis au service d'autre chose. Nous dressons un constat sourcé, nous questionnons sans accuser, et nous revendiquons le droit au temps : familial, d'oisiveté, de contemplation.",
+    cta: { label: "Lire le manifeste", href: "/manifeste" },
   },
   {
     glyphe: GlyphPortrait,
-    num: "03",
-    titre: "Le Portrait MANA",
-    accroche: "Un diagnostic, un état initial documenté — à l'échelle du monde.",
+    num: "02",
+    titre: "Ce que le monde mesure — et ce qu'il ne voit pas",
+    accroche: "L'argent chaque trimestre ; le temps une fois par décennie.",
     texte:
-      "Fondé sur des données publiques mondiales (ONU, OIT, OCDE, enquêtes nationales d'emploi du temps), le Portrait MANA livre trois choses : un portrait documenté où le mesuré, l'interprété et l'hypothèse sont distingués ; une première signature MANA avec niveaux de confiance et données manquantes ; une feuille de route de questions prioritaires et d'indicateurs annuels.",
+      "Le travail payé est compté dans 160 pays ; le care non rémunéré, lui, n'est mesuré que par de rares enquêtes — 72 pays une fois, 27 au moins deux fois. 745 000 décès par an sont attribuables aux longues heures. La moitié de l'humanité déclare n'avoir pas eu le temps de faire ce qui comptait pour elle hier.",
+    cta: { label: "Voir les observations", href: "/donnees" },
+  },
+  {
+    glyphe: GlyphIndice,
+    num: "03",
+    titre: "L'indice MANA",
+    accroche: "La visibilité des circuits, jamais un classement.",
+    texte:
+      "Le MANA est partout — l'indice ne mesure pas sa présence, mais la visibilité de ses circuits : ce qui circule entre les êtres et avec le vivant, ce qu'on en voit, ce qu'on n'en voit pas. Six chapitres de lecture, quatre grandeurs, quatre états de la donnée — mesuré, interprété, hypothèse, invisible.",
+    cta: { label: "Comprendre l'indice", href: "/indice" },
   },
   {
     glyphe: GlyphMethode,
     num: "04",
     titre: "Une méthode publique et versionnée",
-    accroche: "Citée, vérifiable, critiquable.",
+    accroche: "Cité, vérifiable, critiquable.",
     texte:
-      "La méthode est publiée et versionnée : chaque résultat se cite « Méthode MANA, vX.Y, date ». Les sources sont nommées. Les conclusions sont soumises aux données et à la méthode — jamais au montant du contrat.",
+      "Dix articles, un faisceau de regards — anthropologique, écolosociologique, historique, psychologique, philosophique — et des interdits : pas de score, pas de classement de pays, pas de prescriptif. Chaque résultat se cite « Méthode MANA, vX.Y, date ».",
+    cta: { label: "Lire la méthode", href: "/methode" },
   },
   {
     glyphe: GlyphSources,
@@ -61,9 +65,12 @@ const SECTIONS = [
     titre: "Des données publiques, rien d'autre",
     accroche: "Sources ouvertes, incertitudes explicites.",
     texte:
-      "ILOSTAT, ONU (SDG 5.4.1), OCDE Time Use, enquêtes nationales : l'indice MANA n'invente rien. Une donnée manquante est dite manquante ; une interprétation est dite interprétation. Le mesuré, l'interprété et l'hypothèse ne se mélangent jamais.",
+      "ILOSTAT, ONU (SDG 5.4.1), OCDE Time Use, enquêtes nationales : l'indice MANA n'invente rien. Une donnée manquante est dite manquante ; une interprétation est dite interprétation. Le mesuré, l'interprété, l'hypothèse et l'invisible ne se mélangent jamais.",
+    cta: { label: "Notre approche", href: "/vision" },
   },
 ];
+
+
 
 const DIMENSIONS_GRID = [
   "Temps humain",
@@ -904,7 +911,7 @@ export default function App() {
           <section className="hero">
             <div className="wrap">
               <p className="hero-label">
-                Infrastructure d'observation · Indice mondial
+                Manifeste du temps retrouvé · Indice mondial
               </p>
               <h1 className="brand-grand">
                 <Brand />
@@ -932,11 +939,11 @@ export default function App() {
                 <a className="btn btn-primary" href={`${B}/manifeste`}>
                   Lire le manifeste
                 </a>
-                <a className="btn btn-ghost" href={`${B}/vision`}>
-                  La vision
+                <a className="btn btn-ghost" href={`${B}/donnees`}>
+                  Les observations
                 </a>
-                <a className="btn btn-ghost" href={`${B}/portrait`}>
-                  Le Portrait MANA
+                <a className="btn btn-ghost" href={`${B}/methode`}>
+                  La méthode
                 </a>
               </div>
               <p className="hero-note">{METHODE_VERSION}</p>
@@ -955,18 +962,11 @@ export default function App() {
                   <p className={`section-accroche ${ACCENTS[i % 4]}`}>{s.accroche}</p>
                   <p className="section-texte">{s.texte}</p>
                   <div className="est-actions">
-                    <a
-                      className="btn btn-clair"
-                      href={`${B}/${["vision", "indice", "portrait", "methode", "methode"][Number(s.num) - 1]}`}
-                    >
-                      {s.num === "01"
-                        ? "Comprendre la décision fondatrice"
-                        : s.num === "02"
-                          ? "Les six dimensions"
-                          : s.num === "03"
-                            ? "Les trois livrables"
-                            : "Lire la méthode"}
-                    </a>
+                    {s.cta && (
+                      <a className="btn btn-clair" href={`${B}${s.cta.href}`}>
+                        {s.cta.label}
+                      </a>
+                    )}
                   </div>
                 </div>
               </section>
