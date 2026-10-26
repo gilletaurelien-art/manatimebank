@@ -1378,3 +1378,13 @@ html { background: var(--sand); }
 .glyphe.accent-bleu { color: var(--bleu); }
 .glyphe.accent-vert { color: var(--vert); }
 .glyphe.accent-orange { color: var(--orange); }
+
+/* ===== Logo et icônes header : accents de la charte ===== */
+/* MANA reste encre ; « time » passe au bleu de l'image, la signature or
+   reste réservée aux anneaux et numéros. */
+.brand em { color: var(--bleu); font-style: normal; }
+.hero h1.brand-grand em { color: var(--bleu); }
+/* Icônes de navigation : rotation bleu / vert / orange comme les sections */
+.nav-acc-bleu { color: var(--bleu); }
+.nav-acc-vert { color: var(--vert); }
+.nav-acc-orange { color: var(--orange); }

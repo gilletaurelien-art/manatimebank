@@ -380,23 +380,23 @@ export default function App() {
           </a>
           <nav className="nav">
             <a href={`${B}/vision`}>
-              <NavVision />
+              <NavVision className="nav-acc-bleu" />
               <span>Vision</span>
             </a>
             <a href={`${B}/indice`}>
-              <NavIndice />
+              <NavIndice className="nav-acc-vert" />
               <span>Indice</span>
             </a>
             <a href={`${B}/portrait`}>
-              <NavPortrait />
+              <NavPortrait className="nav-acc-orange" />
               <span>Portrait</span>
             </a>
             <a href={`${B}/methode`}>
-              <NavMethode />
+              <NavMethode className="nav-acc-bleu" />
               <span>Méthode</span>
             </a>
             <a href={`${B}/charte`} className="nav-cta">
-              <NavCharte />
+              <NavCharte className="nav-acc-vert" />
               <span>Charte</span>
             </a>
           </nav>
