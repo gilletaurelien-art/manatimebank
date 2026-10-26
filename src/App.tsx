@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { usePath, baseUrl } from "./router";
 import {
   GlyphTemps,
@@ -71,8 +72,6 @@ const SECTIONS = [
   },
 ];
 
-
-
 const DIMENSIONS_GRID = [
   "Temps humain",
   "Solidarité",
@@ -84,218 +83,7 @@ const DIMENSIONS_GRID = [
 
 const B = baseUrl();
 
-function PageVision() {
-  return (
-    <PageDoctrine
-      nom="Vision"
-      titre="Une infrastructure d'observation du temps"
-      description="MANA TIME BANK observe comment l'humanité utilise sa ressource temporelle. Le mot banque au sens de banque de données ; ce que nous ne sommes pas ; le MANA partout et la visibilité des circuits."
-      sections={[
-        {
-          label: "La décision fondatrice",
-          corps: (
-            <p>
-              MANA TIME BANK observe : comment l'humanité utilise sa ressource
-              temporelle dans le système vivant dont elle dépend. Le temps est
-              la ressource, la société le système d'organisation, le vivant
-              l'environnement. Rien n'y est déposé, échangé ni crédité — la
-              ressource observée est le temps lui-même, pas une monnaie.
-            </p>
-          ),
-        },
-        {
-          label: "Pourquoi « banque » ?",
-          corps: (
-            <p>
-              Le mot banque est utilisé ici hors de tout circuit financier —
-              comme dans « banque de données », « banque d'images » ou
-              « banque de sons » : le lieu où l'on conserve et organise ce
-              qui compte. MANA TIME BANK n'est pas un établissement
-              financier : elle ne reçoit, ne détient ni ne manie aucun
-              dépôt, aucun crédit, aucune monnaie — d'heures ou d'autre
-              chose. C'est une banque au sens ancien et simple : la table
-              où l'on pose ce qu'on veut examiner ensemble — en
-              l'occurrence, l'usage mondial du temps humain.
-            </p>
-          ),
-        },
-        {
-          label: "Une heure n'a pas de valeur morale fixe",
-          corps: (
-            <p>
-              On étudie les systèmes qui orientent l'usage du temps et leurs
-              conséquences, pas la « valeur » de chaque heure. Aucune heure
-              n'est classée, notée ou hiérarchisée : on observe comment
-              l'humanité organise le temps, ce que cela produit, et on le
-              documente honnêtement.
-            </p>
-          ),
-        },
-        {
-          label: "Ce que nous ne sommes pas",
-          corps: (
-            <p>
-              Pas une banque de temps d'échange : aucune heure n'y est
-              déposée, échangée ou créditée. Pas un classement de pays : aucun
-              territoire n'y est noté, comparé ou primé. Pas un prescripteur :
-              aucune solution, aucun programme, aucune recommandation. Pas un
-              vendeur en l'état : aucune prestation n'est proposée sur ce
-              site. Si vous cherchez un système d'échange d'heures, il existe
-              de vraies timebanks — ce projet-là observe ; il n'échange pas.
-            </p>
-          ),
-        },
-        {
-          label: "Positionnement",
-          corps: (
-            <p>
-              Indice mondial, même écosystème MANA. Le MANA est partout —
-              il n'y a pas de lieu sans MANA, seulement des circuits
-              qu'on ne voit pas encore. La production de connaissance est
-              portée par l'Alliance MANA (association) : intérêt général,
-              méthode publique.
-            </p>
-          ),
-        },
-      ]}
-    />
-  );
-}
 
-function PageIndice() {
-  return (
-    <PageDoctrine
-      nom="Indice MANA"
-      titre="La visibilité des circuits"
-      description="L'indice MANA ne mesure pas la présence du MANA mais la visibilité de ses circuits : six chapitres, quatre grandeurs (stock, circulation, distribution, tenue), quatre états de donnée, aucun score."
-      sections={[
-        {
-          label: "Le principe-pivot",
-          corps: (
-            <p>
-              Le MANA est partout — il n'y a pas de lieu sans MANA, seulement
-              des circuits qu'on ne voit pas encore. L'indice MANA ne mesure
-              donc pas la présence du MANA : il observe la <strong>
-              visibilité de ses circuits</strong> — ce qui circule entre
-              les êtres et avec le vivant, ce qu'on en voit, ce qu'on n'en
-              voit pas. Une lunette, jamais un classement.
-            </p>
-          ),
-        },
-        {
-          label: "Six chapitres",
-          corps: (
-            <>
-              <p>
-                Les six dimensions sont les chapitres de lecture du portrait —
-                des entrées éditoriales lisibles, jamais des composantes d'un
-                score :
-              </p>
-              <ul>
-                {DIMENSIONS.map((d) => (
-                  <li key={d.nom}>
-                    <strong>{d.nom}.</strong> {d.texte}
-                  </li>
-                ))}
-              </ul>
-            </>
-          ),
-        },
-        {
-          label: "Quatre grandeurs, ossature interne",
-          corps: (
-            <p>
-              Chaque chapitre se lit à travers les quatre grandeurs de la
-              méthode : le <strong>stock</strong> (la réserve d'heures), la{" "}
-              <strong>circulation</strong> (les flux), la{" "}
-              <strong>distribution</strong> (la variance entre groupes) et la{" "}
-              <strong>tenue</strong> (la persistance des circuits). Un même
-              chapitre peut montrer une circulation intense et une tenue
-              fragile — le profil montre les tensions, il ne les arbitre pas.
-            </p>
-          ),
-        },
-        {
-          label: "Règles de publication",
-          corps: (
-            <p>
-              Pas de score global, pas de couleur synthétique, pas de
-              classement des pays : profil multidimensionnel, données
-              sourcées, incertitudes explicites, carte de visibilité à trous
-              affichée, représentation spectrale à terme.
-            </p>
-          ),
-        },
-      ]}
-    />
-  );
-}
-
-function PagePortrait() {
-  return (
-    <PageDoctrine
-      nom="Premier produit"
-      titre="Le Portrait MANA"
-      description="Diagnostic mondial documenté à partir de données publiques (ONU, OIT, OCDE) : l'état du visible, la liste des invisibles, la description des régimes. Trois livrables, aucun score."
-      sections={[
-        {
-          label: "Nature du produit",
-          corps: (
-            <p>
-              Diagnostic mondial, état initial documenté, fondé sur des
-              données publiques existantes (ILOSTAT, ONU SDG 5.4.1, OCDE Time
-              Use, enquêtes nationales d'emploi du temps). Le monde compte
-              sa monnaie chaque trimestre ; son temps, une fois par décennie
-              dans un tiers des pays.
-            </p>
-          ),
-        },
-        {
-          label: "Trois livrables",
-          corps: (
-            <>
-              <p>
-                <strong>1.</strong> Un portrait documenté, où le
-                mesuré, l'interprété et l'hypothèse sont distingués.
-              </p>
-              <p>
-                <strong>2.</strong> Une première signature MANA : dimensions
-                séparées, niveaux de confiance, données manquantes.
-              </p>
-              <p>
-                <strong>3.</strong> Une feuille de route : questions
-                prioritaires, indicateurs annuels.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Modèle",
-          corps: (
-            <p>
-              Production de connaissance d'intérêt général portée par
-              l'Alliance MANA (association). Le modèle économique est en
-              cours de définition ; ce site ne vend rien en l'état et ne
-              comporte aucun mur payant.
-            </p>
-          ),
-        },
-        {
-          label: "Données et périmètres",
-          corps: (
-            <p>
-              Aucune donnée identifiante n'est collectée. Les conclusions ne
-              se stockent pas comme statut : constats sourcés, datés, avec
-              niveau de confiance, profil dérivé. Les trous de visibilité
-              (l'entraide informelle, le care invisible) sont des résultats
-              en soi, pas des regrets.
-            </p>
-          ),
-        },
-      ]}
-    />
-  );
-}
 
 function PageMethode() {
   return (
@@ -478,49 +266,6 @@ function PageMethode() {
   );
 }
 
-function PageCharte() {
-  return (
-    <PageDoctrine
-      nom="Confiance"
-      titre="Charte de confiance"
-      description="La méthode est publique et versionnée. La prestation est payante. Les conclusions sont soumises aux données et à la méthode — jamais au montant du contrat."
-      sections={[
-        {
-          label: "Engagement",
-          corps: (
-            <p style={{ fontStyle: "italic" }}>
-              « La méthode est publique et versionnée. La prestation est
-              payante. Les conclusions sont soumises aux données et à la
-              méthode — jamais au montant du contrat. »
-            </p>
-          ),
-        },
-        {
-          label: "Test d'acceptation",
-          corps: (
-            <p>
-              Aucun contenu de ce site ne promet score, classement ni
-              amélioration d'évaluation contre paiement. Si un contenu
-              contredit cet engagement, il est corrigé.
-            </p>
-          ),
-        },
-        {
-          label: "Caisse et non-lucrativité",
-          corps: (
-            <p>
-              La production est portée par l'Alliance MANA (association) :
-              non-lucrativité réelle, résultats publiables, méthode ouverte.
-              Ce site ne vend rien en l'état ; le jour où une prestation
-              existe, elle respectera cet engagement.
-            </p>
-          ),
-        },
-      ]}
-    />
-  );
-}
-
 function PageMentions() {
   return (
     <PageDoctrine
@@ -559,369 +304,6 @@ function PageMentions() {
               Aucune donnée ni lead n'est revendu. Aucune donnée identifiante
               n'est collectée. Aucune donnée identifiante ne transite par
               le site.
-            </p>
-          ),
-        },
-      ]}
-    />
-  );
-}
-
-function PageManifeste() {
-  return (
-    <PageDoctrine
-      nom="Posture de l'Alliance"
-      titre="Manifeste du temps retrouvé"
-      description="Le temps est le bien commun premier de l'humanité : 24 heures pour chacun. Un constat sourcé (OMS/OIT, ONU), des questions sans accusation, le droit au temps — familial, d'oisiveté, de contemplation."
-      sections={[
-        {
-          label: "L'âme de l'enfant",
-          corps: (
-            <p>
-              Un enfant ne comprend pas le monde des adultes — et il a
-              raison. Il n'en a pas les outils : ni le rendement, ni la
-              carrière, ni la retraite. Il possède d'autres instruments,
-              que nous avons tous eus et perdus : l'étonnement, la question
-              sans fin, le présent absolu. Il veut bien manger, rire, être
-              avec sa famille. C'est tout ce qui l'intéresse. Puis les
-              systèmes le forment — l'école, l'horloge, la productivité —
-              et l'ici et maintenant devient l'attente de plus tard.
-              MANA TIME BANK regarde le temps avec l'âme de cet enfant :
-              curieux, sans outils, questionnant ce que les adultes ont
-              cessé de voir. C'est pour cela que notre nom s'écrit en
-              lettres de couleurs — comme les crayons d'un enfant qui
-              colore, une à une, chaque lettre de ce qui est important.
-              L'enfant sait ce qu'il y a de vrai, en toute innocence.
-            </p>
-          ),
-        },
-        {
-          label: "Le constat",
-          corps: (
-            <>
-              <p>
-                Chaque être humain reçoit vingt-quatre heures par jour. Ni plus,
-                ni moins — du billionnaire au sans-abri, c'est la seule
-                ressource parfaitement partagée de l'humanité. Elle ne se
-                cumule pas, ne s'hérite pas, ne se fabrique pas. Et personne
-                ne la compte.
-              </p>
-              <p>
-                Le monde publie sa monnaie chaque trimestre, dans près de deux
-                cents pays. Il mesure le temps de sa vie une fois par décennie,
-                dans soixante-douze d'entre eux (ONU, SDG 5.4.1). Les heures de
-                soin données aux enfants et aux aînés — des milliards par an,
-                majoritairement portées par des femmes — n'apparaissent dans
-                aucune comptabilité nationale en tant que telles (OIT, 2018).
-                L'Organisation mondiale de la santé estime à 745 000 les décès
-                annuels attribuables aux seules longues heures de travail
-                (OMS/OIT, 2021). L'insomnie est devenue un mode de gouvernement
-                silencieux : le monde compte son argent en dormant debout.
-              </p>
-              <p>
-                Comment une civilisation qui mesure tout a-t-elle pu ne jamais
-                mesurer la seule chose qu'elle possède tous en commun ?
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Les questions",
-          corps: (
-            <>
-              <p>
-                Nous n'accusons personne. Nous remarquons que tous les grands
-                courants de pensée, chacun à sa manière, ont placé le temps de
-                la vie au service d'autre chose — et nous demandons pourquoi.
-              </p>
-              <p>
-                Celui qui fait du temps une marchandise : pourquoi le rendement
-                d'une heure vaudrait-il plus que sa plénitude ? Celui qui en
-                fait un devoir : pourquoi la valeur d'une vie se mesurerait-elle
-                à sa production ? Celui qui promet d'en abolir le besoin : que
-                deviendrait un humain qui ne dort plus ? Celui qui a gagné la
-                journée de huit heures : pourquoi s'est-il arrêté là, il y a
-                un siècle ? Aucun n'a fait du temps le centre. Tous l'ont mis
-                à l'arrière-plan — de la production, de la croissance, du
-                progrès, de la révolution. Le bien commun premier de l'humanité
-                reste le grand absent de ses pensées politiques.
-              </p>
-              <p>
-                Et nous demandons aussi : qui possède les heures ? Car il
-                n'existe pas de marché du temps proprement dit — il existe un
-                marché du temps <em>des autres</em>. Certains vendent leurs
-                heures pour vivre ; d'autres achètent les heures des premiers
-                pour exister. La grande redistribution moderne n'est peut-être
-                pas celle des richesses. C'est celle des heures.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Ce que nous revendiquons — et ce que nous ne proposons pas",
-          corps: (
-            <>
-              <p>
-                Nous revendiquons un droit qui n'a jamais été écrit : le droit
-                au temps. Le temps de sa famille, le temps de la paresse au sens
-                de Paul Lafargue, le temps de la contemplation, le temps du
-                sommeil rendu. Tout ce que chaque époque a essayé de retirer à
-                l'humain pour le mettre au travail.
-              </p>
-              <p>
-                Nous n'affirmons pas avoir de solutions. Nous proposons une
-                lumière nouvelle : rendre visible ce qui circule entre les
-                êtres — la page <a href={`${B}/donnees`}>données</a> en
-                assemble les premières observations — les heures de travail, de soin, d'entraide, d'attention
-                — et ce que chaque système en fait. Un constat documenté,
-                sourcé, vérifiable, est plus redoutable qu'un programme : on
-                peut renvoyer une utopie à l'utopie ; on ne peut pas renvoyer
-                un chiffre à l'imaginaire.
-              </p>
-              <p>
-                Le MANA, disaient les cultures du Pacifique, est la force
-                vitale qui circule en toute chose. Elle est partout. Ce n'est
-                pas elle qui manque — c'est notre regard.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Sources",
-          corps: (
-            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
-              ONU, SDG 5.4.1 (proportion de temps consacré au travail domestique
-              et de soin non rémunéré, 72 pays disposant d'enquêtes) · OIT, Care
-              work and care jobs (2018) · OMS/OIT, Environmental and societal
-              burden of long working hours (745 000 décès/an, 2021) · ILOSTAT,
-              heures hebdomadaires effectives, ~160 pays · Paul Lafargue, Le
-              Droit à la paresse (1880) · Bertrand Russell, Éloge de l'oisiveté
-              (1932) · Byung-Chul Han, La Société de la fatigue · Hartmut
-              Rosa, Accélération et résonance.
-            </p>
-          ),
-        },
-      ]}
-    />
-  );
-}
-
-function PageDonnees() {
-  return (
-    <PageDoctrine
-      nom="Les observations"
-      titre="Données du temps mondial"
-      description="Le bilan chiffré du temps humain : heures travaillées (PWT 2023), care non rémunéré par sexe (ONU SDG 5.4.1), lues en thèse, antithèse et synthèse. Sources datées, états de données, aucun classement."
-      sections={[
-        {
-          label: "En bref",
-          corps: (
-            <p>
-              Le monde compte l'argent chaque trimestre dans près de 200
-              pays ; il ne mesure le temps de la vie que par de rares
-              enquêtes — 72 pays une fois, 27 au moins deux fois. Ce que les
-              données publiques laissent voir : ~44 heures de travail
-              hebdomadaire en moyenne, trois fois plus de temps de soin non
-              rémunéré porté par les femmes, 745 000 décès par an liés aux
-              longues heures, et la moitié de l'humanité qui n'a pas eu le
-              temps de faire ce qui comptait pour elle hier. Cette page
-              assemble ces observations, puis en propose une lecture en
-              thèse, antithèse et synthèse — chaque chiffre porte sa
-              source, chaque question reste ouverte.
-            </p>
-          ),
-        },
-        {
-          label: "Ce que le monde mesure",
-          corps: (
-            <>
-              <p>
-                <strong>Le travail payé est compté partout.</strong> L'OIT
-                publie les heures hebdomadaires effectives d'environ 160 pays
-                — 43,9 heures en moyenne mondiale, plus de 48 dans les pays
-                les plus intensifs (ILOSTAT).
-              </p>
-              <p>
-                <strong>Le care est presque invisible.</strong> Seuls 72 pays
-                ont mené une enquête emploi du temps au moins une fois, 27 au
-                moins deux fois (OIT, 2018). L'ONU suit le temps de soin non
-                rémunéré via l'indicateur SDG 5.4.1 — les femmes y portent
-                environ trois fois plus d'heures que les hommes, partout où
-                c'est mesuré.
-              </p>
-              <p>
-                <strong>Le corps paie.</strong> L'OMS et l'OIT attribuent
-                745 000 décès par an aux longues heures de travail — AVC et
-                maladies cardiaques (2021). Le burn-out est reconnu comme
-                phénomène professionnel par l'OIT depuis 2024.
-              </p>
-              <p>
-                <strong>Le vécu se déclare.</strong> Le Gallup World Poll
-                demande dans plus de 140 pays : « Avez-vous eu le temps de
-                faire ce qui comptait pour vous hier ? » — la moitié de
-                l'humanité répond non, y compris dans les pays riches.
-              </p>
-              <p>
-                <strong>Certains régimes tiennent mieux.</strong> Les pays
-                nordiques combinent horaires courts, care largement
-                marchandisé et ressenti du temps parmi les meilleurs mesurés
-                — sans que personne n'ait décidé de les classer premiers.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Séries — heures de travail payé, 2023 (heures annuelles par travailleur)",
-          corps: (
-            <>
-              <p>
-                Mesuré. Source : Penn World Table 11.0 via Our World in Data
-                (« annual working hours per worker »), millésime 2023.
-              </p>
-              <table className="donnees-table">
-                <thead>
-                  <tr><th>Pays</th><th>Heures / an</th><th>≈ h / semaine</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Cambodge</td><td>2 389</td><td>46,0</td></tr>
-                  <tr><td>Bangladesh</td><td>2 383</td><td>45,8</td></tr>
-                  <tr><td>Botswana</td><td>2 258</td><td>43,4</td></tr>
-                  <tr><td>Algérie</td><td>2 232</td><td>42,9</td></tr>
-                  <tr><td>Cameroun</td><td>2 181</td><td>41,9</td></tr>
-                  <tr><td>Albanie</td><td>2 152</td><td>41,4</td></tr>
-                  <tr><td>Brésil</td><td>1 994</td><td>38,3</td></tr>
-                  <tr><td>Chili</td><td>1 950</td><td>37,5</td></tr>
-                  <tr><td>Canada</td><td>1 731</td><td>33,3</td></tr>
-                  <tr><td>Belgique</td><td>1 593</td><td>30,6</td></tr>
-                  <tr><td>Autriche</td><td>1 438</td><td>27,7</td></tr>
-                </tbody>
-              </table>
-              <p>
-                La plage mondiale est de plus de 1 600 heures par an entre
-                les configurations les plus intensives et les moins
-                intensives — deux travailleurs ne vivent pas dans le même
-                régime. Ces chiffres ne classent rien : ils montrent
-                l'ampleur de la variance.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Séries — care non rémunéré, heures par jour (femmes / hommes, dernière enquête disponible)",
-          corps: (
-            <>
-              <p>
-                Mesuré (dans les pays enquêtés — invisible ailleurs).
-                Source : ONU, SDG 5.4.1, via Our World in Data. Année entre
-                parenthèses : la plus récente enquête du pays.
-              </p>
-              <table className="donnees-table">
-                <thead>
-                  <tr><th>Pays</th><th>Femmes</th><th>Hommes</th><th>Rapport</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Inde (2024)</td><td>5,37</td><td>0,70</td><td>7,7×</td></tr>
-                  <tr><td>Mexique (2024)</td><td>5,14</td><td>2,04</td><td>2,5×</td></tr>
-                  <tr><td>Maroc (2012)</td><td>5,00</td><td>0,72</td><td>6,9×</td></tr>
-                  <tr><td>France (2010)</td><td>3,79</td><td>2,28</td><td>1,7×</td></tr>
-                  <tr><td>États-Unis (2023)</td><td>3,70</td><td>2,42</td><td>1,5×</td></tr>
-                  <tr><td>Japon (2021)</td><td>3,53</td><td>0,90</td><td>3,9×</td></tr>
-                  <tr><td>Norvège (2023)</td><td>3,48</td><td>2,76</td><td>1,3×</td></tr>
-                  <tr><td>Suède (2011)</td><td>3,85</td><td>3,08</td><td>1,25×</td></tr>
-                </tbody>
-              </table>
-              <p>
-                Trois constats dans les données elles-mêmes : la fracture
-                de genre existe partout mesurée (jamais inversée) ; son
-                ampleur varie de 1,25 à 7,7 — ce ne sont pas les mêmes
-                régimes ; et les dates racontent l'asymétrie : la Norvège
-                a enquêté en 2023, la France en 2010 — certains pays ne
-                regardent leur care que tous les quinze ans.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "La thèse — ce que les données suggèrent",
-          corps: (
-            <p>
-              L'humanité dispose d'un stock inélastique — 24 heures par être,
-              ni plus ni moins — et les systèmes qui l'organisent prélèvent
-              une part croissante de ce stock pour la production, la
-              circulation et la connexion, laissant le care, le repos et
-              l'attention dans l'angle mort statistique. Les données
-              existantes dessinent un monde qui compte tout ce qu'il
-              s'échange contre de l'argent, et presque rien de ce qui
-              s'échange entre les êtres. La thèse est documentable : là où
-              le temps non monétisé est mesuré, il apparaît massif — des
-              milliards d'heures de soin et d'entraide, majoritairement
-              portées par les femmes, et nulle part comptées comme
-              richesse.
-            </p>
-          ),
-        },
-        {
-          label: "L'antithèse — ce que les mêmes données autorisent d'autre",
-          corps: (
-            <p>
-              Une lecture opposée est possible, et honnête : le temps mesuré
-              n'est pas le temps vécu, et aucun chiffre agrégé ne prouve une
-              intention. Les 43,9 heures moyennes incluent le travail
-              informel, choisi ou subi, des économies où le salariat
-              n'obéit pas aux mêmes catégories. Les enquêtes emploi du
-              temps reposent sur des nomenclatures occidentales — une
-              même activité est « travail » ici, « vie » là. Le ressenti
-              Gallup est un souvenir, pas un relevé. Et le lien entre
-              longues heures et mortalité est une corrélation à l'échelle
-              des populations, jamais une condamnation de tel système en
-              particulier. Le point le plus dérangeant de l'antithèse :
-              les pays qui mesurent le mieux leur temps sont aussi ceux
-              dont les citoyens se disent les plus pressés — la mesure
-              elle-même n'a rendu personne plus libre. Peut-être que le
-              problème n'est pas le manque de données, mais le regard.
-            </p>
-          ),
-        },
-        {
-          label: "La synthèse — ce que MANA TIME BANK retient",
-          corps: (
-            <>
-              <p>
-                La thèse et l'antithèse tiennent toutes les deux, et c'est
-                précisément le constat : l'humanité vit sur une ressource
-                qu'elle ne sait ni compter ni regarder, et les données
-                existantes — partielles, situées, nomenclaturées — ne
-                permettront jamais ni de prouver une catastrophe ni de
-                rassurer. Entre l'alarme et le déni, il y a une troisième
-                posture : documenter ce qui est visible, nommer ce qui
-                ne l'est pas, et laisser chacun — habitants, élus,
-                chercheurs — se saisir du constat.
-              </p>
-              <p>
-                La page de données de MANA TIME BANK n'affirme donc rien
-                que ses sources ne disent. Chaque observation porte son
-                état — mesuré, interprété, hypothèse, invisible. Ce que
-                le monde peut mesurer du temps est assemblé ici ; ce
-                qu'il ne peut pas (encore) mesurer est écrit comme tel.
-                Le reste — la question du mieux, du juste, du souhaitable —
-                n'appartient pas à la donnée.
-              </p>
-            </>
-          ),
-        },
-        {
-          label: "Sources",
-          corps: (
-            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
-              Heures de travail : Penn World Table 11.0 via Our World in
-              Data, « annual working hours per worker », 2023 · Care non
-              rémunéré : ONU SDG 5.4.1 via Our World in Data (dernière
-              enquête disponible par pays) · ILOSTAT, heures hebdomadaires
-              effectives (~160 pays) · OIT, Care work and care jobs (72
-              pays avec enquête emploi du temps, 27 au moins deux fois,
-              2018) · OMS/OIT (745 000 décès/an attribuables aux longues
-              heures, 2021) · Gallup World Poll (question du temps pour
-              soi, 140+ pays) · OCDE, Time Use Database.
             </p>
           ),
         },
@@ -1852,6 +1234,571 @@ function PageRegimes() {
   );
 }
 
+const SEC_MANIFESTE: { label: string; corps: React.ReactNode }[] = [
+        {
+          label: "L'âme de l'enfant",
+          corps: (
+            <p>
+              Un enfant ne comprend pas le monde des adultes — et il a
+              raison. Il n'en a pas les outils : ni le rendement, ni la
+              carrière, ni la retraite. Il possède d'autres instruments,
+              que nous avons tous eus et perdus : l'étonnement, la question
+              sans fin, le présent absolu. Il veut bien manger, rire, être
+              avec sa famille. C'est tout ce qui l'intéresse. Puis les
+              systèmes le forment — l'école, l'horloge, la productivité —
+              et l'ici et maintenant devient l'attente de plus tard.
+              MANA TIME BANK regarde le temps avec l'âme de cet enfant :
+              curieux, sans outils, questionnant ce que les adultes ont
+              cessé de voir. C'est pour cela que notre nom s'écrit en
+              lettres de couleurs — comme les crayons d'un enfant qui
+              colore, une à une, chaque lettre de ce qui est important.
+              L'enfant sait ce qu'il y a de vrai, en toute innocence.
+            </p>
+          ),
+        },
+        {
+          label: "Le constat",
+          corps: (
+            <>
+              <p>
+                Chaque être humain reçoit vingt-quatre heures par jour. Ni plus,
+                ni moins — du billionnaire au sans-abri, c'est la seule
+                ressource parfaitement partagée de l'humanité. Elle ne se
+                cumule pas, ne s'hérite pas, ne se fabrique pas. Et personne
+                ne la compte.
+              </p>
+              <p>
+                Le monde publie sa monnaie chaque trimestre, dans près de deux
+                cents pays. Il mesure le temps de sa vie une fois par décennie,
+                dans soixante-douze d'entre eux (ONU, SDG 5.4.1). Les heures de
+                soin données aux enfants et aux aînés — des milliards par an,
+                majoritairement portées par des femmes — n'apparaissent dans
+                aucune comptabilité nationale en tant que telles (OIT, 2018).
+                L'Organisation mondiale de la santé estime à 745 000 les décès
+                annuels attribuables aux seules longues heures de travail
+                (OMS/OIT, 2021). L'insomnie est devenue un mode de gouvernement
+                silencieux : le monde compte son argent en dormant debout.
+              </p>
+              <p>
+                Comment une civilisation qui mesure tout a-t-elle pu ne jamais
+                mesurer la seule chose qu'elle possède tous en commun ?
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Les questions",
+          corps: (
+            <>
+              <p>
+                Nous n'accusons personne. Nous remarquons que tous les grands
+                courants de pensée, chacun à sa manière, ont placé le temps de
+                la vie au service d'autre chose — et nous demandons pourquoi.
+              </p>
+              <p>
+                Celui qui fait du temps une marchandise : pourquoi le rendement
+                d'une heure vaudrait-il plus que sa plénitude ? Celui qui en
+                fait un devoir : pourquoi la valeur d'une vie se mesurerait-elle
+                à sa production ? Celui qui promet d'en abolir le besoin : que
+                deviendrait un humain qui ne dort plus ? Celui qui a gagné la
+                journée de huit heures : pourquoi s'est-il arrêté là, il y a
+                un siècle ? Aucun n'a fait du temps le centre. Tous l'ont mis
+                à l'arrière-plan — de la production, de la croissance, du
+                progrès, de la révolution. Le bien commun premier de l'humanité
+                reste le grand absent de ses pensées politiques.
+              </p>
+              <p>
+                Et nous demandons aussi : qui possède les heures ? Car il
+                n'existe pas de marché du temps proprement dit — il existe un
+                marché du temps <em>des autres</em>. Certains vendent leurs
+                heures pour vivre ; d'autres achètent les heures des premiers
+                pour exister. La grande redistribution moderne n'est peut-être
+                pas celle des richesses. C'est celle des heures.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Ce que nous revendiquons — et ce que nous ne proposons pas",
+          corps: (
+            <>
+              <p>
+                Nous revendiquons un droit qui n'a jamais été écrit : le droit
+                au temps. Le temps de sa famille, le temps de la paresse au sens
+                de Paul Lafargue, le temps de la contemplation, le temps du
+                sommeil rendu. Tout ce que chaque époque a essayé de retirer à
+                l'humain pour le mettre au travail.
+              </p>
+              <p>
+                Nous n'affirmons pas avoir de solutions. Nous proposons une
+                lumière nouvelle : rendre visible ce qui circule entre les
+                êtres — la page <a href={`${B}/donnees`}>données</a> en
+                assemble les premières observations — les heures de travail, de soin, d'entraide, d'attention
+                — et ce que chaque système en fait. Un constat documenté,
+                sourcé, vérifiable, est plus redoutable qu'un programme : on
+                peut renvoyer une utopie à l'utopie ; on ne peut pas renvoyer
+                un chiffre à l'imaginaire.
+              </p>
+              <p>
+                Le MANA, disaient les cultures du Pacifique, est la force
+                vitale qui circule en toute chose. Elle est partout. Ce n'est
+                pas elle qui manque — c'est notre regard.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              ONU, SDG 5.4.1 (proportion de temps consacré au travail domestique
+              et de soin non rémunéré, 72 pays disposant d'enquêtes) · OIT, Care
+              work and care jobs (2018) · OMS/OIT, Environmental and societal
+              burden of long working hours (745 000 décès/an, 2021) · ILOSTAT,
+              heures hebdomadaires effectives, ~160 pays · Paul Lafargue, Le
+              Droit à la paresse (1880) · Bertrand Russell, Éloge de l'oisiveté
+              (1932) · Byung-Chul Han, La Société de la fatigue · Hartmut
+              Rosa, Accélération et résonance.
+            </p>
+          ),
+        },
+];
+
+const SEC_VISION: { label: string; corps: React.ReactNode }[] = [
+        {
+          label: "La décision fondatrice",
+          corps: (
+            <p>
+              MANA TIME BANK observe : comment l'humanité utilise sa ressource
+              temporelle dans le système vivant dont elle dépend. Le temps est
+              la ressource, la société le système d'organisation, le vivant
+              l'environnement. Rien n'y est déposé, échangé ni crédité — la
+              ressource observée est le temps lui-même, pas une monnaie.
+            </p>
+          ),
+        },
+        {
+          label: "Pourquoi « banque » ?",
+          corps: (
+            <p>
+              Le mot banque est utilisé ici hors de tout circuit financier —
+              comme dans « banque de données », « banque d'images » ou
+              « banque de sons » : le lieu où l'on conserve et organise ce
+              qui compte. MANA TIME BANK n'est pas un établissement
+              financier : elle ne reçoit, ne détient ni ne manie aucun
+              dépôt, aucun crédit, aucune monnaie — d'heures ou d'autre
+              chose. C'est une banque au sens ancien et simple : la table
+              où l'on pose ce qu'on veut examiner ensemble — en
+              l'occurrence, l'usage mondial du temps humain.
+            </p>
+          ),
+        },
+        {
+          label: "Une heure n'a pas de valeur morale fixe",
+          corps: (
+            <p>
+              On étudie les systèmes qui orientent l'usage du temps et leurs
+              conséquences, pas la « valeur » de chaque heure. Aucune heure
+              n'est classée, notée ou hiérarchisée : on observe comment
+              l'humanité organise le temps, ce que cela produit, et on le
+              documente honnêtement.
+            </p>
+          ),
+        },
+        {
+          label: "Ce que nous ne sommes pas",
+          corps: (
+            <p>
+              Pas une banque de temps d'échange : aucune heure n'y est
+              déposée, échangée ou créditée. Pas un classement de pays : aucun
+              territoire n'y est noté, comparé ou primé. Pas un prescripteur :
+              aucune solution, aucun programme, aucune recommandation. Pas un
+              vendeur en l'état : aucune prestation n'est proposée sur ce
+              site. Si vous cherchez un système d'échange d'heures, il existe
+              de vraies timebanks — ce projet-là observe ; il n'échange pas.
+            </p>
+          ),
+        },
+        {
+          label: "Positionnement",
+          corps: (
+            <p>
+              Indice mondial, même écosystème MANA. Le MANA est partout —
+              il n'y a pas de lieu sans MANA, seulement des circuits
+              qu'on ne voit pas encore. La production de connaissance est
+              portée par l'Alliance MANA (association) : intérêt général,
+              méthode publique.
+            </p>
+          ),
+        },
+];
+
+const SEC_CHARTE: { label: string; corps: React.ReactNode }[] = [
+        {
+          label: "Engagement",
+          corps: (
+            <p style={{ fontStyle: "italic" }}>
+              « La méthode est publique et versionnée. La prestation est
+              payante. Les conclusions sont soumises aux données et à la
+              méthode — jamais au montant du contrat. »
+            </p>
+          ),
+        },
+        {
+          label: "Test d'acceptation",
+          corps: (
+            <p>
+              Aucun contenu de ce site ne promet score, classement ni
+              amélioration d'évaluation contre paiement. Si un contenu
+              contredit cet engagement, il est corrigé.
+            </p>
+          ),
+        },
+        {
+          label: "Caisse et non-lucrativité",
+          corps: (
+            <p>
+              La production est portée par l'Alliance MANA (association) :
+              non-lucrativité réelle, résultats publiables, méthode ouverte.
+              Ce site ne vend rien en l'état ; le jour où une prestation
+              existe, elle respectera cet engagement.
+            </p>
+          ),
+        },
+];
+
+const SEC_DONNEES: { label: string; corps: React.ReactNode }[] = [
+        {
+          label: "En bref",
+          corps: (
+            <p>
+              Le monde compte l'argent chaque trimestre dans près de 200
+              pays ; il ne mesure le temps de la vie que par de rares
+              enquêtes — 72 pays une fois, 27 au moins deux fois. Ce que les
+              données publiques laissent voir : ~44 heures de travail
+              hebdomadaire en moyenne, trois fois plus de temps de soin non
+              rémunéré porté par les femmes, 745 000 décès par an liés aux
+              longues heures, et la moitié de l'humanité qui n'a pas eu le
+              temps de faire ce qui comptait pour elle hier. Cette page
+              assemble ces observations, puis en propose une lecture en
+              thèse, antithèse et synthèse — chaque chiffre porte sa
+              source, chaque question reste ouverte.
+            </p>
+          ),
+        },
+        {
+          label: "Ce que le monde mesure",
+          corps: (
+            <>
+              <p>
+                <strong>Le travail payé est compté partout.</strong> L'OIT
+                publie les heures hebdomadaires effectives d'environ 160 pays
+                — 43,9 heures en moyenne mondiale, plus de 48 dans les pays
+                les plus intensifs (ILOSTAT).
+              </p>
+              <p>
+                <strong>Le care est presque invisible.</strong> Seuls 72 pays
+                ont mené une enquête emploi du temps au moins une fois, 27 au
+                moins deux fois (OIT, 2018). L'ONU suit le temps de soin non
+                rémunéré via l'indicateur SDG 5.4.1 — les femmes y portent
+                environ trois fois plus d'heures que les hommes, partout où
+                c'est mesuré.
+              </p>
+              <p>
+                <strong>Le corps paie.</strong> L'OMS et l'OIT attribuent
+                745 000 décès par an aux longues heures de travail — AVC et
+                maladies cardiaques (2021). Le burn-out est reconnu comme
+                phénomène professionnel par l'OIT depuis 2024.
+              </p>
+              <p>
+                <strong>Le vécu se déclare.</strong> Le Gallup World Poll
+                demande dans plus de 140 pays : « Avez-vous eu le temps de
+                faire ce qui comptait pour vous hier ? » — la moitié de
+                l'humanité répond non, y compris dans les pays riches.
+              </p>
+              <p>
+                <strong>Certains régimes tiennent mieux.</strong> Les pays
+                nordiques combinent horaires courts, care largement
+                marchandisé et ressenti du temps parmi les meilleurs mesurés
+                — sans que personne n'ait décidé de les classer premiers.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Séries — heures de travail payé, 2023 (heures annuelles par travailleur)",
+          corps: (
+            <>
+              <p>
+                Mesuré. Source : Penn World Table 11.0 via Our World in Data
+                (« annual working hours per worker »), millésime 2023.
+              </p>
+              <table className="donnees-table">
+                <thead>
+                  <tr><th>Pays</th><th>Heures / an</th><th>≈ h / semaine</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Cambodge</td><td>2 389</td><td>46,0</td></tr>
+                  <tr><td>Bangladesh</td><td>2 383</td><td>45,8</td></tr>
+                  <tr><td>Botswana</td><td>2 258</td><td>43,4</td></tr>
+                  <tr><td>Algérie</td><td>2 232</td><td>42,9</td></tr>
+                  <tr><td>Cameroun</td><td>2 181</td><td>41,9</td></tr>
+                  <tr><td>Albanie</td><td>2 152</td><td>41,4</td></tr>
+                  <tr><td>Brésil</td><td>1 994</td><td>38,3</td></tr>
+                  <tr><td>Chili</td><td>1 950</td><td>37,5</td></tr>
+                  <tr><td>Canada</td><td>1 731</td><td>33,3</td></tr>
+                  <tr><td>Belgique</td><td>1 593</td><td>30,6</td></tr>
+                  <tr><td>Autriche</td><td>1 438</td><td>27,7</td></tr>
+                </tbody>
+              </table>
+              <p>
+                La plage mondiale est de plus de 1 600 heures par an entre
+                les configurations les plus intensives et les moins
+                intensives — deux travailleurs ne vivent pas dans le même
+                régime. Ces chiffres ne classent rien : ils montrent
+                l'ampleur de la variance.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Séries — care non rémunéré, heures par jour (femmes / hommes, dernière enquête disponible)",
+          corps: (
+            <>
+              <p>
+                Mesuré (dans les pays enquêtés — invisible ailleurs).
+                Source : ONU, SDG 5.4.1, via Our World in Data. Année entre
+                parenthèses : la plus récente enquête du pays.
+              </p>
+              <table className="donnees-table">
+                <thead>
+                  <tr><th>Pays</th><th>Femmes</th><th>Hommes</th><th>Rapport</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Inde (2024)</td><td>5,37</td><td>0,70</td><td>7,7×</td></tr>
+                  <tr><td>Mexique (2024)</td><td>5,14</td><td>2,04</td><td>2,5×</td></tr>
+                  <tr><td>Maroc (2012)</td><td>5,00</td><td>0,72</td><td>6,9×</td></tr>
+                  <tr><td>France (2010)</td><td>3,79</td><td>2,28</td><td>1,7×</td></tr>
+                  <tr><td>États-Unis (2023)</td><td>3,70</td><td>2,42</td><td>1,5×</td></tr>
+                  <tr><td>Japon (2021)</td><td>3,53</td><td>0,90</td><td>3,9×</td></tr>
+                  <tr><td>Norvège (2023)</td><td>3,48</td><td>2,76</td><td>1,3×</td></tr>
+                  <tr><td>Suède (2011)</td><td>3,85</td><td>3,08</td><td>1,25×</td></tr>
+                </tbody>
+              </table>
+              <p>
+                Trois constats dans les données elles-mêmes : la fracture
+                de genre existe partout mesurée (jamais inversée) ; son
+                ampleur varie de 1,25 à 7,7 — ce ne sont pas les mêmes
+                régimes ; et les dates racontent l'asymétrie : la Norvège
+                a enquêté en 2023, la France en 2010 — certains pays ne
+                regardent leur care que tous les quinze ans.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "La thèse — ce que les données suggèrent",
+          corps: (
+            <p>
+              L'humanité dispose d'un stock inélastique — 24 heures par être,
+              ni plus ni moins — et les systèmes qui l'organisent prélèvent
+              une part croissante de ce stock pour la production, la
+              circulation et la connexion, laissant le care, le repos et
+              l'attention dans l'angle mort statistique. Les données
+              existantes dessinent un monde qui compte tout ce qu'il
+              s'échange contre de l'argent, et presque rien de ce qui
+              s'échange entre les êtres. La thèse est documentable : là où
+              le temps non monétisé est mesuré, il apparaît massif — des
+              milliards d'heures de soin et d'entraide, majoritairement
+              portées par les femmes, et nulle part comptées comme
+              richesse.
+            </p>
+          ),
+        },
+        {
+          label: "L'antithèse — ce que les mêmes données autorisent d'autre",
+          corps: (
+            <p>
+              Une lecture opposée est possible, et honnête : le temps mesuré
+              n'est pas le temps vécu, et aucun chiffre agrégé ne prouve une
+              intention. Les 43,9 heures moyennes incluent le travail
+              informel, choisi ou subi, des économies où le salariat
+              n'obéit pas aux mêmes catégories. Les enquêtes emploi du
+              temps reposent sur des nomenclatures occidentales — une
+              même activité est « travail » ici, « vie » là. Le ressenti
+              Gallup est un souvenir, pas un relevé. Et le lien entre
+              longues heures et mortalité est une corrélation à l'échelle
+              des populations, jamais une condamnation de tel système en
+              particulier. Le point le plus dérangeant de l'antithèse :
+              les pays qui mesurent le mieux leur temps sont aussi ceux
+              dont les citoyens se disent les plus pressés — la mesure
+              elle-même n'a rendu personne plus libre. Peut-être que le
+              problème n'est pas le manque de données, mais le regard.
+            </p>
+          ),
+        },
+        {
+          label: "La synthèse — ce que MANA TIME BANK retient",
+          corps: (
+            <>
+              <p>
+                La thèse et l'antithèse tiennent toutes les deux, et c'est
+                précisément le constat : l'humanité vit sur une ressource
+                qu'elle ne sait ni compter ni regarder, et les données
+                existantes — partielles, situées, nomenclaturées — ne
+                permettront jamais ni de prouver une catastrophe ni de
+                rassurer. Entre l'alarme et le déni, il y a une troisième
+                posture : documenter ce qui est visible, nommer ce qui
+                ne l'est pas, et laisser chacun — habitants, élus,
+                chercheurs — se saisir du constat.
+              </p>
+              <p>
+                La page de données de MANA TIME BANK n'affirme donc rien
+                que ses sources ne disent. Chaque observation porte son
+                état — mesuré, interprété, hypothèse, invisible. Ce que
+                le monde peut mesurer du temps est assemblé ici ; ce
+                qu'il ne peut pas (encore) mesurer est écrit comme tel.
+                Le reste — la question du mieux, du juste, du souhaitable —
+                n'appartient pas à la donnée.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              Heures de travail : Penn World Table 11.0 via Our World in
+              Data, « annual working hours per worker », 2023 · Care non
+              rémunéré : ONU SDG 5.4.1 via Our World in Data (dernière
+              enquête disponible par pays) · ILOSTAT, heures hebdomadaires
+              effectives (~160 pays) · OIT, Care work and care jobs (72
+              pays avec enquête emploi du temps, 27 au moins deux fois,
+              2018) · OMS/OIT (745 000 décès/an attribuables aux longues
+              heures, 2021) · Gallup World Poll (question du temps pour
+              soi, 140+ pays) · OCDE, Time Use Database.
+            </p>
+          ),
+        },
+];
+
+const SEC_INDICE: { label: string; corps: React.ReactNode }[] = [
+        {
+          label: "Le principe-pivot",
+          corps: (
+            <p>
+              Le MANA est partout — il n'y a pas de lieu sans MANA, seulement
+              des circuits qu'on ne voit pas encore. L'indice MANA ne mesure
+              donc pas la présence du MANA : il observe la <strong>
+              visibilité de ses circuits</strong> — ce qui circule entre
+              les êtres et avec le vivant, ce qu'on en voit, ce qu'on n'en
+              voit pas. Une lunette, jamais un classement.
+            </p>
+          ),
+        },
+        {
+          label: "Six chapitres",
+          corps: (
+            <>
+              <p>
+                Les six dimensions sont les chapitres de lecture du portrait —
+                des entrées éditoriales lisibles, jamais des composantes d'un
+                score :
+              </p>
+              <ul>
+                {DIMENSIONS.map((d) => (
+                  <li key={d.nom}>
+                    <strong>{d.nom}.</strong> {d.texte}
+                  </li>
+                ))}
+              </ul>
+            </>
+          ),
+        },
+        {
+          label: "Quatre grandeurs, ossature interne",
+          corps: (
+            <p>
+              Chaque chapitre se lit à travers les quatre grandeurs de la
+              méthode : le <strong>stock</strong> (la réserve d'heures), la{" "}
+              <strong>circulation</strong> (les flux), la{" "}
+              <strong>distribution</strong> (la variance entre groupes) et la{" "}
+              <strong>tenue</strong> (la persistance des circuits). Un même
+              chapitre peut montrer une circulation intense et une tenue
+              fragile — le profil montre les tensions, il ne les arbitre pas.
+            </p>
+          ),
+        },
+        {
+          label: "Règles de publication",
+          corps: (
+            <p>
+              Pas de score global, pas de couleur synthétique, pas de
+              classement des pays : profil multidimensionnel, données
+              sourcées, incertitudes explicites, carte de visibilité à trous
+              affichée, représentation spectrale à terme.
+            </p>
+          ),
+        },
+];
+
+const SEC_PORTRAIT: { label: string; corps: React.ReactNode }[] = [
+        {
+          label: "Nature du produit",
+          corps: (
+            <p>
+              Diagnostic mondial, état initial documenté, fondé sur des
+              données publiques existantes (ILOSTAT, ONU SDG 5.4.1, OCDE Time
+              Use, enquêtes nationales d'emploi du temps). Le monde compte
+              sa monnaie chaque trimestre ; son temps, une fois par décennie
+              dans un tiers des pays.
+            </p>
+          ),
+        },
+        {
+          label: "Trois livrables",
+          corps: (
+            <>
+              <p>
+                <strong>1.</strong> Un portrait documenté, où le
+                mesuré, l'interprété et l'hypothèse sont distingués.
+              </p>
+              <p>
+                <strong>2.</strong> Une première signature MANA : dimensions
+                séparées, niveaux de confiance, données manquantes.
+              </p>
+              <p>
+                <strong>3.</strong> Une feuille de route : questions
+                prioritaires, indicateurs annuels.
+              </p>
+            </>
+          ),
+        },
+        {
+          label: "Modèle",
+          corps: (
+            <p>
+              Production de connaissance d'intérêt général portée par
+              l'Alliance MANA (association). Le modèle économique est en
+              cours de définition ; ce site ne vend rien en l'état et ne
+              comporte aucun mur payant.
+            </p>
+          ),
+        },
+        {
+          label: "Données et périmètres",
+          corps: (
+            <p>
+              Aucune donnée identifiante n'est collectée. Les conclusions ne
+              se stockent pas comme statut : constats sourcés, datés, avec
+              niveau de confiance, profil dérivé. Les trous de visibilité
+              (l'entraide informelle, le care invisible) sont des résultats
+              en soi, pas des regrets.
+            </p>
+          ),
+        },
+];
+
 function PageTempsVecu() {
   return (
     <PageDoctrine
@@ -2436,22 +2383,68 @@ function PageTempsVecu() {
   );
 }
 
+function Redirect({ to }: { to: string }) {
+  useEffect(() => {
+    window.location.replace(baseUrl() + to);
+  }, [to]);
+  return (
+    <main className="publier">
+      <div className="wrap">
+        <p className="territoire-intro">Redirection…</p>
+      </div>
+    </main>
+  );
+}
+
+function PageComprendre() {
+  return (
+    <PageDoctrine
+      nom="Comprendre"
+      titre="La raison d'être de MANA TIME BANK"
+      description="Manifeste du temps retrouvé, vision du projet et charte de confiance : pourquoi le temps est le bien commun premier de l'humanité, ce que MANA TIME BANK observe, et les engagements qui garantissent que les conclusions restent soumises aux données."
+      sections={[
+        ...SEC_MANIFESTE,
+        ...SEC_VISION,
+        ...SEC_CHARTE,
+      ]}
+    />
+  );
+}
+
+function PageObserver() {
+  return (
+    <PageDoctrine
+      nom="Observer"
+      titre="Ce que MANA TIME BANK observe"
+      description="Le parcours d'observation : les données disponibles du temps mondial (PWT, SDG 5.4.1), l'indice MANA et la visibilité des circuits, le portrait d'un système temporel — et les limites de ce qu'on peut conclure. Aucun score, aucun classement."
+      sections={[
+        ...SEC_DONNEES,
+        ...SEC_INDICE,
+        ...SEC_PORTRAIT,
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
+  comprendre: PageComprendre,
+  observer: PageObserver,
+  regimes: PageRegimes,
+  methode: PageMethode,
   "temps-vecu": PageTempsVecu,
-  manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
   "regime-synchronise-institutionnel": PageRegimeSynchronise,
   "regime-fragmente-marchand": PageRegimeFragmente,
   "regime-care-massif": PageRegimeCare,
   "regime-saisonnier": PageRegimeSaisonnier,
-  regimes: PageRegimes,
-  donnees: PageDonnees,
-  vision: PageVision,
-  indice: PageIndice,
-  portrait: PagePortrait,
-  methode: PageMethode,
-  charte: PageCharte,
   "mentions-legales": PageMentions,
+  // Redirections des anciennes routes (contenus fusionnés)
+  manifeste: () => <Redirect to="/comprendre" />,
+  vision: () => <Redirect to="/comprendre" />,
+  charte: () => <Redirect to="/comprendre" />,
+  donnees: () => <Redirect to="/observer" />,
+  indice: () => <Redirect to="/observer" />,
+  portrait: () => <Redirect to="/observer" />,
 };
 
 export default function App() {
@@ -2539,14 +2532,17 @@ export default function App() {
                 l'humanité utilise sa ressource temporelle — son MANA.
               </p>
               <div className="hero-cta">
-                <a className="btn btn-primary" href={`${B}/manifeste`}>
-                  Lire le manifeste
+                <a className="btn btn-primary" href={`${B}/comprendre`}>
+                  Comprendre
                 </a>
-                <a className="btn btn-ghost" href={`${B}/donnees`}>
-                  Les observations
+                <a className="btn btn-ghost" href={`${B}/observer`}>
+                  Observer
+                </a>
+                <a className="btn btn-ghost" href={`${B}/regimes`}>
+                  Régimes
                 </a>
                 <a className="btn btn-ghost" href={`${B}/methode`}>
-                  La méthode
+                  Méthode
                 </a>
               </div>
               <p className="hero-note">{METHODE_VERSION}</p>
@@ -2616,12 +2612,10 @@ export default function App() {
             <ContactForm />
           </div>
           <nav className="footer-nav" aria-label="Pied de page">
-            <a href={`${B}/manifeste`}>Manifeste du temps retrouvé</a>
-            <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu</a>
-            <a href={`${B}/vision`}>Vision</a>
-            <a href={`${B}/donnees`}>Données du temps mondial</a>
-            <a href={`${B}/indice`}>Indice MANA</a>
-            <a href={`${B}/regimes`}>Typologie des régimes temporels</a>
+            <a href={`${B}/comprendre`}>Comprendre — manifeste, vision, charte</a>
+            <a href={`${B}/observer`}>Observer — données, indice, portrait</a>
+            <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu — essai</a>
+            <a href={`${B}/regimes`}>Régimes — typologie et cinq fiches</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>
