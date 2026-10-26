@@ -68,8 +68,19 @@ ses coûts (OMS/OIT : 745 000 décès/an, burn-out reconnu 2024). Chaque
 grandeur (stock, circulation, distribution, tenue) porte ses marqueurs
 avec leur état : mesuré, interprété, hypothèse, invisible.
 
+Fiche 02 : /regime-synchronise-institutionnel — le régime synchronisé
+institutionnel : sphères bornées et coordonnées par une horloge commune
+(journée de 8h, école, repos protégé) ; le seul régime éprouvé sur plus
+d'un siècle (conquis 1850-1936, boucle fermée : le repos rend ce que le
+travail prend) ; protection inégale du découpage (les exclus — informels,
+aidants — vivent sans bornes) ; érosion documentée de ses limites
+(horaires atypiques). Contraste avec la fiche 01 : séparation contre
+superposition ; construit par un siècle de luttes contre avance sans
+avoir été décidé ; aucun des deux n'est « meilleur ».
+
 Pages : /manifeste, /vision, /donnees, /indice, /portrait, /methode,
-/charte, /mentions-legales, /regime-insomniaque-connecte.
+/charte, /mentions-legales, /regime-insomniaque-connecte,
+/regime-synchronise-institutionnel.
 
 Contact : via le formulaire du site (démo locale tant que le backend
 n'existe pas).

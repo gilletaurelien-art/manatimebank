@@ -958,9 +958,144 @@ function PageRegimeInsomniaque() {
   );
 }
 
+function PageRegimeSynchronise() {
+  return (
+    <PageDoctrine
+      nom="Typologie des régimes temporels — fiche 02"
+      titre="Le régime synchronisé institutionnel"
+      sections={[
+        {
+          label: "Définition",
+          corps: (
+            <p>
+              Configuration stable d'usage du temps où les activités sont
+              découpées en sphères successives et coordonnées par une
+              horloge commune : journée de travail bornée, école à heures
+              fixes, repas à heures sociales, repos protégé. C'est l'héritier
+              direct des grandes conquêtes temporelles — la journée de
+              huit heures, le repos hebdomadaire, les congés payés, l'école
+              obligatoire — et le régime par rapport auquel tous les
+              autres se définissent, y compris l'insomniaque connecté
+              qui le déborde (fiche 01).
+            </p>
+          ),
+        },
+        {
+          label: "Stock — une réserve découpée et protégée",
+          corps: (
+            <p>
+              La réserve éveillée est segmentée en blocs nommés (travail,
+              école, repas, repos), chacun protégé par des règles. Le
+              sommeil y est une institution : horaires réguliers, nuit
+              socialement sanctuarisée. <strong>Marqueurs :</strong>{" "}
+              durée légale du travail et heures d'école par pays (mesuré) ;
+              régularité des horaires de sommeil (enquêtes nationales —
+              interprété).
+            </p>
+          ),
+        },
+        {
+          label: "Circulation — des flux bornés et coordonnés",
+          corps: (
+            <p>
+              Les flux circulent par créneaux synchronisés : le travail
+              commence et finit à heures fixes, les repas et les enfants
+              rythment la journée, les équipements publics ouvrent et
+              ferment ensemble. La coordination est le coût et le bénéfice
+              du régime : chacun perd en flexibilité ce que tous gagnent
+              en prévisibilité. <strong>Marqueurs :</strong> part des
+              horaires standards dans l'emploi (enquêtes emploi — mesuré) ;
+              heures d'ouverture des services publics (documentation
+              nationale — interprété).
+            </p>
+          ),
+        },
+        {
+          label: "Distribution — la protection inégale du découpage",
+          corps: (
+            <p>
+              Le découpage protège d'abord ceux qui y sont inclus : le
+              salarié protégé, l'écolier, le fonctionnaire. Les exclus du
+              régime — indépendants, informels, aidants, travailleurs
+              domestiques — vivent sans les bornes qui protègent les
+              autres. <strong>Marqueurs :</strong> taux de couverture de
+              la protection sociale du travail par pays (mesuré) ;
+              synchronisation des horaires scolaires et professionnels —
+              charge de garde qui en découle (interprété).
+            </p>
+          ),
+        },
+        {
+          label: "Tenue — le régime le plus éprouvé de l'histoire",
+          corps: (
+            <p>
+              C'est le seul régime dont la tenue est attestée sur plus
+              d'un siècle : conquis par les mouvements ouvriers entre 1850
+              et 1936 (journée de huit heures, repos hebdomadaire, congés
+              payés), il a survécu aux guerres, aux chocs pétroliers et à
+              la tertiarisation — mais les enquêtes d'emploi montrent
+              partout l'érosion de ses bornes : horaires atypiques,
+              travail du soir, disponibilité. Sa boucle est fermée
+              (le repos rend ce que le travail prend), mais sa
+              reproduction n'est plus assurée : chaque génération l'en
+              hérite un peu plus entamé. La question de sa durée de vie
+              appartient au politique, pas à la donnée.
+            </p>
+          ),
+        },
+        {
+          label: "Les invisibles de ce régime",
+          corps: (
+            <p>
+              Le travail non borné des exclus du découpage (informel,
+              domestique, aidant) — invisible tant que l'enquête ne
+              regarde que le salarié protégé ; le coût de coordination
+              lui-même (le temps de synchronisation que le régime impose
+              et que personne ne compte — attentes, trajets aux heures
+              pleines, files). Un régime centenaire dont les fondations
+              restent, en partie, hors de la comptabilité.
+            </p>
+          ),
+        },
+        {
+          label: "Contraste avec la fiche 01",
+          corps: (
+            <p>
+              Là où l'insomniaque connecté superpose, le synchronisé
+              institutionnel sépare : sphères bornées contre sphères
+              superposées, nuit sanctuarisée contre nuit grignotée,
+              coordination collective contre disponibilité individuelle.
+              Le premier a été construit par un siècle de luttes ; le
+              second avance sans avoir été décidé. Aucun des deux n'est
+              « meilleur » : ils sont deux manières d'organiser la même
+              ressource — et la plupart des vies réelles vivent dans
+              leur mélange.
+            </p>
+          ),
+        },
+        {
+          label: "Sources",
+          corps: (
+            <p style={{ fontSize: "var(--t-xs)", opacity: 0.7 }}>
+              Histoire : E.P. Thompson, Time, Work-Discipline and Industrial
+              Capitalism (1967) · Jacques Le Goff, Temps de l'Église et temps
+              du marchand · législations nationales (journée de 8h, repos
+              hebdomadaire, congés payés) · enquêtes emploi nationales et
+              européennes (horaires atypiques, travail du soir) · OCDE, Time
+              Use Database · ILOSTAT (horaires standards). Fiche établie
+              selon la Méthode MANA, v0.2.
+            </p>
+          ),
+        },
+      ]}
+    />
+  );
+}
+
 const PAGES: Record<string, () => React.JSX.Element> = {
   manifeste: PageManifeste,
   "regime-insomniaque-connecte": PageRegimeInsomniaque,
+  "regime-synchronise-institutionnel": PageRegimeSynchronise,
   donnees: PageDonnees,
   vision: PageVision,
   indice: PageIndice,
@@ -1129,6 +1264,7 @@ export default function App() {
             <a href={`${B}/donnees`}>Données du temps mondial</a>
             <a href={`${B}/indice`}>Indice MANA</a>
             <a href={`${B}/regime-insomniaque-connecte`}>Régime insomniaque connecté — fiche 01</a>
+            <a href={`${B}/regime-synchronise-institutionnel`}>Régime synchronisé institutionnel — fiche 02</a>
             <a href={`${B}/portrait`}>Portrait MANA</a>
             <a href={`${B}/methode`}>Méthode</a>
             <a href={`${B}/charte`}>Charte de confiance</a>
