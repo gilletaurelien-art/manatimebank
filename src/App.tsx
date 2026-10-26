@@ -380,7 +380,10 @@ function PageManifeste() {
               et l'ici et maintenant devient l'attente de plus tard.
               MANA TIME BANK regarde le temps avec l'âme de cet enfant :
               curieux, sans outils, questionnant ce que les adultes ont
-              cessé de voir.
+              cessé de voir. C'est pour cela que notre nom s'écrit en
+              lettres de couleurs — comme les crayons d'un enfant qui
+              colore, une à une, chaque lettre de ce qui est important.
+              L'enfant sait ce qu'il y a de vrai, en toute innocence.
             </p>
           ),
         },
