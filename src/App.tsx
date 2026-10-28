@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { usePath, baseUrl } from "./router";
+import { REDIRIGEES, poserCanonique } from "./canonique";
 import {
   GlyphTemps,
   GlyphIndice,
@@ -2618,17 +2619,19 @@ const PAGES: Record<string, () => React.JSX.Element> = {
   "regime-care-massif": PageRegimeCare,
   "regime-saisonnier": PageRegimeSaisonnier,
   "mentions-legales": PageMentions,
-  // Redirections des anciennes routes (contenus fusionnés)
-  manifeste: () => <Redirect to="/comprendre" />,
-  vision: () => <Redirect to="/comprendre" />,
-  charte: () => <Redirect to="/comprendre" />,
-  donnees: () => <Redirect to="/observer" />,
-  indice: () => <Redirect to="/observer" />,
-  portrait: () => <Redirect to="/observer" />,
 };
+
+// Les anciennes routes fusionnées sont DÉRIVÉES de la carte unique
+// (src/canonique.ts) : une entrée ajoutée là redirige ET se canonicalise vers sa
+// destination, sans retouche ici. Les deux ne peuvent plus diverger.
+for (const [ancienne, cible] of Object.entries(REDIRIGEES)) {
+  PAGES[ancienne] = () => <Redirect to={`/${cible}`} />;
+}
 
 export default function App() {
   const path = usePath();
+  // La canonique suit la route (SPA sans prérendu : un seul HTML pour tout).
+  useEffect(() => { poserCanonique(path); }, [path]);
   const slug = path.match(/^\/([\w-]+)\/?$/)?.[1] ?? null;
   const Page = slug ? PAGES[slug] : null;
 

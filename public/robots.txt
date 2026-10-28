@@ -15,4 +15,4 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-Sitemap: https://gilletaurelien-art.github.io/manatimebank/sitemap.xml
+Sitemap: __SITE_URL__/sitemap.xml
