@@ -23,10 +23,21 @@ const outDir = process.env.OUT_DIR ?? "site";
 const siteUrl = (process.env.SITE_URL ?? HOTE_PAGES).replace(/\/$/, "");
 const racine = siteUrl + base;
 
+// ⚠️ Le motif est nommé pour pouvoir être TESTÉ, et pas seulement appliqué :
+// « le remplacement n'a rien changé » n'est pas « il n'y avait rien à
+// remplacer ». La première version de ce greffon confondait les deux et
+// refusait de construire quand la valeur en place était DÉJÀ la bonne — un
+// garde qui criait au loup. Mesuré le 28/10/2026.
+const MOTIF_CANONIQUE =
+  /<link rel="canonical" href="[^"]*"\s*\/?>(\s*<meta property="og:url"[^>]*>)?/;
+
 /** Remplace la canonique d'une coquille HTML, et y ajoute og:url. */
 function injecterCanonique(html: string, url: string): string {
+  if (!MOTIF_CANONIQUE.test(html)) {
+    throw new Error('aucune <link rel="canonical"> à réécrire dans la coquille');
+  }
   return html.replace(
-    /<link rel="canonical" href="[^"]*"\s*\/?>(\s*<meta property="og:url"[^>]*>)?/,
+    MOTIF_CANONIQUE,
     `<link rel="canonical" href="${url}" />\n    <meta property="og:url" content="${url}" />`,
   );
 }
@@ -42,9 +53,6 @@ function cible(): Plugin {
     name: "valeurs-de-la-cible",
     transformIndexHtml(html) {
       const sortie = injecterCanonique(html, racine);
-      if (sortie === html) {
-        throw new Error('index.html : aucune <link rel="canonical"> à réécrire');
-      }
       coquille = sortie;
       return sortie;
     },
