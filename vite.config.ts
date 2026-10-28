@@ -1,6 +1,13 @@
 import { defineConfig, type Plugin } from "vite";
 import react from "@vitejs/plugin-react";
-import { construireSitemap, PAGES_VIVANTES, REDIRIGEES, canonique } from "./src/canonique";
+import {
+  construireSitemap,
+  PAGES_VIVANTES,
+  REDIRIGEES,
+  canonique,
+  titreDeLaRoute,
+  descriptionDeLaRoute,
+} from "./src/canonique";
 
 // La cible décide du chemin de base ET de l'hôte — pas le code.
 //   • GitHub Pages sert sous /manatimebank/ → sans base, les bundles 404, page blanche.
@@ -30,6 +37,50 @@ const racine = siteUrl + base;
 // garde qui criait au loup. Mesuré le 28/10/2026.
 const MOTIF_CANONIQUE =
   /<link rel="canonical" href="[^"]*"\s*\/?>(\s*<meta property="og:url"[^>]*>)?/;
+
+/**
+ * Remplace titre, og:title et (si la page en a une) la description dans une
+ * coquille HTML.
+ *
+ * 🔴 POURQUOI L'og:title COMPTE PLUS QUE LE <title>. Les titres étaient posés
+ * en JS par chaque page : Google les voit (il exécute le JS), mais les APERÇUS
+ * DE LIEN non — Slack, WhatsApp, LinkedIn, iMessage, Signal lisent l'og:title
+ * du HTML livré et n'exécutent rien. Chaque lien partagé vers le manifeste,
+ * l'indice ou la méthode affichait donc la vignette de l'ACCUEIL. Pour un site
+ * doctrinal dont l'objet est d'être cité, c'est une perte directe — et elle se
+ * constate sans outil : on colle un lien dans une conversation.
+ * ⚠️ Chaque motif est TESTÉ avant d'être appliqué : « le remplacement n'a rien
+ * changé » n'est pas « il n'y avait rien à remplacer ».
+ */
+function injecterTextes(html: string, titre: string, description: string | null): string {
+  const motifs: [RegExp, string][] = [
+    [/<title>[^<]*<\/title>/, `<title>${titre}</title>`],
+    [
+      /<meta property="og:title" content="[^"]*"\s*\/?>/,
+      `<meta property="og:title" content="${titre}" />`,
+    ],
+  ];
+  if (description) {
+    motifs.push(
+      [
+        /<meta name="description" content="[^"]*"\s*\/?>/,
+        `<meta name="description" content="${description}" />`,
+      ],
+      [
+        /<meta property="og:description" content="[^"]*"\s*\/?>/,
+        `<meta property="og:description" content="${description}" />`,
+      ],
+    );
+  }
+  let sortie = html;
+  for (const [motif, remplacement] of motifs) {
+    if (!motif.test(sortie)) {
+      throw new Error(`coquille : rien à remplacer pour ${motif}`);
+    }
+    sortie = sortie.replace(motif, remplacement);
+  }
+  return sortie;
+}
 
 /** Remplace la canonique d'une coquille HTML, et y ajoute og:url. */
 function injecterCanonique(html: string, url: string): string {
@@ -86,8 +137,17 @@ function cible(): Plugin {
         for (const slug of routes) {
           const url = canonique(`/${slug}`, siteUrl, base);
           if (!url) throw new Error(`route ${slug} : aucune canonique calculable`);
+          const titre = titreDeLaRoute(`/${slug}`);
+          if (!titre) throw new Error(`route ${slug} : aucun titre`);
           await mkdir(`${dir}/${slug}`, { recursive: true });
-          await writeFile(`${dir}/${slug}/index.html`, injecterCanonique(coquille, url));
+          await writeFile(
+            `${dir}/${slug}/index.html`,
+            injecterTextes(
+              injecterCanonique(coquille, url),
+              titre,
+              descriptionDeLaRoute(`/${slug}`),
+            ),
+          );
         }
 
         // 2. 404.html — la coquille SANS canonique.
@@ -143,6 +203,14 @@ function cible(): Plugin {
           const attendu = canonique(`/${slug}`, siteUrl, base);
           if (pose !== attendu) {
             throw new Error(`/${slug} : canonique ${pose}, attendu ${attendu}`);
+          }
+          const titreAttendu = titreDeLaRoute(`/${slug}`);
+          const titrePose = h.match(/<title>([^<]*)<\/title>/)?.[1];
+          const ogPose = h.match(/<meta property="og:title" content="([^"]*)"/)?.[1];
+          if (titrePose !== titreAttendu || ogPose !== titreAttendu) {
+            throw new Error(
+              `/${slug} : titre « ${titrePose} », og:title « ${ogPose} », attendu « ${titreAttendu} »`,
+            );
           }
         }
       },

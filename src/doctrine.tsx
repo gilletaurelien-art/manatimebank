@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { baseUrl } from "./router";
+import { PAGES } from "./canonique";
 
 // Contenu doctrinal versionné — miroir du futur schéma SQL
 // (contenus_doctrine) : chaque bloc daté et sourcé, cité
@@ -68,24 +69,26 @@ export function Brand() {
   );
 }
 
-export function PageDoctrine({ nom, titre, sections, description }: {
+/**
+ * ⚠️ `slug` REMPLACE les anciennes props `titre` et `description` (28/10/2026).
+ * Les textes vivaient ici, en littéraux, ET devaient être injectés au build
+ * dans `<title>`/`og:title` : deux copies de la même phrase, donc une
+ * divergence programmée. Ils vivent désormais dans la table de routes
+ * (src/canonique.ts), celle qui porte déjà la canonique et le plan de site.
+ * ⭐ Le `<h1>` visible et le titre d'onglet lisent la MÊME entrée : ils ne
+ * peuvent plus se contredire.
+ * Le titre du document et la description sont posés une seule fois, par App,
+ * au changement de route — plus par chaque page.
+ */
+export function PageDoctrine({ nom, slug, sections }: {
   nom: string;
-  titre: string;
-  description?: string;
+  slug: string;
   sections: { label: string; corps: React.ReactNode }[];
 }) {
-  useTitre(titre);
+  const page = PAGES.find((p) => p.slug === slug);
+  if (!page) throw new Error(`PageDoctrine : slug inconnu « ${slug} »`);
+  const titre = page.titre;
   const B = baseUrl();
-  useEffect(() => {
-    if (!description) return;
-    let meta = document.querySelector('meta[name="description"]');
-    if (!meta) {
-      meta = document.createElement("meta");
-      meta.setAttribute("name", "description");
-      document.head.appendChild(meta);
-    }
-    meta.setAttribute("content", description);
-  }, [description]);
   return (
     <main className="publier">
       <div className="wrap">

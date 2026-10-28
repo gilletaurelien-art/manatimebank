@@ -90,8 +90,7 @@ function PageMethode() {
   return (
     <PageDoctrine
       nom="Méthode"
-      titre="Méthode MANA v0.2 — publique et versionnée"
-      description="Dix articles, un faisceau de neuf regards, des interdits : pas de score, pas de classement, mesuré/interprété/hypothèse/invisible. Méthode publique, versionnée, falsifiable."
+      slug="methode"
       sections={[
         {
           label: "Version et citation",
@@ -271,7 +270,7 @@ function PageMentions() {
   return (
     <PageDoctrine
       nom="Informations légales"
-      titre="Mentions légales"
+      slug="mentions-legales"
       sections={[
         {
           label: "Éditeur",
@@ -317,7 +316,7 @@ function PageRegimeInsomniaque() {
   return (
     <PageDoctrine
       nom="Typologie des régimes temporels — fiche 01"
-      titre="Le régime insomniaque connecté"
+      slug="regime-insomniaque-connecte"
       sections={[
         {
           label: "Définition",
@@ -427,7 +426,7 @@ function PageRegimeSynchronise() {
   return (
     <PageDoctrine
       nom="Typologie des régimes temporels — fiche 02"
-      titre="Le régime synchronisé institutionnel"
+      slug="regime-synchronise-institutionnel"
       sections={[
         {
           label: "Définition",
@@ -561,7 +560,7 @@ function PageRegimeFragmente() {
   return (
     <PageDoctrine
       nom="Typologie des régimes temporels — fiche 03"
-      titre="Le régime fragmenté marchand"
+      slug="regime-fragmente-marchand"
       sections={[
         {
           label: "Définition",
@@ -705,7 +704,7 @@ function PageRegimeCare() {
   return (
     <PageDoctrine
       nom="Typologie des régimes temporels — fiche 04"
-      titre="Le régime du care massif"
+      slug="regime-care-massif"
       sections={[
         {
           label: "Définition",
@@ -849,7 +848,7 @@ function PageRegimeSaisonnier() {
   return (
     <PageDoctrine
       nom="Typologie des régimes temporels — fiche 05"
-      titre="Le régime saisonnier"
+      slug="regime-saisonnier"
       sections={[
         {
           label: "Définition",
@@ -1000,7 +999,6 @@ function PageRegimeSaisonnier() {
 }
 
 function PageRegimes() {
-  useTitre("Typologie des régimes temporels");
   const B = baseUrl();
   const regimes = [
     {
@@ -1817,8 +1815,7 @@ function PageTempsVecu() {
   return (
     <PageDoctrine
       nom="Chapitre — essai en trois échelles"
-      titre="Du temps possédé au temps vécu"
-      description="Essai en trois échelles (individu, collectivités, humanité) : temps vécu et liberté temporelle à l'ère des machines. Avoir, valoir, être ; le paradoxe du progrès technique ; Internet, diapason potentiel."
+      slug="temps-vecu"
       sections={[
         {
           label: "Des années de vie. De la vie dans des années.",
@@ -2414,8 +2411,7 @@ function PageComprendre() {
   return (
     <PageDoctrine
       nom="Comprendre"
-      titre="La raison d'être de MANA TIME BANK"
-      description="Manifeste du temps retrouvé, vision du projet et charte de confiance : pourquoi le temps est le bien commun premier de l'humanité, ce que MANA TIME BANK observe, et les engagements qui garantissent que les conclusions restent soumises aux données."
+      slug="comprendre"
       sections={[
         ...SEC_MANIFESTE,
         ...SEC_VISION,
@@ -2429,8 +2425,7 @@ function PageObserver() {
   return (
     <PageDoctrine
       nom="Observer"
-      titre="Ce que MANA TIME BANK observe"
-      description="Le parcours d'observation : les données disponibles du temps mondial (PWT, SDG 5.4.1), l'indice MANA et la visibilité des circuits, le portrait d'un système temporel — et les limites de ce qu'on peut conclure. Aucun score, aucun classement."
+      slug="observer"
       sections={[
         ...SEC_DONNEES,
         ...SEC_INDICE,
@@ -2444,8 +2439,7 @@ function PageSoutenir() {
   return (
     <PageDoctrine
       nom="Soutenir"
-      titre="Soutenir MANA TIME BANK"
-      description="Soutenir la production de connaissances d'intérêt général sur le temps : un don ponctuel ou mensuel à l'Alliance MANA, sans contrepartie, pour documenter les régimes temporels et maintenir la méthode accessible à toutes et tous."
+      slug="soutenir"
       sections={[
         {
           label: "Pourquoi soutenir",
@@ -2524,8 +2518,7 @@ function PageEtudePilote() {
   return (
     <PageDoctrine
       nom="Offre pilote · collectivités"
-      titre="Étude des temporalités d'un territoire"
-      description="Une étude documentée des temporalités d'un territoire : cartographie des données et zones d'ombre, régimes temporels observables, contraintes et marges de liberté temporelle — sans score global ni classement. Tarif de lancement pilote."
+      slug="etude-pilote"
       sections={[
         {
           label: "Pourquoi cette étude",

@@ -1,6 +1,15 @@
 import { describe, it, expect } from "vitest";
 import { readFileSync } from "node:fs";
-import { PAGES_VIVANTES, REDIRIGEES, canonique, construireSitemap } from "./canonique";
+import {
+  PAGES,
+  PAGES_VIVANTES,
+  REDIRIGEES,
+  TITRE_GENERIQUE,
+  canonique,
+  construireSitemap,
+  titreDeLaRoute,
+  descriptionDeLaRoute,
+} from "./canonique";
 
 const app = readFileSync(new URL("./App.tsx", import.meta.url), "utf8");
 
@@ -44,6 +53,53 @@ describe("la carte des routes est la source unique", () => {
       );
     }
     expect(canonique("/", "https://manatimebank.org", "/")).toBe("https://manatimebank.org/");
+  });
+
+  // ── LES TITRES ──────────────────────────────────────────────────────────
+  // Le défaut du 28/10 : les titres étaient posés en JS, donc absents du HTML
+  // livré. Les aperçus de lien (Slack, WhatsApp, LinkedIn…) n'exécutent pas le
+  // JS : chaque lien partagé montrait la vignette de l'accueil.
+  it("chaque page vivante a un titre non vide", () => {
+    const sans = PAGES.filter((p) => !p.titre || !p.titre.trim());
+    expect(sans.map((p) => p.slug)).toEqual([]);
+  });
+
+  it("deux pages ne partagent JAMAIS le même titre", () => {
+    const vus = new Map<string, string[]>();
+    for (const p of PAGES) vus.set(p.titre, [...(vus.get(p.titre) ?? []), p.slug]);
+    const doublons = [...vus.entries()].filter(([, s]) => s.length > 1);
+    expect(doublons).toEqual([]);
+  });
+
+  it("chaque route plate rend un titre, suffixé par la marque", () => {
+    for (const s of PAGES_VIVANTES) {
+      const t = titreDeLaRoute(`/${s}`);
+      expect(t).toBeTruthy();
+      expect(t).toMatch(/ — MANA TIME BANK$/);
+      expect(t).not.toBe(TITRE_GENERIQUE);
+    }
+    expect(titreDeLaRoute("/")).toBe(TITRE_GENERIQUE);
+  });
+
+  // ⚠️ Une route qui REDIRIGE porte le titre de sa destination, exactement
+  // comme elle en porte la canonique : les deux doivent raconter la même chose.
+  it("une redirection porte le titre de sa DESTINATION", () => {
+    for (const [ancienne, cible] of Object.entries(REDIRIGEES)) {
+      expect(titreDeLaRoute(`/${ancienne}`)).toBe(titreDeLaRoute(`/${cible}`));
+    }
+  });
+
+  it("une route inconnue porte le GÉNÉRIQUE, pas un titre de page", () => {
+    expect(titreDeLaRoute("/inexistant-xyz")).toBeNull();
+  });
+
+  // ⛔ On ne REMPLIT PAS les descriptions manquantes : une description inventée
+  // est pire qu'une description générique. C'est de l'écriture, pas un réglage.
+  it("une description n'est rendue que si elle est ÉCRITE", () => {
+    for (const p of PAGES) {
+      expect(descriptionDeLaRoute(`/${p.slug}`)).toBe(p.description ?? null);
+    }
+    expect(descriptionDeLaRoute("/inexistant-xyz")).toBeNull();
   });
 
   it("une route inconnue n'a PAS de canonique", () => {
