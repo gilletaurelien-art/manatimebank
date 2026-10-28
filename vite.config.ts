@@ -90,7 +90,21 @@ function cible(): Plugin {
           await writeFile(`${dir}/${slug}/index.html`, injecterCanonique(coquille, url));
         }
 
-        // 2. robots.txt : l'hôte de la cible à la place du marqueur.
+        // 2. 404.html — la coquille SANS canonique.
+        //
+        // 🔴 La 404 servait /index.html, donc la canonique de l'ACCUEIL : elle
+        // invitait Google à indexer l'URL fautive COMME l'accueil. Le correctif
+        // jumeau de manahome-app, posé le même jour, énonçait pourtant la règle
+        // — « une page d'erreur ne se canonicalise sur rien » — et ne l'avait
+        // appliquée que de son côté.
+        // ⭐ UNE RÈGLE ÉNONCÉE DANS UN CORRECTIF NE SE PROPAGE PAS TOUTE SEULE
+        // AU CORRECTIF D'À CÔTÉ. Même divergence entre voisins que le `www`.
+        await writeFile(
+          `${dir}/404.html`,
+          coquille.replace(MOTIF_CANONIQUE, "").replace(/\n\s*\n/, "\n"),
+        );
+
+        // 3. robots.txt : l'hôte de la cible à la place du marqueur.
         const chemin = `${dir}/robots.txt`;
         const texte = await readFile(chemin, "utf8");
         if (!texte.includes("__SITE_URL__")) {
@@ -121,7 +135,7 @@ function cible(): Plugin {
           }
         }
 
-        // 4. Et le contrôle qui vaut tous les autres : chaque route livrée
+        // 5. Et le contrôle qui vaut tous les autres : chaque route livrée
         // porte-t-elle BIEN sa propre canonique ? Vérifié sur le fichier écrit.
         for (const slug of routes) {
           const h = await readFile(`${dir}/${slug}/index.html`, "utf8");
