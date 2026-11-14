@@ -99,7 +99,33 @@ tarifs — chaque porte dit ce qu'elle est, la maison ne dit rien.
 4. **Règle transversale** : aucune décision d'architecture ne dépend
    d'une réponse générée par un LLM (même grille que la gouvernance).
 
-## 6. Schéma de synthèse
+## 6. La voix publique — Mastodon (décision du 14/11/2026)
+
+L'écosystème existe publiquement sur le Fediverse ; les cercles,
+jamais. Deux règles et une décision :
+
+1. **Manafamily ne fédère jamais.** Mastodon est l'anti-doctrine en
+   boîte : comptage ambiant (I4), public par défaut, fédération qui
+   duplique — l'effacement définitif par l'auteur (doctrine Carnet)
+   serait techniquement impossible à garantir sur des copies
+   hébergées chez des inconnus. Les cercles restent une brique
+   maison : RLS, n<5, suppression.
+2. **Le registre ne fédère jamais.** La voix publique de MANA parle
+   sur Mastodon ; le cadastre du don ne quitte jamais la maison.
+3. **Mode d'hébergement : comptes sur instances existantes d'abord**
+   (une instance ESS/fediverse fiable), **instance dédiée plus tard
+   si la communauté l'exige** — même logique que la gouvernance : on
+   ne crée pas une structure pour zéro utilisateur. L'instance
+   dédiée éventuelle est une porte : mortelle, donc elle attend sa
+   preuve de besoin.
+
+Le Fediverse est philosophiquement le terrain de MANA : ActivityPub
+est un protocole sans coordinateur — la confiance dans le protocole,
+pas dans une entreprise (la leçon Bitcoin : le protocole, pas le
+token). Une asso qui tient un discours sur la mesure non marchande
+ne vit pas sur un réseau qui vend l'attention.
+
+## 7. Schéma de synthèse
 
 ```
 manahome.org        — le compte (SSO), la maison des IA
