@@ -66,6 +66,9 @@ export const PAGES: readonly Page[] = [
   { slug: "ce-qui-vient", titre: "Ce qui vient — les échecs, le duopole, et la pertinence",
     description:
       "Pourquoi les banques de temps ont échoué (six causes documentées, la circulation pour unique erreur), pourquoi capitalisme et communisme ne sont qu'un duopole de mesures, et pourquoi MANA TIME BANK occupe le seul terrain que ni le capital ni le plan ne prendront : la comptabilité du temps donné." },
+  { slug: "tribunal-des-fantomes", titre: "Le tribunal des fantômes",
+    description:
+      "Annexe légère : Marx, Bouddha, Jésus, Gandhi, Robespierre, Lao Tseu, Mao ou Shiva comparus devant les quatre clauses du canon. Aucune sentence n'est exécutoire ; aucune récupération non plus." },
   { slug: "regimes", titre: "Typologie des régimes temporels" },
   { slug: "methode", titre: "Méthode MANA v0.2 — publique et versionnée",
     description:
