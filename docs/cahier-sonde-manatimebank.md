@@ -249,8 +249,9 @@ export_integral          — route d'export public du registre (v0.3)
 - Pas de capture de données comportementales, jamais.
 - Pas d'ouverture aux instruments partenaires avant la validation du
   pilote.
-- Gouvernance à trancher avant production : qui tient le registre,
-  qui audite.
+- Gouvernance — tranchée le 14/11/2026 (voir section 9) : l'Alliance
+  MANA tient le registre ; l'audit externe est reporté à l'étude
+  pilote.
 
 ## 7. La boucle complète (pour mémoire)
 
@@ -277,13 +278,27 @@ deux fois, une seule lumière.
 - Préalables actés : notes canoniques publiées (mana-force,
   physique du système) ; pivots validés (frappe double,
   accumulation à vie) ; cet amendement v0.3 fait foi.
-- **Reste à publier sur le site avant le code** : la mise à jour des
-  textes « remise à zéro chaque nuit » (doctrine, invitation, llms.txt)
-  vers l'accumulation à vie — voir annexe ci-dessous.
-- Dépôt d'accueil : à trancher — brique dans manahome-app ou dépôt
-  dédié. Le service KS-5 hébergera la sonde.
-- Arbitrage gouvernance (qui tient le registre, qui audite) avant
-  production.
+- **Site à jour** : la mise à jour « remise à zéro chaque nuit » →
+  accumulation à vie a été publiée (PR #10, 14/11/2026) : rendre-les-mots,
+  llms.txt (canon v0.3 + annexe tribunal). L'annexe ci-dessous est
+  donc satisfaite.
+- **Décisions tranchées le 14/11/2026 (Aurélien)** :
+  - **Dépôt d'accueil : brique dans manahome-app** (pas de dépôt
+    dédié). Le service KS-5 héberge la sonde ; le site statique
+    manatimebank n'héberge rien.
+  - **Gouvernance du registre : l'Alliance MANA tient le registre**
+    (option A). TEMPOsystem apporte l'infrastructure — déclaré, jamais
+    caché — avec la règle d'abstention au règlement intérieur de
+    l'asso (même grille que le plan de financement LEADER). Le
+    registre du don est un bien commun : il vit sous personne morale
+    non marchande.
+  - **Audit externe : reporté à l'étude pilote** — décision explicite,
+    pas un oubli. Entre-temps, l'auditabilité technique est portée
+    par le canon v0.3 : invariant public Σ émis = Σ reçu, marqueurs
+    d'état, export intégral. Un auditeur nommé sera requis avant
+    toute citation publique de la première série.
+  - Règle transversale : aucune décision de gouvernance ne dépend
+    d'une réponse générée par un LLM.
 
 ## Annexe — mises à jour du site requises par les pivots v0.3
 
