@@ -34,7 +34,7 @@ import {
   PageRegimeSaisonnier } from "./pages-regimes";
 import { PageTempsVecu } from "./pages-temps-vecu";
 import { PageRendreLesMots, PageTempsDonne } from "./pages-fondatrices";
-import { PageLeVivantDabord, PageEconomiesDuTemps } from "./pages-critique";
+import { PageLeVivantDabord, PageEconomiesDuTemps, PageCeQuiVient } from "./pages-critique";
 
 
 // manatimebank.org — visage doctrine : mission, méthode versionnée,
@@ -136,6 +136,7 @@ const PAGES: Record<string, () => React.JSX.Element> = {
   observer: PageObserver,
   "rendre-les-mots": PageRendreLesMots,
   "economies-du-temps": PageEconomiesDuTemps,
+  "ce-qui-vient": PageCeQuiVient,
   regimes: PageRegimes,
   methode: PageMethode,
   "temps-donne": PageTempsDonne,
@@ -305,6 +306,7 @@ export default function App() {
             <a href={`${B}/rendre-les-mots`}>Rendre les mots — texte fondateur</a>
             <a href={`${B}/temps-donne`}>Pourquoi le temps donné n'est pas compté</a>
             <a href={`${B}/economies-du-temps`}>L'heure pour monnaie — deux siècles d'essais</a>
+            <a href={`${B}/ce-qui-vient`}>Ce qui vient — les échecs, le duopole, la pertinence</a>
             <a href={`${B}/comprendre`}>Comprendre — manifeste, vision, charte</a>
             <a href={`${B}/observer`}>Observer — données, indice, portrait</a>
             <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu — essai</a>

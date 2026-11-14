@@ -63,6 +63,9 @@ export const PAGES: readonly Page[] = [
   { slug: "economies-du-temps", titre: "L'heure pour monnaie — deux siècles d'économies du temps",
     description:
       "De Cincinnati (1827) aux time credits de Tempo : deux siècles d'essais d'économies du temps. Tous ont su compter le temps donné ; tous ont cru qu'il fallait le faire circuler. MANA TIME BANK sépare la mesure de l'échange : un miroir, pas un marché." },
+  { slug: "ce-qui-vient", titre: "Ce qui vient — les échecs, le duopole, et la pertinence",
+    description:
+      "Pourquoi les banques de temps ont échoué (six causes documentées, la circulation pour unique erreur), pourquoi capitalisme et communisme ne sont qu'un duopole de mesures, et pourquoi MANA TIME BANK occupe le seul terrain que ni le capital ni le plan ne prendront : la comptabilité du temps donné." },
   { slug: "regimes", titre: "Typologie des régimes temporels" },
   { slug: "methode", titre: "Méthode MANA v0.2 — publique et versionnée",
     description:
