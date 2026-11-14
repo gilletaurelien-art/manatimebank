@@ -48,9 +48,15 @@ export const PAGES: readonly Page[] = [
   { slug: "comprendre", titre: "La raison d'être de MANA TIME BANK",
     description:
       "Manifeste du temps retrouvé, vision du projet et charte de confiance : pourquoi le temps est le bien commun premier de l'humanité, ce que MANA TIME BANK observe, et les engagements qui garantissent que les conclusions restent soumises aux données." },
+  { slug: "rendre-les-mots", titre: "Rendre les mots au temps d'une vie",
+    description:
+      "Texte fondateur : les mots de la finance — crédit, dette, capital, intérêt — ont été pris à la vie et jamais rendus. MANA TIME BANK les rend. Le temps d'une vie n'est pas un bilan, c'est une chronique." },
   { slug: "observer", titre: "Ce que MANA TIME BANK observe",
     description:
       "Le parcours d'observation : les données disponibles du temps mondial (PWT, SDG 5.4.1), l'indice MANA et la visibilité des circuits, le portrait d'un système temporel — et les limites de ce qu'on peut conclure. Aucun score, aucun classement." },
+  { slug: "temps-donne", titre: "Pourquoi le temps donné n'est pas compté",
+    description:
+      "Le temps donné aux autres n'existe dans aucun compte : l'aveu institutionnel (ONU 5.4.1), la décision fondatrice des comptabilités nationales, le compte satellite de l'INSEE — et l'instrument que MANA TIME BANK construit pour compter le temps donné au geste." },
   { slug: "regimes", titre: "Typologie des régimes temporels" },
   { slug: "methode", titre: "Méthode MANA v0.2 — publique et versionnée",
     description:

@@ -58,6 +58,46 @@ Principe-pivot : le MANA est partout — l'indice ne mesure pas la présence
 du MANA mais la visibilité de ses circuits (ce qui circule entre les êtres
 et avec le vivant, ce qu'on en voit, ce qu'on n'en voit pas).
 
+Texte fondateur /rendre-les-mots : les mots de la finance ont été pris à
+la vie et jamais rendus — crédit (credere : croire, confier), dette et
+devoir (debere : la dette a détourné le devoir), capital (caput : la tête,
+la vie), intérêt (interesse : être concerné), salaire (le sel, la ration
+du soldat), monnaie (Junon Moneta, l'avertisseuse — monere, avertir).
+Le monde a gardé le vocabulaire et perdu l'objet. MANA TIME BANK rend
+les mots : le crédit redevient la croyance (être cru sur parole), la
+dette redevient le devoir (elle ne s'acquitte jamais en secondes), le
+capital redevient la vie — deux milliards et demi de secondes, le seul
+qui ne fructifie pas et ne se lègue pas. La dotation : 86 400 secondes
+par jour pour chacun, du billionnaire au sans-abri, remise à zéro chaque
+nuit — la seule fortune universelle, qui ne se garde pas. La question
+fondatrice : qu'avez-vous donné de votre vie — et qu'en reste-t-il pour
+vous ? Une vie n'est pas un bilan, c'est une chronique. La banque de
+MANA TIME BANK est une banque de données : on y dépose des faits, jamais
+des valeurs ; on n'y retire rien, parce que tout ce qui y est déposé
+n'a jamais cessé d'appartenir à ceux qui l'ont vécu.
+
+Chapitre /temps-donne — pourquoi le temps donné n'est pas compté :
+l'aveu institutionnel (objectif ODD 5.4 adopté en 2015 ; indicateur 5.4.1
+mesuré par de rares enquêtes emploi du temps : 72 pays une fois, 27 au
+moins deux) ; la décision de conception des comptabilités nationales
+(frontière de production du SCN qui exclut de droit les services non
+rémunérés rendus au sein des ménages, avec l'exception qui dit tout :
+la même heure de soin, donnée, est invisible — achetée, elle crée du
+PIB ; l'avertissement de Kuznets en 1934 consigné puis laissé de côté ;
+l'exclusion nommée par Marilyn Waring en 1988) ; le compte qu'on ne rend
+jamais (INSEE : 60 milliards d'heures de travail domestique en 2010, en
+compte satellite, jamais dans le PIB — Insee Première n° 1423) ; le trou
+en dessous du trou : l'entraide informelle n'a même pas un indicateur.
+L'instrument en construction : compter le temps donné au geste, sur la
+parole d'un témoin direct — donneur ou receveur — avec un cinquième état
+de données, « rapporté », en cours d'écriture pour la méthode v0.3.
+La mesure ne devra rien (compter n'est pas échanger : jamais un banc
+d'échange, aucune heure donnée n'ouvre de droit à une heure reçue), ne
+classera pas les personnes (pas de score, pas de palmarès), ne se
+prétendra pas représentative (biais affichés, jamais corrigés en
+silence) ; la donnée appartiendra au territoire qui la produit. Le don
+ne se solde pas, il se consigne.
+
 Typologie des régimes temporels (Article 4 de la méthode) — première
 fiche publiée : /regime-insomniaque-connecte. Le régime insomniaque
 connecté : travail, connexion et attention superposés en continu ;
@@ -133,6 +173,9 @@ Architecture : quatre entrées principales.
   /regime-insomniaque-connecte, /regime-synchronise-institutionnel,
   /regime-fragmente-marchand, /regime-care-massif, /regime-saisonnier.
 - /methode — méthode MANA v0.2 (dix articles, faisceau).
+Textes fondateurs du projet : /rendre-les-mots (les mots rendus à la vie)
+et /temps-donne (pourquoi le temps donné n'est pas compté — le chapitre
+qui fonde l'instrument de mesure).
 Essai long : /temps-vecu. Soutien et modèle : /soutenir (don, adhésion,
 mécénat — transparence des financements dans la charte) et /etude-pilote
 (étude des temporalités d'un territoire pour les collectivités, tarif de
