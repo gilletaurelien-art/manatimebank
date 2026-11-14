@@ -12,15 +12,19 @@ Chaque domaine porte **une relation**, pas un produit :
 |---|---|---|
 | manahome.org | **toi et la maison** | le compte — identité unique (SSO), le socle |
 | mana.bzh | toi et le territoire — Bretagne | promenades, radio, le pays |
-| manafrance *(hypothèse de nom)* | toi et le territoire — France | exploration de l'ESS |
+| manafrance *(hypothèse de nom)* | toi et le territoire — France | toutes les offices de tourisme de France — suite logique de mana.bzh |
+| alliancemana.org | **toi et la maison commune** | la vitrine ESS, l'association — la gouvernance (elle tient le registre) |
 | mana.love | **toi et MANA** | la relation intime — conversation, care, abonnement |
 | manafamily | **toi et les tiens** | les cercles — groupes, familles, tribus, amis |
 | manatimebank | **toi et le monde** | le registre — la consignation du temps donné |
 
 Deux axes se croisent :
-- **l'axe territorial** (bzh → france → home) : les promenades, en
-  cercles concentriques de plus en plus larges — la Bretagne, la
-  France, le monde ;
+- **l'axe territorial** (bzh → france) : les offices de tourisme,
+  en cercles concentriques — le réseau breton d'abord, toutes les
+  OT de France ensuite (suite logique de mana.bzh) ;
+- **l'axe des maisons** (home → alliancemana) : la maison des IA
+  (le compte, la technique) et la maison commune (l'ESS,
+  la gouvernance) ;
 - **l'axe relationnel** (love / family / timebank) : la relation
   verticale (toi et MANA), la relation horizontale (toi et les
   tiens), la trace publique (toi et le monde).
@@ -42,6 +46,12 @@ Trois arguments, un par nature :
    des fronts en aval : **manahome = l'auth, les produits = des
    portes.** Sinon : comptes dupliqués, et chaque fusion future
    devient une migration.
+   ⚠️ Nuance : manahome porte l'identité technique (le compte SSO) ;
+   **alliancemana porte la personne morale** (l'asso, la gouvernance
+   du registre, la vitrine ESS, le soutien). Les deux maisons ne se
+   confondent pas : l'une est l'infrastructure, l'autre l'institution.
+   (Décision du 14/11/2026 : la vitrine ESS quitte manafrance pour
+   alliancemana.org ; manafrance devient l'anneau territorial.)
 3. **Doctrinal.** La mortalité assumée (note « physique du
    système ») : les produits sont mortels. Si le compte vit dans
    mana.love et que mana.love meurt, les personnes meurent avec. La
@@ -93,11 +103,14 @@ tarifs — chaque porte dit ce qu'elle est, la maison ne dit rien.
 
 ```
 manahome.org        — le compte (SSO), la maison des IA
-  ├─ mana.bzh        — le territoire proche (promenades, radio)
-  ├─ manafrance      — le territoire large (ESS) — hypothèse
+  ├─ mana.bzh        — le territoire proche (les OT de Bretagne, la radio)
+  ├─ manafrance      — le territoire large (toutes les OT de France)
   ├─ mana.love       — la relation (toi et MANA)
   ├─ manafamily      — les cercles (toi et les tiens)
   └─ manatimebank    — le registre (toi et le monde)
+
+alliancemana.org    — la maison commune : l'ESS, l'association,
+                      la gouvernance — elle tient le registre
 ```
 
 *La maison tient le compte ; les portes tiennent les relations ; le
