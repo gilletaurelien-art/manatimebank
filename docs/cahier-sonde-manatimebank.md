@@ -41,28 +41,17 @@ La sonde compte le temps donné dans l'écosystème MANA — **au geste et à la
 - L'interdit vaut aussi **déguisé** : en « reconnaissance », en « points de cercle », en « avance », en « compensation », en « crédit de temps » — tout habit d'une unité qui circule est un transfert, donc un bug.
 - Réciproque assumée : le merci est la seule réponse possible à un don, et il est **en mots, jamais en unités** (I2).
 
-### La qualification avant transfert — la porte que passe tout outil
-Tout nouvel outil, brique ou fonctionnalité qui touche au MANA doit être **qualifié avant d'entrer parmi nos outils**. La qualification se réduit à quatre questions — **une seule réponse « oui » = refus, l'outil n'entre pas** :
-
-1. **Transfert** : une unité change-t-elle de main, d'un compte à un autre — même simulée, même « à titre de reconnaissance » ?
-2. **Solde** : un état lisible se comporte-t-il comme un avoir, un crédit ou une dette ?
-3. **Contrepartie** : le geste ouvre-t-il un droit futur — une heure donnée doit-elle une heure en retour ?
-4. **Dette** : quelqu'un peut-il finir « à découvert » de temps ?
-
-- Quatre « non » : l'outil est qualifié, il entre. Sinon : **bug, refusé — pas négociable, pas différable, pas « en option désactivée »**.
-- La qualification est **écrite avant l'outil** : le test vitest qui la vérifie précède la fonctionnalité, jamais l'inverse. Un outil non qualifié ne passe pas en revue de code.
-
-
 ### Les deux portes (témoignage)
 - **Porte donneur** : je consigne ce que j'ai donné. Tient seule.
 - **Porte receveur** : je consigne ce que j'ai reçu — le remerciement fait comptable. Tient seule.
 - **Empreinte du fait** (dédup) : deux témoignages du même fait = un seul fait dans les agrégats (deux souvenirs légitimes, comme la doctrine des `souvenirs`).
 - **La confirmation n'est jamais affichée au donneur** : pas de statut « attesté/non attesté » — sinon naît le palmarès du don non remercié. La dédup travaille en silence.
 
-### Le motif du don (le renversement de la machine à dette)
-- À la consignation, le déclarant peut énoncer **pourquoi** il donne : une **dimension** parmi les six de l'indice MANA (temps_humain, solidarite, ecologie, regeneration, equite_temporelle, durabilite) + un **texte libre** facultatif.
-- **Jamais obligatoire** : un don sans motif énoncé est complet.
-- Le texte libre reste au cercle (intimité : « soin à mon père ») ; **seule la dimension monte vers les agrégats**.
+### La qualification avant transfert — le pourquoi du don (le renversement de la machine à dette)
+- **Le transfert interdit a sa réponse positive : la qualification.** Ce qui qualifie un don, ce n'est pas *combien* — c'est *pourquoi*. La comptabilité de dette demande « combien tu me dois » ; celle du don demande « pourquoi je te donne » : **le renversement exact de la machine à dette**. Ta meilleure idée depuis l'unité.
+- Le motif a déjà ses six réponses : **les six dimensions de l'indice MANA** (temps_humain, solidarite, ecologie, regeneration, equite_temporelle, durabilite). **Chaque seconde consignée nourrit le chapitre qu'elle a servi — la sonde alimente l'indice, le cœur du site se referme.**
+- À la consignation, le déclarant peut énoncer **pourquoi** il donne : une **dimension** + un **texte libre** facultatif.
+- **Trois gardes** : (1) motif **jamais obligatoire** — un don sans motif énoncé est complet ; (2) le **texte libre reste au cercle** (intimité : « soin à mon père ») ; (3) **seule la dimension monte vers les agrégats**.
 - Jamais de lecture par personne : on ne classe pas les donateurs par motif.
 
 ### La comptabilité
@@ -145,7 +134,7 @@ Découvrir un chemin sur MANAhome → inviter son cercle MANAfamily → revenir 
 ## 8. Livrables attendus de Claude (dans l'ordre)
 
 1. Migration 014 (ou suite de la numérotation du dépôt) : tables + RLS + vues agrégées avec garde n≥5 — relu par SuperMANA, jamais jouée à l'aveugle.
-2. Modules purs (mint, veille, empreinte, dédup) + tests vitest — **un test par interdit de la section 4**, et le test de qualification avant transfert (section 1 : les quatre questions) joué sur tout module touchant au MANA.
+2. Modules purs (mint, veille, empreinte, dédup) + tests vitest — **un test par interdit de la section 4**.
 3. Routes API : consigner (deux portes), ouvrir/fermer une veille, merci, réserve hebdo, lecture d'agrégats — sans jamais exposer I1–I8.
 4. Message commit : `branche: sonde manatimebank v1` (sans accents).
 
