@@ -413,19 +413,11 @@ const SEC_VISION: { label: string; corps: React.ReactNode }[] = [
               aucune solution, aucun programme, aucune recommandation. Pas un
               vendeur en l'état : aucune prestation n'est proposée sur ce
               site. Si vous cherchez un système d'échange d'heures, il existe
-              de vraies timebanks — ce projet-là observe ; il n'échange pas.
-            </p>
-          ),
-        },
-        {
-          label: "Positionnement",
-          corps: (
-            <p>
-              Indice mondial, même écosystème MANA. Le MANA est partout —
-              il n'y a pas de lieu sans MANA, seulement des circuits
-              qu'on ne voit pas encore. La production de connaissance est
-              portée par l'Alliance MANA (association) : intérêt général,
-              méthode publique.
+              de vraies timebanks — deux siècles d'essais racontés dans{" "}
+              <a href={`${B}/economies-du-temps`}>
+                « L'heure pour monnaie »
+              </a>{" "}
+              ; ce projet-là observe, il n'échange pas.
             </p>
           ),
         },
@@ -755,18 +747,6 @@ const SEC_INDICE: { label: string; corps: React.ReactNode }[] = [
 
 const SEC_PORTRAIT: { label: string; corps: React.ReactNode }[] = [
         {
-          label: "Nature du produit",
-          corps: (
-            <p>
-              Diagnostic mondial, état initial documenté, fondé sur des
-              données publiques existantes (ILOSTAT, ONU SDG 5.4.1, OCDE Time
-              Use, enquêtes nationales d'emploi du temps). Le monde compte
-              sa monnaie chaque trimestre ; son temps, une fois par décennie
-              dans un tiers des pays.
-            </p>
-          ),
-        },
-        {
           label: "Trois livrables",
           corps: (
             <>
@@ -923,6 +903,29 @@ export function PageEtudePilote() {
       nom="Offre pilote · collectivités"
       slug="etude-pilote"
       sections={[
+        {
+          label: "Créer votre compte — essayer",
+          corps: (
+            <>
+              <p>
+                La sonde MANAtimebank est en cours de construction :
+                l'étude pilote ouvrira les premiers cercles. Créer un
+                compte, c'est rejoindre un cercle et voir sa dotation
+                s'afficher — <strong>86 400 MANA par jour,
+                inconditionnelle</strong> : elle ne se gagne pas plus
+                qu'elle ne s'achète, et elle ne se reçoit de personne.
+                Ce qui se consigne, c'est le geste : chaque temps donné
+                y est déclaré par celui qui le donne, qualifié par ce
+                qu'il a servi, et jamais échangé.
+              </p>
+              <p>
+                Laissez vos coordonnées via le formulaire ci-dessous
+                pour être prévenu de l'ouverture — et dites-nous ce
+                que vous aimeriez y consigner en premier.
+              </p>
+            </>
+          ),
+        },
         {
           label: "Pourquoi cette étude",
           corps: (

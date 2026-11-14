@@ -34,6 +34,7 @@ import {
   PageRegimeSaisonnier } from "./pages-regimes";
 import { PageTempsVecu } from "./pages-temps-vecu";
 import { PageRendreLesMots, PageTempsDonne } from "./pages-fondatrices";
+import { PageLeVivantDabord, PageEconomiesDuTemps } from "./pages-critique";
 
 
 // manatimebank.org — visage doctrine : mission, méthode versionnée,
@@ -46,47 +47,56 @@ const SECTIONS = [
   {
     glyphe: GlyphTemps,
     num: "01",
-    titre: "Manifeste du temps retrouvé",
-    accroche: "Le droit au temps — le bien commun premier de l'humanité.",
+    titre: "Le vivant d'abord",
+    accroche: "La critique — et l'alternative sérieuse.",
     texte:
-      "Vingt-quatre heures par jour, pour chaque être humain, du billionnaire au sans-abri : la seule ressource parfaitement partagée. Aucun grand courant de pensée n'en a fait le centre — tous l'ont mis au service d'autre chose. Nous dressons un constat sourcé, nous questionnons sans accuser, et nous revendiquons le droit au temps : familial, d'oisiveté, de contemplation.",
-    cta: { label: "Lire le manifeste", href: "/comprendre" },
+      "Le monde capitaliste a organisé ses sociétés autour d'une mesure qui ne voit ni le temps, ni le soin, ni le vivant. Les alternatives sont déjà écrites — rapport Stiglitz-Sen-Fitoussi, limites planétaires, droits de la nature. Il ne leur manque qu'un instrument pour devenir pilotables : nous le construisons.",
+    cta: { label: "Lire la critique", href: "/le-vivant-d-abord" },
   },
   {
     glyphe: GlyphPortrait,
     num: "02",
-    titre: "Ce que le monde mesure — et ce qu'il ne voit pas",
-    accroche: "L'argent chaque trimestre ; le temps une fois par décennie.",
+    titre: "Rendre les mots",
+    accroche: "Crédit, dette, capital : des mots de la vie, pris à la vie.",
     texte:
-      "Le travail payé est compté dans 160 pays ; le care non rémunéré, lui, n'est mesuré que par de rares enquêtes — 72 pays une fois, 27 au moins deux fois. 745 000 décès par an sont attribuables aux longues heures. La moitié de l'humanité déclare n'avoir pas eu le temps de faire ce qui comptait pour elle hier.",
-    cta: { label: "Voir les observations", href: "/observer" },
+      "Les mots de la finance ont été pris à la vie, un à un, il y a des siècles — et jamais rendus. Nous les rendons : le crédit redevient la croyance, la dette redevient le devoir, le capital redevient la tête. Le temps d'une vie n'est pas un bilan : c'est une chronique.",
+    cta: { label: "Lire le texte fondateur", href: "/rendre-les-mots" },
   },
   {
     glyphe: GlyphIndice,
     num: "03",
-    titre: "L'indice MANA",
-    accroche: "La visibilité des circuits, jamais un classement.",
+    titre: "Ce que le monde mesure — et ce qu'il ne voit pas",
+    accroche: "L'argent chaque trimestre ; le temps une fois par décennie.",
     texte:
-      "Le MANA est partout — l'indice ne mesure pas sa présence, mais la visibilité de ses circuits : ce qui circule entre les êtres et avec le vivant, ce qu'on en voit, ce qu'on n'en voit pas. Six chapitres de lecture, quatre grandeurs, quatre états de la donnée — mesuré, interprété, hypothèse, invisible.",
-    cta: { label: "Comprendre l'indice", href: "/observer" },
-  },
-  {
-    glyphe: GlyphMethode,
-    num: "04",
-    titre: "Une méthode publique et versionnée",
-    accroche: "Cité, vérifiable, critiquable.",
-    texte:
-      "Dix articles, un faisceau de regards — anthropologique, écolosociologique, historique, psychologique, philosophique — et des interdits : pas de score, pas de classement de pays, pas de prescriptif. Chaque résultat se cite « Méthode MANA, vX.Y, date ».",
-    cta: { label: "Lire la méthode", href: "/methode" },
+      "Le travail payé est compté dans 160 pays ; le care non rémunéré n'est mesuré que par de rares enquêtes — 72 pays une fois, 27 au moins deux fois. 745 000 décès par an sont attribuables aux longues heures. Ce n'est pas un oubli : c'est une décision, jamais révisée.",
+    cta: { label: "Lire le dossier", href: "/temps-donne" },
   },
   {
     glyphe: GlyphSources,
-    num: "05",
-    titre: "Des données publiques, rien d'autre",
-    accroche: "Sources ouvertes, incertitudes explicites.",
+    num: "04",
+    titre: "L'heure pour monnaie",
+    accroche: "Deux siècles d'essais — et une erreur commune.",
     texte:
-      "ILOSTAT, ONU (SDG 5.4.1), OCDE Time Use, enquêtes nationales : l'indice MANA n'invente rien. Une donnée manquante est dite manquante ; une interprétation est dite interprétation. Le mesuré, l'interprété, l'hypothèse et l'invisible ne se mélangent jamais.",
-    cta: { label: "Notre approche", href: "/comprendre" },
+      "De Cincinnati (1827) aux time credits de Tempo (2008), tous les systèmes ont su compter le temps donné ; tous ont cru qu'il fallait le faire circuler. La valeur du temps donné n'a pas besoin de circuler pour exister : elle a besoin d'être vue. Nous séparons la mesure de l'échange.",
+    cta: { label: "Lire l'histoire", href: "/economies-du-temps" },
+  },
+  {
+    glyphe: GlyphMethode,
+    num: "05",
+    titre: "Une méthode publique et versionnée",
+    accroche: "Cité, vérifiable, critiquable.",
+    texte:
+      "Dix articles, un faisceau de regards, des interdits : pas de score, pas de classement, pas de prescriptif. Les données sont publiques — ILOSTAT, ONU, OCDE — une donnée manquante est dite manquante, une interprétation est dite interprétation. Chaque résultat se cite « Méthode MANA, vX.Y, date ».",
+    cta: { label: "Lire la méthode", href: "/methode" },
+  },
+  {
+    glyphe: GlyphTemps,
+    num: "06",
+    titre: "Essayer — rejoindre l'étude pilote",
+    accroche: "Votre dotation s'affiche ; elle ne se gagne pas.",
+    texte:
+      "La sonde MANAtimebank est en construction : elle consignera le temps donné au geste, dans votre cercle. Créer un compte, c'est voir sa dotation s'afficher — 86 400 MANA par jour, inconditionnelle — et consigner ses premiers dons. Aucune heure ne s'échange, ne s'achète, ne se doit.",
+    cta: { label: "Rejoindre l'étude pilote", href: "/etude-pilote" },
   },
 ];
 
@@ -119,11 +129,13 @@ function Redirect({ to }: { to: string }) {
 
 
 const PAGES: Record<string, () => React.JSX.Element> = {
+  "le-vivant-d-abord": PageLeVivantDabord,
   comprendre: PageComprendre,
   soutenir: PageSoutenir,
   "etude-pilote": PageEtudePilote,
   observer: PageObserver,
   "rendre-les-mots": PageRendreLesMots,
+  "economies-du-temps": PageEconomiesDuTemps,
   regimes: PageRegimes,
   methode: PageMethode,
   "temps-donne": PageTempsDonne,
@@ -170,9 +182,13 @@ export default function App() {
               <NavIndice className="nav-acc-orange" />
               <span>Régimes</span>
             </a>
-            <a href={`${B}/methode`} className="nav-cta">
+            <a href={`${B}/methode`}>
               <NavMethode className="nav-acc-vert" />
               <span>Méthode</span>
+            </a>
+            <a href={`${B}/etude-pilote`} className="nav-cta">
+              <NavManifeste className="nav-acc-jaune" />
+              <span>Essayer</span>
             </a>
           </nav>
         </div>
@@ -185,7 +201,7 @@ export default function App() {
           <section className="hero">
             <div className="wrap">
               <p className="hero-label">
-                Manifeste du temps retrouvé · Indice mondial
+                Le vivant d'abord · Indice mondial du temps humain
               </p>
               <h1 className="brand-grand">
                 <Brand />
@@ -204,20 +220,15 @@ export default function App() {
                 être avec les siens — c'est tout ce qui l'intéresse. C'est
                 peut-être tout ce qui a jamais compté.
               </p>
-              <p className="lede">
-                Le temps est la ressource. La société, le système
-                d'organisation. Le vivant, l'environnement. On observe comment
-                l'humanité utilise sa ressource temporelle — son MANA.
-              </p>
               <div className="hero-cta">
-                <a className="btn btn-primary" href={`${B}/comprendre`}>
-                  Comprendre
+                <a className="btn btn-primary" href={`${B}/le-vivant-d-abord`}>
+                  Pourquoi ce projet existe
+                </a>
+                <a className="btn btn-ghost" href={`${B}/etude-pilote`}>
+                  Essayer — étude pilote
                 </a>
                 <a className="btn btn-ghost" href={`${B}/observer`}>
                   Observer
-                </a>
-                <a className="btn btn-ghost" href={`${B}/regimes`}>
-                  Régimes
                 </a>
                 <a className="btn btn-ghost" href={`${B}/methode`}>
                   Méthode
@@ -290,15 +301,17 @@ export default function App() {
             <ContactForm />
           </div>
           <nav className="footer-nav" aria-label="Pied de page">
-            <a href={`${B}/comprendre`}>Comprendre — manifeste, vision, charte</a>
-            <a href={`${B}/observer`}>Observer — données, indice, portrait</a>
+            <a href={`${B}/le-vivant-d-abord`}>Le vivant d'abord — la critique et l'alternative</a>
             <a href={`${B}/rendre-les-mots`}>Rendre les mots — texte fondateur</a>
             <a href={`${B}/temps-donne`}>Pourquoi le temps donné n'est pas compté</a>
+            <a href={`${B}/economies-du-temps`}>L'heure pour monnaie — deux siècles d'essais</a>
+            <a href={`${B}/comprendre`}>Comprendre — manifeste, vision, charte</a>
+            <a href={`${B}/observer`}>Observer — données, indice, portrait</a>
             <a href={`${B}/temps-vecu`}>Du temps possédé au temps vécu — essai</a>
             <a href={`${B}/regimes`}>Régimes — typologie et cinq fiches</a>
             <a href={`${B}/methode`}>Méthode</a>
+            <a href={`${B}/etude-pilote`}>Essayer — rejoindre l'étude pilote</a>
             <a href={`${B}/soutenir`}>Soutenir — don et adhésion</a>
-            <a href={`${B}/etude-pilote`}>Étude pilote · collectivités</a>
             <a href={`${B}/mentions-legales`}>Mentions légales</a>
           </nav>
         </div>
