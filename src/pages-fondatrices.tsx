@@ -141,10 +141,16 @@ const SEC_RENDRE_LES_MOTS: { label: string; corps: React.ReactNode }[] = [
                 Chaque jour, quatre-vingt-six mille quatre cents secondes
                 sont distribuées à chaque être humain — du billionnaire au
                 sans-abri, la seule ressource parfaitement partagée du
-                monde, remise à zéro chaque nuit. Aucune banque ne
-                distribue cela. Aucun régime politique ne l'a promis. C'est
-                la seule fortune universelle, et elle ne se garde pas : ce
-                qui n'est pas vécu s'éteint à minuit.
+                monde, renouvelée chaque jour comme le soleil revient.
+                Aucune banque ne distribue cela. Aucun régime politique ne
+                l'a promis. C'est la seule fortune universelle — et elle
+                ne se garde pas : la dotation se renouvelle, elle ne se
+                thésaurise pas. Mais ce qui est{" "}
+                <strong>donné</strong>, lui, ne s'éteint plus : consigné,
+                il ne se dissout jamais. Le compteur ne baisse pas ;{" "}
+                <strong>un photon émis ne revient jamais vers
+                l'étoile</strong>. Ce qui n'est pas vécu s'éteint ; ce
+                qui est offert demeure.
               </p>
               <p>
                 Ce monde vous demande combien vous valez — et il répond en

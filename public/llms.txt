@@ -68,8 +68,11 @@ les mots : le crédit redevient la croyance (être cru sur parole), la
 dette redevient le devoir (elle ne s'acquitte jamais en secondes), le
 capital redevient la vie — deux milliards et demi de secondes, le seul
 qui ne fructifie pas et ne se lègue pas. La dotation : 86 400 secondes
-par jour pour chacun, du billionnaire au sans-abri, remise à zéro chaque
-nuit — la seule fortune universelle, qui ne se garde pas. La question
+par jour pour chacun, du billionnaire au sans-abri, renouvelée chaque
+jour comme le soleil revient — la seule fortune universelle, qui ne se
+garde pas. Mais ce qui est donné ne se dissout jamais : le compteur ne
+baisse pas, un photon émis ne revient jamais vers l'étoile
+(accumulation à vie, canon v0.3 du 14/11/2026). La question
 fondatrice : qu'avez-vous donné de votre vie — et qu'en reste-t-il pour
 vous ? Une vie n'est pas un bilan, c'est une chronique. La banque de
 MANA TIME BANK est une banque de données : on y dépose des faits, jamais
@@ -155,6 +158,40 @@ fiscale, le territoire contre l'homophilie, un étalon sans marché. Le seul
 terrain que ni le capital ni le plan ne prendront : trop pauvre pour la
 propriété, trop horizontal pour le plan. La pertinence reste une
 hypothèse — le pilote la démontrera ou non.
+
+Canon v0.3 du 14/11/2026 (notes « mana-force » et « physique du
+système », publiées dans docs/) : le don est une combustion — un
+humain vit environ 2,4 milliards de secondes, chaque seconde donnée
+est brûlée du noyau comme le soleil brûle le sien pour émettre de
+la lumière. Au geste, deux traces sont frappées, aucune ne circule :
+combustion côté donneur, lumière reçue côté receveur (I1 tient :
+tout se crée, rien ne se transfère). Invariant public : la somme des
+émissions égale la somme des réceptions. Le compteur ne baisse
+jamais — accumulation à vie : un photon émis ne revient jamais vers
+l'étoile. Quatre clauses : libres les êtres, véridique le registre,
+mortel le système, éternelle la lumière émise. Le mensonge est
+libre, et visible (marqueurs d'état, jamais de police). La seconde
+donnée n'a pas de cours : aucune conversion monétaire, jamais.
+Échelle : kiloMANA ~17 minutes, MégaMANA ~11,6 jours, GigaMANA
+~31,7 ans, PétaMANA ~31,7 millions d'années (l'humanité entière à
+1 h/jour ≈ 10,5 PétaMANA/an — le seul agrégat en péta dont chaque
+unité est une caresse).
+
+Annexe /tribunal-des-fantomes — section légère, hors canon
+doctrinal : les grands morts comparaissent devant les quatre
+clauses. Marx approuve le compteur et vandalise l'interdit de s'en
+servir ; Hayek est allergique mais poli ; Bouddha accorde un stage ;
+Jésus négocie l'humilité et concède le point ; Robespierre n'a pas
+ri ; Smith vient chercher sa page 1 ; Nietzsche signe le livre
+d'or ; Weil approuve d'une voix très basse ; Lao Tseu comparaît par
+procuration ; Socrate est ravi d'un refus ; César cherche l'angle
+d'invasion ; David consigne la première dédicace du tribunal
+(4 kiloMANA pour Jonathan — l'amitié ne se rend pas) ; Kropotkine
+est approuvé à 100 % par les marmottes ; Mao désapprouve
+explicitement (« un système pour empêcher les grands bonds » — le
+plus beau compliment reçu) ; Shiva pose le troisième œil sur la
+seconde sans cours. Aucun ne peut annexer le canon : le sourire du
+corpus en fait la preuve.
 
 Typologie des régimes temporels (Article 4 de la méthode) — première
 fiche publiée : /regime-insomniaque-connecte. Le régime insomniaque
