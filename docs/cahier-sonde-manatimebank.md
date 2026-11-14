@@ -31,6 +31,28 @@ La sonde compte le temps donné dans l'écosystème MANA — **au geste et à la
 - **Adossé au vécu** : on ne minte que des secondes réellement traversées en les consacrant à quelqu'un. Le mint est une dédicace, **jamais un transfert d'unités** : le receveur ne gagne rien de dénombrable.
 - À qui on veut, quand on veut, parce qu'on le veut. Jamais due, jamais en retour.
 
+### Le MANA — l'étalon, pas la monnaie
+- Le MANA est l'**unité de compte du temps donné** : 1 MANA = 1 seconde. Il mesure, il ne paie pas, il ne vaut rien hors du fait qu'il nomme.
+- Trois propriétés inviolables : **non-accumulable** (dissous à minuit), **non-transférable**, **non-échangeable**.
+- Il n'est jamais un avoir : nulle part, pour personne, un solde de MANA ne peut être lu, déduit ou promis.
+
+### Le transfert de MANA — l'interdit cardinal
+- **Transférer du MANA = faire passer des unités d'une personne à une autre. Ça n'existe pas et n'existera jamais.** Le receveur ne gagne rien de dénombrable ; le don est une dédicace, pas un paiement. C'est le test de garde du projet : *toute mécanique qui déplace du MANA entre deux personnes est un bug, pas une feature* (I1).
+- L'interdit vaut aussi **déguisé** : en « reconnaissance », en « points de cercle », en « avance », en « compensation », en « crédit de temps » — tout habit d'une unité qui circule est un transfert, donc un bug.
+- Réciproque assumée : le merci est la seule réponse possible à un don, et il est **en mots, jamais en unités** (I2).
+
+### La qualification avant transfert — la porte que passe tout outil
+Tout nouvel outil, brique ou fonctionnalité qui touche au MANA doit être **qualifié avant d'entrer parmi nos outils**. La qualification se réduit à quatre questions — **une seule réponse « oui » = refus, l'outil n'entre pas** :
+
+1. **Transfert** : une unité change-t-elle de main, d'un compte à un autre — même simulée, même « à titre de reconnaissance » ?
+2. **Solde** : un état lisible se comporte-t-il comme un avoir, un crédit ou une dette ?
+3. **Contrepartie** : le geste ouvre-t-il un droit futur — une heure donnée doit-elle une heure en retour ?
+4. **Dette** : quelqu'un peut-il finir « à découvert » de temps ?
+
+- Quatre « non » : l'outil est qualifié, il entre. Sinon : **bug, refusé — pas négociable, pas différable, pas « en option désactivée »**.
+- La qualification est **écrite avant l'outil** : le test vitest qui la vérifie précède la fonctionnalité, jamais l'inverse. Un outil non qualifié ne passe pas en revue de code.
+
+
 ### Les deux portes (témoignage)
 - **Porte donneur** : je consigne ce que j'ai donné. Tient seule.
 - **Porte receveur** : je consigne ce que j'ai reçu — le remerciement fait comptable. Tient seule.
@@ -123,7 +145,7 @@ Découvrir un chemin sur MANAhome → inviter son cercle MANAfamily → revenir 
 ## 8. Livrables attendus de Claude (dans l'ordre)
 
 1. Migration 014 (ou suite de la numérotation du dépôt) : tables + RLS + vues agrégées avec garde n≥5 — relu par SuperMANA, jamais jouée à l'aveugle.
-2. Modules purs (mint, veille, empreinte, dédup) + tests vitest — **un test par interdit de la section 4**.
+2. Modules purs (mint, veille, empreinte, dédup) + tests vitest — **un test par interdit de la section 4**, et le test de qualification avant transfert (section 1 : les quatre questions) joué sur tout module touchant au MANA.
 3. Routes API : consigner (deux portes), ouvrir/fermer une veille, merci, réserve hebdo, lecture d'agrégats — sans jamais exposer I1–I8.
 4. Message commit : `branche: sonde manatimebank v1` (sans accents).
 
