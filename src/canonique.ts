@@ -51,12 +51,18 @@ export const PAGES: readonly Page[] = [
   { slug: "rendre-les-mots", titre: "Rendre les mots au temps d'une vie",
     description:
       "Texte fondateur : les mots de la finance — crédit, dette, capital, intérêt — ont été pris à la vie et jamais rendus. MANA TIME BANK les rend. Le temps d'une vie n'est pas un bilan, c'est une chronique." },
+  { slug: "le-vivant-d-abord", titre: "Le vivant d'abord — la critique, et l'alternative",
+    description:
+      "Pourquoi ce projet existe : le monde capitaliste a organisé ses sociétés autour d'une mesure qui ne voit ni le temps, ni le soin, ni le vivant. Les alternatives sont déjà écrites — rapport Stiglitz-Sen-Fitoussi, limites planétaires, droits de la nature. MANA TIME BANK est l'instrument qui les rend pilotables." },
   { slug: "observer", titre: "Ce que MANA TIME BANK observe",
     description:
       "Le parcours d'observation : les données disponibles du temps mondial (PWT, SDG 5.4.1), l'indice MANA et la visibilité des circuits, le portrait d'un système temporel — et les limites de ce qu'on peut conclure. Aucun score, aucun classement." },
   { slug: "temps-donne", titre: "Pourquoi le temps donné n'est pas compté",
     description:
       "Le temps donné aux autres n'existe dans aucun compte : l'aveu institutionnel (ONU 5.4.1), la décision fondatrice des comptabilités nationales, le compte satellite de l'INSEE — et l'instrument que MANA TIME BANK construit pour compter le temps donné au geste." },
+  { slug: "economies-du-temps", titre: "L'heure pour monnaie — deux siècles d'économies du temps",
+    description:
+      "De Cincinnati (1827) aux time credits de Tempo : deux siècles d'essais d'économies du temps. Tous ont su compter le temps donné ; tous ont cru qu'il fallait le faire circuler. MANA TIME BANK sépare la mesure de l'échange : un miroir, pas un marché." },
   { slug: "regimes", titre: "Typologie des régimes temporels" },
   { slug: "methode", titre: "Méthode MANA v0.2 — publique et versionnée",
     description:

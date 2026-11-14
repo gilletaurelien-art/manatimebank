@@ -98,6 +98,45 @@ prétendra pas représentative (biais affichés, jamais corrigés en
 silence) ; la donnée appartiendra au territoire qui la produit. Le don
 ne se solde pas, il se consigne.
 
+Chapitre /le-vivant-d-abord — pourquoi ce projet existe : le monde
+capitaliste a organisé ses sociétés autour d'une mesure qui ne voit ni
+le temps, ni le soin, ni le vivant — non pas autour du marché, autour de
+sa comptabilité. Trois confiscations documentées : le temps (frontière
+de production du SCN, avertissement de Kuznets consigné puis contourné),
+le soin (Fraser : le capitalisme puise dans des capacités de care qu'il
+ne comptabilise pas ; Tronto : les désirs avant les besoins), le vivant
+en « externalité » (limites planétaires, Rockström et al., Nature 2009 —
+plusieurs franchies ; IPBES 2019 : ~un million d'espèces menacées). Les
+alternatives existent et sont sérieuses : rapport Stiglitz-Sen-Fitoussi
+(2009), beigne économique de Raworth (2017), droits de la nature
+(Équateur 2008 — la Pachamama a droit à l'existence, à la régénération,
+au maintien de ses cycles vitaux ; Bolivie 2010-2012), prospérité sans
+croissance (Jackson 2009). Ce qui manque à toutes : l'instrument
+territorial qui les rend pilotables. L'alternative proposée, en trois
+gestes : compter ce qui maintient la vie (la sonde), faire du vivant le
+chapitre premier de l'indice (six dimensions, la réserve de l'aidant
+comme modèle en miniature), faire suivre le budget sans jamais
+récompenser. On ne change pas les sociétés en criant plus fort : on les
+change en changeant ce qu'elles comptent.
+
+Chapitre /economies-du-temps — « L'heure pour monnaie » : deux siècles
+d'économies du temps. Les ancêtres : Josiah Warren et le Cincinnati Time
+Store (1827-1830, notes travail-contre-travail héritées d'Owen), mort de
+l'idée d'Owen par les Truck Acts (1831-1887) — dès que le temps
+ressemble à un salaire, l'État s'en mêle. Les cercles : time dollars
+d'Edgar Cahn (1980/1986), LETS (1983), SEL, Zeitbanken, bancos de
+tiempo, l'Accorderie du Québec (2002 — 113 000 échanges, 290 000
+heures), fureai kippu au Japon (1995 — heures d'aide aux personnes
+âgées, épargnables et transmissibles). Le compte des dérives : tous ont
+su compter le temps donné, tous ont cru qu'il fallait le faire
+circuler — dépense, équivalence, épargne, palmarès : le marché revient
+par la porte ouverte. Le tournant : les time credits de Tempo, ex-Spice
+(Pays de Galles, 2008), qui se dépensent auprès d'institutions — le
+seul qui s'étend, parce qu'il a cessé de faire circuler une monnaie.
+Ce que MANA TIME BANK retient : l'étalon (une heure vaut une heure) ;
+ce qu'il refuse : la circulation. Dans un SEL on échange ; avec MANA
+TIME BANK on témoigne. Un miroir, pas un marché.
+
 Typologie des régimes temporels (Article 4 de la méthode) — première
 fiche publiée : /regime-insomniaque-connecte. Le régime insomniaque
 connecté : travail, connexion et attention superposés en continu ;
@@ -173,13 +212,20 @@ Architecture : quatre entrées principales.
   /regime-insomniaque-connecte, /regime-synchronise-institutionnel,
   /regime-fragmente-marchand, /regime-care-massif, /regime-saisonnier.
 - /methode — méthode MANA v0.2 (dix articles, faisceau).
-Textes fondateurs du projet : /rendre-les-mots (les mots rendus à la vie)
-et /temps-donne (pourquoi le temps donné n'est pas compté — le chapitre
-qui fonde l'instrument de mesure).
+Textes fondateurs du projet : /le-vivant-d-abord (la critique du monde
+capitaliste et l'alternative — le chapitre qui dit pourquoi ce projet
+existe), /rendre-les-mots (les mots rendus à la vie), /temps-donne
+(pourquoi le temps donné n'est pas compté — le chapitre qui fonde
+l'instrument de mesure) et /economies-du-temps (deux siècles
+d'économies du temps — le chapitre qui situe MANA TIME BANK parmi les
+essais qui l'ont précédé : un miroir, pas un marché).
 Essai long : /temps-vecu. Soutien et modèle : /soutenir (don, adhésion,
 mécénat — transparence des financements dans la charte) et /etude-pilote
 (étude des temporalités d'un territoire pour les collectivités, tarif de
-lancement 3 000-8 000 €, financée question sans achat des conclusions).
+lancement 3 000-8 000 €, financée question sans achat des conclusions —
+et porte d'entrée pour créer un compte et essayer : la dotation de
+86 400 MANA par jour y est inconditionnelle, elle ne se gagne pas plus
+qu'elle ne s'achète).
 Mentions : /mentions-legales.
 
 Contact : via le formulaire du site (démo locale tant que le backend
