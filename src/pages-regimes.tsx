@@ -3,6 +3,8 @@ import { baseUrl } from "./router";
 
 // Les six régimes temporels — extraits d'App.tsx (14/11/2026, découpage 64 Ko).
 
+const ACCENTS = ["accent-jaune", "accent-vert", "accent-orange", "accent-bleu"] as const;
+
 const B = baseUrl();
 
 export function PageRegimeInsomniaque() {
