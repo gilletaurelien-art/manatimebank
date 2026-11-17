@@ -3,22 +3,15 @@ name: Deploy live
 on:
   push:
     branches: [main]
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+  workflow_dispatch: {}
 
 concurrency:
-  group: pages
-  cancel-in-progress: true
+  group: deploy-live
+  cancel-in-progress: false
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
 
@@ -29,22 +22,36 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run build
+      # ═══════════════════════════════════════════════════════════════════
+      #  🔴 REMPLACE LE DÉPLOIEMENT GitHub Pages, QUI NE SERVAIT RIEN.
+      #
+      #  Mesuré le 17/11/2026 : manatimebank.org résout sur le KS-5
+      #  (147.135.254.25), servi par Caddy depuis /srv/www-manatimebank.
+      #  L'ancien job déployait sur Pages à chaque push, RÉUSSISSAIT à
+      #  chaque fois (vert dans l'historique des runs), et n'atteignait
+      #  JAMAIS le domaine public. 35 commits (9 PR le 14/11 seul) se sont
+      #  accumulés sur 18 jours sans qu'un seul n'arrive en ligne — un
+      #  déploiement vert qui vise la mauvaise cible est indiscernable
+      #  d'un vrai déploiement jusqu'à ce qu'on COMPARE le site public à
+      #  ce que CI prétend avoir expédié.
+      #
+      #  ⭐ C'est pour ça que ce job n'appelle pas juste rsync : il appelle
+      #  `scripts/deployer-ks5.sh`, qui se VÉRIFIE contre le domaine réel
+      #  après coup (empreinte de chaque route) et ÉCHOUE si le public ne
+      #  reçoit pas ce qui vient d'être construit. Un run vert ici veut
+      #  dire que manatimebank.org sert CE commit — pas qu'une commande a
+      #  rendu 0.
+      # ═══════════════════════════════════════════════════════════════════
+      - name: Déployer sur le KS-5 (le domaine réel)
+        env:
+          MANA_SSH_KEY: /tmp/mana_deploy_key
+        run: |
+          install -m 600 /dev/null "$MANA_SSH_KEY"
+          printf '%s\n' "${{ secrets.MANA_KS5_DEPLOY_KEY }}" > "$MANA_SSH_KEY"
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.MANA_KS5_HOST_KEY }}" >> ~/.ssh/known_hosts
+          bash scripts/deployer-ks5.sh
 
-      # Pages attend un dossier unique ; on pousse le build Vite complet
-      - run: mv site _page
-
-      # Hack liens profonds : 404.html = copie d'index ; le JS lit l'URL
-      # et rend la bonne page (méthode, charte, etc.)
-      - run: cp _page/index.html _page/404.html
-
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: _page
-
-      - uses: actions/deploy-pages@v4
-        id: deployment
+      - name: Retirer la clé privée du disque du runner
+        if: always()
+        run: shred -u /tmp/mana_deploy_key 2>/dev/null || rm -f /tmp/mana_deploy_key
